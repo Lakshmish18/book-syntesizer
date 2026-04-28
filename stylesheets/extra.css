@@ -1,0 +1,25 @@
+.md-typeset h1 {
+  font-weight: 800;
+}
+
+.md-typeset h2 {
+  margin-top: 2rem;
+  border-bottom: 1px solid rgba(125, 125, 125, 0.2);
+  padding-bottom: 0.25rem;
+}
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  border: 1px solid rgba(125, 125, 125, 0.2);
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.6rem;
+}
+
+.md-typeset code {
+  border-radius: 0.35rem;
+}
