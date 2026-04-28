@@ -1,0 +1,421 @@
+{
+  "nodes": {
+    "3ab3b756-c90b-463d-8ea2-4e9382acf1f4": {
+      "canonical_name": "cache memory",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d",
+        "inferred:cache-levels",
+        "inferred:cache-types"
+      ]
+    },
+    "f1ea0877-4a09-470d-b45e-1be87b23c1fe": {
+      "canonical_name": "SRAM",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "54f402d4-d712-4400-8aa3-65c8b06eb5a8": {
+      "canonical_name": "processor",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "232da49a-3848-4382-8841-556617047498": {
+      "canonical_name": "IBM System/360 Model 85",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "946faca6-7736-4c19-a418-0bce01a6fc8d": {
+      "canonical_name": "Intel 486DX",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "b2ea68e4-2ee1-4daa-acae-96d5540e9ee8": {
+      "canonical_name": "8 KB L1 cache",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "08099c55-ebc9-4f43-a6c5-9e43fde915c7": {
+      "canonical_name": "RAM",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "6dda4778-91c9-4556-9a4f-ebccb2b80f02": {
+      "canonical_name": "central processor and main memory",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "efd11c9b-8885-4ce3-b00c-30db1508d301": {
+      "canonical_name": "on-chip 8 KB L1 cache",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "c23b72b0-d61c-460e-b36b-ef01c5d141df": {
+      "canonical_name": "hit ratio",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "09b947cf-4f23-4e22-8c22-8bb593589421": {
+      "canonical_name": "Total number of hits divided by (Total number of hits + Total number of misses)",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "50bcb43f-1798-4d55-b7cd-75322d56ad12": {
+      "canonical_name": "miss ratio",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "52e3e3cb-908a-4788-bac5-2f6b829858c7": {
+      "canonical_name": "1 - hit ratio",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "9b88270d-c3ad-48d0-9cae-3f5528ccfac4": {
+      "canonical_name": "CPI",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "0aa7ef08-41a6-44b3-8518-c7d332cf32e7": {
+      "canonical_name": "number of cycles needed to execute one instruction",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "25cf2e11-4651-4b68-accf-fed60cc1107b": {
+      "canonical_name": "IPC",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "d88117cd-2e4b-4add-875e-75e8819dcf0e": {
+      "canonical_name": "1 divided by number of instructions",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "c4208181-5f6d-48a7-8bfc-dcbe9ecbdcc8": {
+      "canonical_name": "direct mapping",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d",
+        "inferred:cache-types"
+      ]
+    },
+    "5ecb11dc-cdce-409b-99da-dd3a0d4a29ea": {
+      "canonical_name": "cache mapping",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "21bfef84-f3f3-4079-b68d-ba2a005f6218": {
+      "canonical_name": "associative mapping",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d",
+        "inferred:cache-types"
+      ]
+    },
+    "99dfb760-cb4b-4451-8a29-c5875a866d7b": {
+      "canonical_name": "set associative mapping",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d",
+        "inferred:cache-types"
+      ]
+    },
+    "7acf02e7-c869-4b87-aaaa-0bb300c97d66": {
+      "canonical_name": "divided into sets, each consisting of cache lines or blocks",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ]
+    },
+    "5df1ac88-89a3-4085-aa64-f4c72eb398c5": {
+      "canonical_name": "L1 cache",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "inferred:cache-levels"
+      ]
+    },
+    "c6cd146b-f0bb-4cef-89e5-092024fb5bf8": {
+      "canonical_name": "L2 cache",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "inferred:cache-levels"
+      ]
+    },
+    "d7fdf639-5f4f-4f15-90fc-808e6eb65636": {
+      "canonical_name": "L3 cache",
+      "type": "concept",
+      "attributes": {},
+      "sources": [
+        "inferred:cache-levels"
+      ]
+    }
+  },
+  "edges": [
+    {
+      "from_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "relation": "is_constructed_from",
+      "to_node": "f1ea0877-4a09-470d-b45e-1be87b23c1fe",
+      "confidence": 0.95,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "relation": "resides_in",
+      "to_node": "54f402d4-d712-4400-8aa3-65c8b06eb5a8",
+      "confidence": 0.95,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "232da49a-3848-4382-8841-556617047498",
+      "relation": "is_historical_milestone_for",
+      "to_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "confidence": 0.9,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "946faca6-7736-4c19-a418-0bce01a6fc8d",
+      "relation": "introduced",
+      "to_node": "b2ea68e4-2ee1-4daa-acae-96d5540e9ee8",
+      "confidence": 0.9,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "relation": "is_faster_than",
+      "to_node": "08099c55-ebc9-4f43-a6c5-9e43fde915c7",
+      "confidence": 0.9,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "relation": "is_buffer_between",
+      "to_node": "6dda4778-91c9-4556-9a4f-ebccb2b80f02",
+      "confidence": 0.95,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "946faca6-7736-4c19-a418-0bce01a6fc8d",
+      "relation": "introduced",
+      "to_node": "efd11c9b-8885-4ce3-b00c-30db1508d301",
+      "confidence": 0.95,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "c23b72b0-d61c-460e-b36b-ef01c5d141df",
+      "relation": "is_calculated_as",
+      "to_node": "09b947cf-4f23-4e22-8c22-8bb593589421",
+      "confidence": 0.95,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "50bcb43f-1798-4d55-b7cd-75322d56ad12",
+      "relation": "is_calculated_as",
+      "to_node": "52e3e3cb-908a-4788-bac5-2f6b829858c7",
+      "confidence": 0.95,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "9b88270d-c3ad-48d0-9cae-3f5528ccfac4",
+      "relation": "is_calculated_as",
+      "to_node": "0aa7ef08-41a6-44b3-8518-c7d332cf32e7",
+      "confidence": 0.9,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "25cf2e11-4651-4b68-accf-fed60cc1107b",
+      "relation": "is_calculated_as",
+      "to_node": "d88117cd-2e4b-4add-875e-75e8819dcf0e",
+      "confidence": 0.9,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "c4208181-5f6d-48a7-8bfc-dcbe9ecbdcc8",
+      "relation": "types",
+      "to_node": "5ecb11dc-cdce-409b-99da-dd3a0d4a29ea",
+      "confidence": 0.9,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "21bfef84-f3f3-4079-b68d-ba2a005f6218",
+      "relation": "types",
+      "to_node": "5ecb11dc-cdce-409b-99da-dd3a0d4a29ea",
+      "confidence": 0.9,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "99dfb760-cb4b-4451-8a29-c5875a866d7b",
+      "relation": "types",
+      "to_node": "5ecb11dc-cdce-409b-99da-dd3a0d4a29ea",
+      "confidence": 0.9,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "99dfb760-cb4b-4451-8a29-c5875a866d7b",
+      "relation": "is_constructed_as",
+      "to_node": "7acf02e7-c869-4b87-aaaa-0bb300c97d66",
+      "confidence": 0.9,
+      "sources": [
+        "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "relation": "levels",
+      "to_node": "5df1ac88-89a3-4085-aa64-f4c72eb398c5",
+      "confidence": 0.8,
+      "sources": [
+        "inferred:cache-levels"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "relation": "levels",
+      "to_node": "c6cd146b-f0bb-4cef-89e5-092024fb5bf8",
+      "confidence": 0.8,
+      "sources": [
+        "inferred:cache-levels"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "relation": "levels",
+      "to_node": "d7fdf639-5f4f-4f15-90fc-808e6eb65636",
+      "confidence": 0.8,
+      "sources": [
+        "inferred:cache-levels"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "relation": "types",
+      "to_node": "c4208181-5f6d-48a7-8bfc-dcbe9ecbdcc8",
+      "confidence": 0.8,
+      "sources": [
+        "inferred:cache-types"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "relation": "types",
+      "to_node": "21bfef84-f3f3-4079-b68d-ba2a005f6218",
+      "confidence": 0.8,
+      "sources": [
+        "inferred:cache-types"
+      ],
+      "conflicting_sources": []
+    },
+    {
+      "from_node": "3ab3b756-c90b-463d-8ea2-4e9382acf1f4",
+      "relation": "types",
+      "to_node": "99dfb760-cb4b-4451-8a29-c5875a866d7b",
+      "confidence": 0.8,
+      "sources": [
+        "inferred:cache-types"
+      ],
+      "conflicting_sources": []
+    }
+  ]
+}

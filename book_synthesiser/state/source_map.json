@@ -1,0 +1,115 @@
+{
+  "Functional Units": [
+    "0cbe681f-c616-407c-b4b8-ce6555388563",
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Registers": [
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7"
+  ],
+  "Bus Structure": [
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Arithmetic Logic Unit (ALU)": [
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Microoperations": [
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Instruction Types": [
+    "0cbe681f-c616-407c-b4b8-ce6555388563",
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7"
+  ],
+  "Primary Memory": [
+    "0cbe681f-c616-407c-b4b8-ce6555388563",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Secondary Memory": [
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Cache Levels": [
+    "0cbe681f-c616-407c-b4b8-ce6555388563",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Cache Mapping": [
+    "0cbe681f-c616-407c-b4b8-ce6555388563",
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Hit Ratio": [
+    "0cbe681f-c616-407c-b4b8-ce6555388563",
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Replacement Policies": [
+    "0cbe681f-c616-407c-b4b8-ce6555388563",
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Performance": [
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Non-Volatile Memory (NVM)": [
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "4e3336e8-1013-4c0b-a884-097762fa1114",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "High Bandwidth Memory (HBM)": [
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7",
+    "f9e26ac4-9161-406a-87ac-ea27a848e982"
+  ],
+  "Persistent Memory": [
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7"
+  ],
+  "Quantum Memory": [
+    "1cbb41ca-8d95-4d6c-a207-4622ebb040c2",
+    "78e325f1-9a76-408d-9241-c21bd660f404",
+    "ed3d498c-d2f2-425a-bcf4-b3cd385ba0f7"
+  ]
+}

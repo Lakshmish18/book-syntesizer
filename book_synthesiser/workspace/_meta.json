@@ -1,0 +1,37 @@
+{
+  "a06e149a-59fd-42f8-91d1-bdd5caa860c6": {
+    "type": "pdf",
+    "doc_name": "10.11648.j.ajece.20230702.11.pdf",
+    "doc_description": "A systematic review article titled \"An Overview of Computer Memory Systems and Emerging Trends,\" published in the American Journal of Electrical and Computer Engineering, analyzing advancements in memory technologies like non-volatile memory, quantum memory, and neuromorphic memory from 2019 to 2023, while addressing challenges such as scalability, energy efficiency, and cost, and highlighting future research directions.",
+    "path": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\book_synthesiser\\pdfs\\10.11648.j.ajece.20230702.11.pdf",
+    "page_count": 8
+  },
+  "00bb6791-38aa-4554-b712-861e4e05b1af": {
+    "type": "pdf",
+    "doc_name": "COMPUTER ORGANIZATION NOTES.pdf",
+    "doc_description": "A comprehensive syllabus and lecture notes for the B.Tech CSE course \"Computer Organization,\" detailing objectives, unit-wise topics on computer architecture, memory systems, CPU organization, I/O principles, pipelining, and references to key textbooks and outcomes.",
+    "path": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\book_synthesiser\\pdfs\\COMPUTER ORGANIZATION NOTES.pdf",
+    "page_count": 82
+  },
+  "7d8d1f0d-966c-4e3d-b9be-13a96daaeaf3": {
+    "type": "pdf",
+    "doc_name": "DLD1.pdf",
+    "doc_description": "A comprehensive document detailing the fundamental structure and operation of computer systems, covering types of computers, functional units, memory hierarchy, processor performance optimization techniques, instruction set architectures, performance measurement methods, and multiprocessor systems.",
+    "path": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\book_synthesiser\\pdfs\\DLD1.pdf",
+    "page_count": 11
+  },
+  "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d": {
+    "type": "pdf",
+    "doc_name": "LITERATURE_SURVEY_ON_CACHE_MEMORY_ijariie9590.pdf",
+    "doc_description": "A comprehensive literature survey on cache memory, detailing its structure, operation, historical development, performance metrics, optimization techniques, and future advancements in improving processor efficiency and system performance.",
+    "path": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\book_synthesiser\\pdfs\\LITERATURE_SURVEY_ON_CACHE_MEMORY_ijariie9590.pdf",
+    "page_count": 6
+  },
+  "10dd6156-e025-412b-bc2e-02fd1ac1b344": {
+    "type": "pdf",
+    "doc_name": "recent advancments in DRAM nad flash memory.pdf",
+    "doc_description": "This document provides an in-depth exploration of recent advancements in DRAM and NAND flash memory architectures, focusing on addressing performance, energy, and reliability bottlenecks through innovative mechanisms, experimental tools, and architectural solutions developed by the SAFARI group.",
+    "path": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\book_synthesiser\\pdfs\\recent advancments in DRAM nad flash memory.pdf",
+    "page_count": 4
+  }
+}

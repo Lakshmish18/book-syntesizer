@@ -1,0 +1,218 @@
+[2026-04-26 02:18:15] START index
+[2026-04-26 02:18:19] START index
+[2026-04-26 02:18:43] START index
+[2026-04-26 02:18:43] FAIL index: PageIndexClient.__init__() got an unexpected keyword argument 'model'
+[2026-04-26 02:18:46] START index
+[2026-04-26 02:18:46] FAIL index: PageIndexClient.__init__() got an unexpected keyword argument 'model'
+[2026-04-26 02:23:46] START index
+[2026-04-26 02:25:40] START index
+[2026-04-26 02:28:09] COMPLETE index
+[2026-04-26 02:30:08] COMPLETE index
+[2026-04-26 02:31:05] START index
+[2026-04-26 02:35:19] COMPLETE index
+[2026-04-26 02:35:46] --- Running stage: index --- skipped (resume)
+[2026-04-26 02:35:46] START outline
+[2026-04-26 02:36:03] COMPLETE outline
+[2026-04-26 02:36:03] START retrieve
+[2026-04-26 02:36:03] FAIL retrieve: Exchange must contain user and assistant messages
+[2026-04-26 02:40:31] START index
+[2026-04-26 02:44:53] COMPLETE index
+[2026-04-26 02:45:14] --- Running stage: index --- skipped (resume)
+[2026-04-26 02:45:14] --- Running stage: outline --- skipped (resume)
+[2026-04-26 02:45:14] START retrieve
+[2026-04-26 02:45:14] FAIL retrieve: Exchange must contain user and assistant messages
+[2026-04-26 02:50:49] START index
+[2026-04-26 02:55:10] COMPLETE index
+[2026-04-26 02:55:29] --- Running stage: index --- skipped (resume)
+[2026-04-26 02:55:29] --- Running stage: outline --- skipped (resume)
+[2026-04-26 02:55:29] START retrieve
+[2026-04-26 02:55:29] FAIL retrieve: Exchange must contain user and assistant messages
+[2026-04-26 02:57:18] START index
+[2026-04-26 03:01:22] COMPLETE index
+[2026-04-26 11:13:16] START index
+[2026-04-26 11:18:08] COMPLETE index
+[2026-04-26 11:23:25] START index
+[2026-04-26 11:27:43] COMPLETE index
+[2026-04-26 11:34:19] START outline
+[2026-04-26 11:34:33] COMPLETE outline
+[2026-04-26 11:35:59] START retrieve
+[2026-04-26 11:35:59] FAIL retrieve: Exchange must contain user and assistant messages
+[2026-04-26 11:37:18] START retrieve
+[2026-04-26 11:37:18] FAIL retrieve: Exchange must contain user and assistant messages
+[2026-04-26 11:37:56] START retrieve
+[2026-04-26 11:37:56] FAIL retrieve: Exchange must contain user and assistant messages
+[2026-04-26 11:38:43] START retrieve
+[2026-04-26 11:38:48] FAIL retrieve: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaRtCdLtvFmzCMxfEoNE2'}
+[2026-04-26 12:00:21] START retrieve
+[2026-04-26 12:00:57] COMPLETE retrieve
+[2026-04-26 12:03:01] START retrieve
+[2026-04-26 12:03:01] COMPLETE retrieve
+[2026-04-26 12:05:01] START retrieve
+[2026-04-26 12:05:54] COMPLETE retrieve
+[2026-04-26 12:08:06] START retrieve
+[2026-04-26 12:09:07] COMPLETE retrieve
+[2026-04-26 12:10:39] START retrieve
+[2026-04-26 12:10:46] COMPLETE retrieve
+[2026-04-26 12:11:12] START retrieve
+[2026-04-26 12:12:06] COMPLETE retrieve
+[2026-04-26 12:12:39] START retrieve
+[2026-04-26 12:13:13] FAIL retrieve: Error code: 400 - {'error': {'message': 'Your input exceeds the context window of this model. Please adjust your input and try again.', 'type': 'invalid_request_error', 'param': 'input', 'code': 'context_length_exceeded'}}
+[2026-04-26 12:15:20] START retrieve
+[2026-04-26 12:17:45] COMPLETE retrieve
+[2026-04-26 12:20:14] START retrieve
+[2026-04-26 12:20:18] COMPLETE retrieve
+[2026-04-26 12:21:39] START retrieve
+[2026-04-26 12:22:26] COMPLETE retrieve
+[2026-04-26 12:26:06] START retrieve
+[2026-04-26 12:26:28] COMPLETE retrieve
+[2026-04-26 12:27:51] START dedup
+[2026-04-26 12:30:42] COMPLETE dedup
+[2026-04-26 12:32:35] START generate
+[2026-04-26 12:33:18] START dedup
+[2026-04-26 12:34:25] COMPLETE generate
+[2026-04-26 12:36:04] COMPLETE dedup
+[2026-04-26 12:36:23] START generate
+[2026-04-26 12:37:59] COMPLETE generate
+[2026-04-26 12:38:59] START validate
+[2026-04-26 12:38:59] COMPLETE validate
+[2026-04-26 12:56:07] START retrieve
+[2026-04-26 12:56:30] COMPLETE retrieve
+[2026-04-26 12:56:58] START dedup
+[2026-04-26 13:00:16] COMPLETE dedup
+[2026-04-26 13:00:38] START generate
+[2026-04-26 13:01:15] COMPLETE generate
+[2026-04-26 13:16:28] START dedup
+[2026-04-26 13:19:25] COMPLETE dedup
+[2026-04-26 13:19:48] START generate
+[2026-04-26 13:21:05] FAIL generate: cannot import name 'TableOfContents' from 'reportlab.platypus' (C:\Users\jarvi\miniconda3\Lib\site-packages\reportlab\platypus\__init__.py)
+[2026-04-26 13:21:36] START generate
+[2026-04-26 13:22:46] COMPLETE generate
+[2026-04-26 13:29:13] START outline
+[2026-04-26 13:29:38] COMPLETE outline
+[2026-04-26 13:29:59] START retrieve
+[2026-04-26 13:30:59] COMPLETE retrieve
+[2026-04-26 13:31:31] START dedup
+[2026-04-26 13:34:56] START dedup
+[2026-04-26 13:39:50] COMPLETE dedup
+[2026-04-26 13:40:11] START dedup
+[2026-04-26 13:43:28] COMPLETE dedup
+[2026-04-26 13:49:49] COMPLETE dedup
+[2026-04-26 13:50:09] START generate
+[2026-04-26 15:04:00] FAIL generate: Connection error.
+[2026-04-26 15:05:09] START generate
+[2026-04-26 15:09:08] COMPLETE generate
+[2026-04-26 15:12:35] START generate
+[2026-04-26 15:16:44] COMPLETE generate
+[2026-04-26 15:50:45] START index
+[2026-04-26 15:54:37] COMPLETE index
+[2026-04-26 15:54:37] START outline
+[2026-04-26 15:54:57] COMPLETE outline
+[2026-04-26 15:54:57] START retrieve
+[2026-04-26 15:56:27] COMPLETE retrieve
+[2026-04-26 15:56:27] START dedup
+[2026-04-26 16:07:35] COMPLETE dedup
+[2026-04-26 16:07:35] START generate
+[2026-04-26 16:11:19] COMPLETE generate
+[2026-04-26 16:11:19] START validate
+[2026-04-26 16:11:19] COMPLETE validate
+[2026-04-27 00:21:52] START index
+[2026-04-27 00:26:15] COMPLETE index
+[2026-04-27 00:26:15] START outline
+[2026-04-27 00:26:38] COMPLETE outline
+[2026-04-27 00:26:38] START retrieve
+[2026-04-27 00:28:33] COMPLETE retrieve
+[2026-04-27 00:28:33] START dedup
+[2026-04-27 00:34:53] --- Running stage: index --- skipped (resume)
+[2026-04-27 00:34:53] --- Running stage: outline --- skipped (resume)
+[2026-04-27 00:34:53] --- Running stage: retrieve --- skipped (resume)
+[2026-04-27 00:34:53] --- Running stage: dedup --- skipped (resume)
+[2026-04-27 00:34:53] --- Running stage: generate --- skipped (resume)
+[2026-04-27 00:34:53] START validate
+[2026-04-27 00:34:53] COMPLETE validate
+[2026-04-27 00:35:21] START reconstruct
+[2026-04-27 00:45:45] COMPLETE dedup
+[2026-04-27 00:45:45] START generate
+[2026-04-27 00:45:45] COMPLETE generate
+[2026-04-27 00:45:45] START validate
+[2026-04-27 00:45:45] COMPLETE validate
+[2026-04-27 01:46:07] START reconstruct
+[2026-04-27 11:08:24] START reconstruct
+[2026-04-27 11:12:23] COMPLETE reconstruct
+[2026-04-27 11:13:06] START index
+[2026-04-27 11:13:10] COMPLETE reconstruct
+[2026-04-27 11:17:31] COMPLETE index
+[2026-04-27 11:17:31] START outline
+[2026-04-27 11:17:59] COMPLETE outline
+[2026-04-27 11:17:59] START retrieve
+[2026-04-27 11:19:51] COMPLETE retrieve
+[2026-04-27 11:19:51] START dedup
+[2026-04-27 11:38:12] COMPLETE dedup
+[2026-04-27 11:38:12] START generate
+[2026-04-27 11:44:23] COMPLETE generate
+[2026-04-27 11:44:23] START validate
+[2026-04-27 11:44:23] COMPLETE validate
+[2026-04-27 11:45:02] START reconstruct
+[2026-04-27 11:53:00] START reconstruct
+[2026-04-27 12:08:00] START reconstruct
+[2026-04-27 12:08:49] COMPLETE reconstruct
+[2026-04-27 12:10:43] --- Running stage: index --- skipped (resume)
+[2026-04-27 12:10:43] --- Running stage: outline --- skipped (resume)
+[2026-04-27 12:10:43] --- Running stage: retrieve --- skipped (resume)
+[2026-04-27 12:10:43] --- Running stage: dedup --- skipped (resume)
+[2026-04-27 12:10:43] --- Running stage: generate --- skipped (resume)
+[2026-04-27 12:10:43] START validate
+[2026-04-27 12:10:43] COMPLETE validate
+[2026-04-27 12:11:05] START reconstruct
+[2026-04-27 12:11:44] COMPLETE reconstruct
+[2026-04-27 12:15:37] START reconstruct
+[2026-04-27 12:16:20] COMPLETE reconstruct
+[2026-04-27 12:20:59] START reconstruct
+[2026-04-27 12:21:29] COMPLETE reconstruct
+[2026-04-27 12:22:15] START reconstruct
+[2026-04-27 12:22:54] COMPLETE reconstruct
+[2026-04-27 12:28:51] START reconstruct
+[2026-04-27 12:29:13] COMPLETE reconstruct
+[2026-04-27 12:32:58] START reconstruct
+[2026-04-27 12:33:22] COMPLETE reconstruct
+[2026-04-27 12:39:36] START reconstruct
+[2026-04-27 12:40:10] COMPLETE reconstruct
+[2026-04-27 12:42:06] START reconstruct
+[2026-04-27 12:42:42] COMPLETE reconstruct
+[2026-04-27 12:44:39] START reconstruct
+[2026-04-27 12:45:13] COMPLETE reconstruct
+[2026-04-27 12:49:27] START reconstruct
+[2026-04-27 12:52:38] COMPLETE reconstruct
+[2026-04-27 12:56:57] START reconstruct
+[2026-04-27 13:00:42] COMPLETE reconstruct
+[2026-04-27 13:03:34] START reconstruct
+[2026-04-27 13:06:49] COMPLETE reconstruct
+[2026-04-27 13:11:12] START reconstruct
+[2026-04-27 13:15:18] COMPLETE reconstruct
+[2026-04-27 13:21:02] START index
+[2026-04-27 13:25:47] COMPLETE index
+[2026-04-27 13:26:13] START reconstruct
+[2026-04-27 13:33:18] COMPLETE reconstruct
+[2026-04-27 13:46:47] START index
+[2026-04-27 13:50:25] START index
+[2026-04-27 13:51:47] COMPLETE index
+[2026-04-27 13:55:59] START reconstruct
+[2026-04-27 13:56:38] COMPLETE index
+[2026-04-27 14:01:00] START index
+[2026-04-27 14:01:36] COMPLETE reconstruct
+[2026-04-27 14:06:34] COMPLETE index
+[2026-04-27 14:06:44] START reconstruct
+[2026-04-27 14:11:56] COMPLETE reconstruct
+[2026-04-27 14:15:45] START reconstruct
+[2026-04-27 14:21:49] COMPLETE reconstruct
+[2026-04-27 14:24:45] START reconstruct
+[2026-04-27 14:29:55] COMPLETE reconstruct
+[2026-04-27 14:30:52] START reconstruct
+[2026-04-27 14:37:02] COMPLETE reconstruct
+[2026-04-27 15:05:14] START index
+[2026-04-27 15:11:42] COMPLETE index
+[2026-04-27 15:11:56] START reconstruct
+[2026-04-27 15:17:14] COMPLETE reconstruct
+[2026-04-27 16:02:44] START reconstruct
+[2026-04-27 16:07:56] COMPLETE reconstruct
+[2026-04-28 12:28:28] START validate
+[2026-04-28 12:28:28] COMPLETE validate

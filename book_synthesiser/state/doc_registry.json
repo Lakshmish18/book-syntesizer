@@ -1,0 +1,33 @@
+[
+  {
+    "filename": "10.11648.j.ajece.20230702.11.pdf",
+    "doc_id": "a06e149a-59fd-42f8-91d1-bdd5caa860c6",
+    "status": "indexed"
+  },
+  {
+    "filename": "COMPUTER ORGANIZATION NOTES.pdf",
+    "doc_id": "00bb6791-38aa-4554-b712-861e4e05b1af",
+    "status": "indexed"
+  },
+  {
+    "filename": "Computer-Organization-min.pdf",
+    "doc_id": null,
+    "status": "failed",
+    "error": "'table_of_contents'"
+  },
+  {
+    "filename": "DLD1.pdf",
+    "doc_id": "7d8d1f0d-966c-4e3d-b9be-13a96daaeaf3",
+    "status": "indexed"
+  },
+  {
+    "filename": "LITERATURE_SURVEY_ON_CACHE_MEMORY_ijariie9590.pdf",
+    "doc_id": "723c5b0e-c90a-476f-8da8-f7b1ef0dbf3d",
+    "status": "indexed"
+  },
+  {
+    "filename": "recent advancments in DRAM nad flash memory.pdf",
+    "doc_id": "10dd6156-e025-412b-bc2e-02fd1ac1b344",
+    "status": "indexed"
+  }
+]

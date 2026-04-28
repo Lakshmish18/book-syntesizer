@@ -1,0 +1,16 @@
+[
+  {
+    "total_page_number": 16
+  },
+  {
+    "total_token": 8476
+  },
+  {
+    "toc_content": "CHAPTER 1\nBasics of Computer Design  :  3-47\n1.1 Computer System  :  3\n1.2 Data Storage in the Memory  :  11\n1.3 Machine Instructions  :  12\n Student Assignments  :  41\nCHAPTER 2\nCPU Design  :  48-78\n2.1 Introduction  :  48\n2.2 Datapath  :  50\n2.3 Control Unit  :  54\n2.4 Program Interrupt  :  71\n2.5 Booth\u2019s Algorithm  :  72\n Student Assignments  :  75CHAPTER 3\nInstruction Pipelining  :  79-112\n3.1 Introduction  :  79\n3.2 RISC Pipelining :  80\n3.3 Pipeline Hazards :  86\n3.4 Pipeline Performance Analysis  :  95\n3.5 Speedup  :  97\n Stude nt Assignments  :  101\nCHAPTER 4\nInteger and Floating  \nPoint Representation  :  113-129\n4.1 Fixed and Floating Point Format  :  113\n4.2 IEEE Floating-Point Number Representation  :  122\n4.3 Multiplying Floating-Point Numbers  :  124\n Stude nt Assignments  :  126\niiiComputer OrganizationINTRODUCTION\nIn this book we tried to keep the syllabus of Computer Organization around the GATE syllabus. Each topic\nrequired for GATE is crisply covered with illustrative examples and each chapter is provided with StudentAssignment at the end of each chapter so that the students get the thorough revision of the topics that he/she\nhad studied. This subject is carefully divided into eight chapters as described below.\n1. 1.1. 1.1.Basics of Computer Design:Basics of Computer Design:Basics of Computer Design:Basics of Computer Design:Basics of Computer Design: In this chapter we discuss the Computer System, Data storage in the\nmemory and Machine instructions\n2. 2.2. 2.2.CPU Design:CPU Design:CPU Design:CPU Design:CPU Design: In this chapter we discuss the Datapath and Control unit design first is hardwired control\nunit second is microprogrammed.\n3. 3.3. 3.3.Instruction Pipelining:Instruction Pipelining:Instruction Pipelining:Instruction Pipelining:Instruction Pipelining: In this chapter we discuss Performance, Instruction processing, Pipeline design\nand issue, Pipeline hazards, Pipeline performance analysis and Speedup.\n4. 4.4. 4.4.Integer and Floating Point Representation:Integer and Floating Point Representation:Integer and Floating Point Representation:Integer and Floating Point Representation:Integer and Floating Point Representation: In this chapter we discuss the Fixed and floating point\nformat, IEEE floating -point number representation, Computer arithmetic, Adding 2\u2019s complement numbers\nand Multiplying floating-point numbers.\n\u0084\u0084\u0084\u0084Computer OrganizationComputer OrganizationComputer OrganizationComputer OrganizationComputer Organization\n ",
+    "toc_page_list": [
+      2,
+      3
+    ],
+    "page_index_given_in_toc": "yes"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "target_entity": "cache memory types",
+  "entity_type": "technology",
+  "required_relations": [
+    "hierarchy",
+    "function"
+  ],
+  "required_attributes": [
+    "levels",
+    "size",
+    "speed"
+  ],
+  "minimum_nodes": 3,
+  "completeness_questions": [
+    "Have all primary cache levels (L1, L2, L3) been identified?",
+    "Are the functions of each cache type described?"
+  ],
+  "search_queries": [
+    "types of cache memory in computers",
+    "different levels of cache memory"
+  ]
+}

@@ -1,0 +1,159 @@
+[
+  {
+    "total_page_number": 82
+  },
+  {
+    "total_token": 30749
+  },
+  {
+    "toc_content": "4 \n INDEX  \n \nUNIT NO  TOPIC  PAGE NO  \nI Basic Functional units of Computers  1-10 \nData Representation  11-13 \nII Register Transfer Language and Micro \nOperations  14-27 \nBasic Computer Organization and Design  28-42 \nIII Central Processing Unit organization  43-50 \nControl unit design  51-57 \nIV Memory Organization  58-65 \nV Input \u2013Output Organization  66-74 \nPipelining and Vector Processing  74-78 \n \n \n \n 1 \n UNIT I  \n \nSyllabus:  \nBasic Functional units of Computers: functional units, basic Operational conce pts, Bus structures. \nSoftware, Performance, Multiprocessors, Multicomputer.  \nData Representation : Signed number representation, fixed and floating point Representations. \nComputer Arithmetic: Addition and subtraction, multiplication Algorithms, Division Alg orithms. \nError detection and correction codes.  \n \n \n \nBasic Structure of  Computers  \n \nComputer Architecture in general covers three aspects of computer design namely: Computer \nHardware, Instruction set Architecture and Computer Organization.  \nComputer hardware co nsists of electronic circuits, displays, magnetic and optical storage \nmedia and communication facilities.  \nInstruction set Architecture is programmer visible machine interface such as instruction set, \nregisters, memory organization and exception handling. T wo main approaches are mainly \nCISC (Complex Instruction Set Computer) and RISC (Reduced Instruction Set Computer)  \nComputer Organization includes the high level aspects of a design, such as memory \nsystem, the bus structure and the design of the internal CPU . \n \nComputer Types  \n \nComputer is a fast electronic calculating machine which accepts digital input, processes it \naccording to the internally stored instructions (Programs) and produces the result on the \noutput device. The internal operation of the computer can be as depicted in the figure below:  \n \nFigure 1: Fetch, Decode and Execute steps in a Computer System  \n",
+    "toc_page_list": [
+      3,
+      4
+    ],
+    "page_index_given_in_toc": "yes"
+  },
+  {
+    "message": "toc_with_page_number: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10'}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50'}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57'}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78'}]"
+  },
+  {
+    "message": "toc_with_physical_index: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'physical_index': '<physical_index_6>'}, {'structure': 'I.1', 'title': 'Data Representation', 'physical_index': '<physical_index_15>'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'physical_index': '<physical_index_18>'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'physical_index': '<physical_index_18>'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'physical_index': None}, {'structure': 'III.1', 'title': 'Control unit design', 'physical_index': None}, {'structure': 'IV', 'title': 'Memory Organization', 'physical_index': None}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'physical_index': None}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'physical_index': None}]"
+  },
+  {
+    "message": "toc_with_physical_index: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'physical_index': 6}, {'structure': 'I.1', 'title': 'Data Representation', 'physical_index': 15}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'physical_index': 18}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'physical_index': 18}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'physical_index': None}, {'structure': 'III.1', 'title': 'Control unit design', 'physical_index': None}, {'structure': 'IV', 'title': 'Memory Organization', 'physical_index': None}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'physical_index': None}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'physical_index': None}]"
+  },
+  {
+    "message": "matching_pairs: [{'title': 'Basic Functional units of Computers', 'page': '1-10', 'physical_index': 6}, {'title': 'Data Representation', 'page': '11-13', 'physical_index': 15}, {'title': 'Register Transfer Language and Micro Operations', 'page': '14-27', 'physical_index': 18}, {'title': 'Basic Computer Organization and Design', 'page': '28-42', 'physical_index': 18}]"
+  },
+  {
+    "message": "offset: None"
+  },
+  {
+    "message": "toc_with_page_number: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10'}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50'}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57'}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78'}]"
+  },
+  {
+    "message": "toc_with_page_number: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10'}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50'}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57'}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78'}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0,
+    "incorrect_results": []
+  },
+  {
+    "message": "toc_transformer: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10'}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50'}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57'}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78'}]"
+  },
+  {
+    "message": "len(group_texts): 2"
+  },
+  {
+    "message": "add_page_number_to_toc: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10', 'physical_index': '<physical_index_5>'}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13', 'physical_index': '<physical_index_15>'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27', 'physical_index': '<physical_index_18>'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42', 'physical_index': '<physical_index_32>'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50', 'physical_index': '<physical_index_49>'}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57', 'physical_index': None}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65', 'physical_index': '<physical_index_58>'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74', 'physical_index': '<physical_index_66>'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78', 'physical_index': '<physical_index_74>'}]"
+  },
+  {
+    "message": "convert_physical_index_to_int: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10', 'physical_index': 5}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13', 'physical_index': 15}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27', 'physical_index': 18}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42', 'physical_index': 32}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50', 'physical_index': 49}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57', 'physical_index': None}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65', 'physical_index': 58}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74', 'physical_index': 66}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78', 'physical_index': 74}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0.5,
+    "incorrect_results": [
+      {
+        "list_index": 4,
+        "answer": "no",
+        "title": "Central Processing Unit organization",
+        "page_number": 49
+      },
+      {
+        "list_index": 5,
+        "answer": "no",
+        "title": "Memory Organization",
+        "page_number": 58
+      },
+      {
+        "list_index": 6,
+        "answer": "no",
+        "title": "Input \u2013Output Organization",
+        "page_number": 66
+      },
+      {
+        "list_index": 7,
+        "answer": "no",
+        "title": "Pipelining and Vector Processing",
+        "page_number": 74
+      }
+    ]
+  },
+  {
+    "message": "len(group_texts): 2"
+  },
+  {
+    "message": "generate_toc: [{'structure': '1', 'title': 'Computer Organization', 'physical_index': '<physical_index_1>'}, {'structure': '2', 'title': 'Objectives of the course', 'physical_index': '<physical_index_2>'}, {'structure': '2.1', 'title': 'UNIT I', 'physical_index': '<physical_index_2>'}, {'structure': '2.1.1', 'title': 'Basic Functional units of Computers', 'physical_index': '<physical_index_2>'}, {'structure': '2.1.2', 'title': 'Data Representation', 'physical_index': '<physical_index_2>'}, {'structure': '2.1.3', 'title': 'Computer Arithmetic', 'physical_index': '<physical_index_2>'}, {'structure': '2.2', 'title': 'UNIT II', 'physical_index': '<physical_index_18>'}, {'structure': '2.2.1', 'title': 'Register Transfer Language and Micro Operations', 'physical_index': '<physical_index_18>'}, {'structure': '2.2.2', 'title': 'Basic Computer Organization and Design', 'physical_index': '<physical_index_32>'}, {'structure': '2.3', 'title': 'UNIT III', 'physical_index': '<physical_index_43>'}, {'structure': '2.3.1', 'title': 'Central Processing Unit organization', 'physical_index': '<physical_index_43>'}, {'structure': '2.3.2', 'title': 'Control unit design', 'physical_index': '<physical_index_43>'}, {'structure': '2.4', 'title': 'UNIT IV', 'physical_index': '<physical_index_58>'}, {'structure': '2.4.1', 'title': 'Memory Organization', 'physical_index': '<physical_index_58>'}, {'structure': '2.5', 'title': 'UNIT V', 'physical_index': '<physical_index_66>'}, {'structure': '2.5.1', 'title': 'Input \u2013Output Organization', 'physical_index': '<physical_index_66>'}, {'structure': '2.5.2', 'title': 'Pipelining and Vector Processing', 'physical_index': '<physical_index_66>'}, {'structure': '3', 'title': 'Text Books', 'physical_index': '<physical_index_2>'}, {'structure': '4', 'title': 'Reference Books', 'physical_index': '<physical_index_3>'}, {'structure': '5', 'title': 'Course Outcomes', 'physical_index': '<physical_index_3>'}, {'structure': '6', 'title': 'INDEX', 'physical_index': '<physical_index_4>'}, {'structure': '2.5.3', 'title': 'Parallel Processing', 'physical_index': '<physical_index_75>'}, {'structure': '2.5.4', 'title': 'Vector(Array) Processing', 'physical_index': '<physical_index_77>'}, {'structure': '2.5.5', 'title': 'Applications of Vector Processors', 'physical_index': '<physical_index_81>'}]"
+  },
+  {
+    "message": "convert_physical_index_to_int: [{'structure': '1', 'title': 'Computer Organization', 'physical_index': 1}, {'structure': '2', 'title': 'Objectives of the course', 'physical_index': 2}, {'structure': '2.1', 'title': 'UNIT I', 'physical_index': 2}, {'structure': '2.1.1', 'title': 'Basic Functional units of Computers', 'physical_index': 2}, {'structure': '2.1.2', 'title': 'Data Representation', 'physical_index': 2}, {'structure': '2.1.3', 'title': 'Computer Arithmetic', 'physical_index': 2}, {'structure': '2.2', 'title': 'UNIT II', 'physical_index': 18}, {'structure': '2.2.1', 'title': 'Register Transfer Language and Micro Operations', 'physical_index': 18}, {'structure': '2.2.2', 'title': 'Basic Computer Organization and Design', 'physical_index': 32}, {'structure': '2.3', 'title': 'UNIT III', 'physical_index': 43}, {'structure': '2.3.1', 'title': 'Central Processing Unit organization', 'physical_index': 43}, {'structure': '2.3.2', 'title': 'Control unit design', 'physical_index': 43}, {'structure': '2.4', 'title': 'UNIT IV', 'physical_index': 58}, {'structure': '2.4.1', 'title': 'Memory Organization', 'physical_index': 58}, {'structure': '2.5', 'title': 'UNIT V', 'physical_index': 66}, {'structure': '2.5.1', 'title': 'Input \u2013Output Organization', 'physical_index': 66}, {'structure': '2.5.2', 'title': 'Pipelining and Vector Processing', 'physical_index': 66}, {'structure': '3', 'title': 'Text Books', 'physical_index': 2}, {'structure': '4', 'title': 'Reference Books', 'physical_index': 3}, {'structure': '5', 'title': 'Course Outcomes', 'physical_index': 3}, {'structure': '6', 'title': 'INDEX', 'physical_index': 4}, {'structure': '2.5.3', 'title': 'Parallel Processing', 'physical_index': 75}, {'structure': '2.5.4', 'title': 'Vector(Array) Processing', 'physical_index': 77}, {'structure': '2.5.5', 'title': 'Applications of Vector Processors', 'physical_index': 81}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0.5833333333333334,
+    "incorrect_results": [
+      {
+        "list_index": 9,
+        "answer": "no",
+        "title": "UNIT III",
+        "page_number": 43
+      },
+      {
+        "list_index": 10,
+        "answer": "no",
+        "title": "Central Processing Unit organization",
+        "page_number": 43
+      },
+      {
+        "list_index": 12,
+        "answer": "no",
+        "title": "UNIT IV",
+        "page_number": 58
+      },
+      {
+        "list_index": 13,
+        "answer": "no",
+        "title": "Memory Organization",
+        "page_number": 58
+      },
+      {
+        "list_index": 14,
+        "answer": "no",
+        "title": "UNIT V",
+        "page_number": 66
+      },
+      {
+        "list_index": 15,
+        "answer": "no",
+        "title": "Input \u2013Output Organization",
+        "page_number": 66
+      },
+      {
+        "list_index": 16,
+        "answer": "no",
+        "title": "Pipelining and Vector Processing",
+        "page_number": 66
+      },
+      {
+        "list_index": 21,
+        "answer": "no",
+        "title": "Parallel Processing",
+        "page_number": 75
+      },
+      {
+        "list_index": 22,
+        "answer": "no",
+        "title": "Vector(Array) Processing",
+        "page_number": 77
+      },
+      {
+        "list_index": 23,
+        "answer": "no",
+        "title": "Applications of Vector Processors",
+        "page_number": 81
+      }
+    ]
+  }
+]

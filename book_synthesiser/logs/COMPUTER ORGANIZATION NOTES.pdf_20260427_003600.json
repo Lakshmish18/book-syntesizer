@@ -1,0 +1,491 @@
+[
+  {
+    "total_page_number": 82
+  },
+  {
+    "total_token": 30749
+  },
+  {
+    "toc_content": "4 \n INDEX  \n \nUNIT NO  TOPIC  PAGE NO  \nI Basic Functional units of Computers  1-10 \nData Representation  11-13 \nII Register Transfer Language and Micro \nOperations  14-27 \nBasic Computer Organization and Design  28-42 \nIII Central Processing Unit organization  43-50 \nControl unit design  51-57 \nIV Memory Organization  58-65 \nV Input \u2013Output Organization  66-74 \nPipelining and Vector Processing  74-78 \n \n \n \n ",
+    "toc_page_list": [
+      3
+    ],
+    "page_index_given_in_toc": "yes"
+  },
+  {
+    "message": "toc_with_page_number: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10'}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50'}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57'}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78'}]"
+  },
+  {
+    "message": "toc_with_physical_index: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'physical_index': '<physical_index_5>'}, {'structure': 'I.1', 'title': 'Data Representation', 'physical_index': '<physical_index_16>'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'physical_index': '<physical_index_18>'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'physical_index': '<physical_index_18>'}]"
+  },
+  {
+    "message": "toc_with_physical_index: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'physical_index': 5}, {'structure': 'I.1', 'title': 'Data Representation', 'physical_index': 16}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'physical_index': 18}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'physical_index': 18}]"
+  },
+  {
+    "message": "matching_pairs: [{'title': 'Basic Functional units of Computers', 'page': '1-10', 'physical_index': 5}, {'title': 'Data Representation', 'page': '11-13', 'physical_index': 16}, {'title': 'Register Transfer Language and Micro Operations', 'page': '14-27', 'physical_index': 18}, {'title': 'Basic Computer Organization and Design', 'page': '28-42', 'physical_index': 18}]"
+  },
+  {
+    "message": "offset: None"
+  },
+  {
+    "message": "toc_with_page_number: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10'}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50'}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57'}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78'}]"
+  },
+  {
+    "message": "toc_with_page_number: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10'}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50'}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57'}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78'}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0,
+    "incorrect_results": []
+  },
+  {
+    "message": "toc_transformer: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10'}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50'}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57'}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78'}]"
+  },
+  {
+    "message": "len(group_texts): 2"
+  },
+  {
+    "message": "add_page_number_to_toc: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10', 'physical_index': '<physical_index_5>'}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13', 'physical_index': '<physical_index_15>'}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27', 'physical_index': '<physical_index_18>'}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42', 'physical_index': '<physical_index_32>'}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50', 'physical_index': '<physical_index_43>'}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57', 'physical_index': '<physical_index_47>'}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65', 'physical_index': '<physical_index_58>', 'start_index': '<physical_index_58>'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74', 'physical_index': '<physical_index_66>', 'start_index': '<physical_index_66>'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78', 'physical_index': '<physical_index_74>', 'start_index': '<physical_index_74>'}]"
+  },
+  {
+    "message": "convert_physical_index_to_int: [{'structure': 'I', 'title': 'Basic Functional units of Computers', 'page': '1-10', 'physical_index': 5}, {'structure': 'I.1', 'title': 'Data Representation', 'page': '11-13', 'physical_index': 15}, {'structure': 'II', 'title': 'Register Transfer Language and Micro Operations', 'page': '14-27', 'physical_index': 18}, {'structure': 'II.1', 'title': 'Basic Computer Organization and Design', 'page': '28-42', 'physical_index': 32}, {'structure': 'III', 'title': 'Central Processing Unit organization', 'page': '43-50', 'physical_index': 43}, {'structure': 'III.1', 'title': 'Control unit design', 'page': '51-57', 'physical_index': 47}, {'structure': 'IV', 'title': 'Memory Organization', 'page': '58-65', 'physical_index': 58, 'start_index': '<physical_index_58>'}, {'structure': 'V', 'title': 'Input \u2013Output Organization', 'page': '66-74', 'physical_index': 66, 'start_index': '<physical_index_66>'}, {'structure': 'V.1', 'title': 'Pipelining and Vector Processing', 'page': '74-78', 'physical_index': 74, 'start_index': '<physical_index_74>'}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0.5555555555555556,
+    "incorrect_results": [
+      {
+        "list_index": 4,
+        "answer": "no",
+        "title": "Central Processing Unit organization",
+        "page_number": 43
+      },
+      {
+        "list_index": 6,
+        "answer": "no",
+        "title": "Memory Organization",
+        "page_number": 58
+      },
+      {
+        "list_index": 7,
+        "answer": "no",
+        "title": "Input \u2013Output Organization",
+        "page_number": 66
+      },
+      {
+        "list_index": 8,
+        "answer": "no",
+        "title": "Pipelining and Vector Processing",
+        "page_number": 74
+      }
+    ]
+  },
+  {
+    "message": "len(group_texts): 2"
+  },
+  {
+    "message": "generate_toc: [{'structure': '1', 'title': 'Computer Organization', 'physical_index': '<physical_index_1>'}, {'structure': '1.1', 'title': 'Objectives of the course', 'physical_index': '<physical_index_2>'}, {'structure': '1.2', 'title': 'UNIT I Basic Functional units of Computers', 'physical_index': '<physical_index_2>'}, {'structure': '1.3', 'title': 'UNIT II Register Transfer Language and Micro Operations', 'physical_index': '<physical_index_18>'}, {'structure': '1.4', 'title': 'UNIT III Central Processing Unit organization', 'physical_index': '<physical_index_43>'}, {'structure': '1.5', 'title': 'UNIT IV Memory Organization', 'physical_index': '<physical_index_58>'}, {'structure': '1.6', 'title': 'UNIT V Input \u2013Output Organization', 'physical_index': '<physical_index_66>'}, {'structure': '1.7', 'title': 'Text Books', 'physical_index': '<physical_index_2>'}, {'structure': '1.8', 'title': 'Reference Books', 'physical_index': '<physical_index_3>'}, {'structure': '1.9', 'title': 'Course Outcomes', 'physical_index': '<physical_index_3>'}, {'structure': '1.10', 'title': 'INDEX', 'physical_index': '<physical_index_4>'}, {'structure': '1.5.1', 'title': 'Memory Hierarchy', 'physical_index': '<physical_index_62>'}, {'structure': '1.5.2', 'title': 'Memory Access Methods', 'physical_index': '<physical_index_63>'}, {'structure': '1.5.3', 'title': 'Main Memory', 'physical_index': '<physical_index_63>'}, {'structure': '1.5.4', 'title': 'Memory Address Map', 'physical_index': '<physical_index_64>'}, {'structure': '1.5.5', 'title': 'Auxiliary Memory', 'physical_index': '<physical_index_65>'}, {'structure': '1.5.6', 'title': 'Cache Memory', 'physical_index': '<physical_index_65>'}, {'structure': '1.5.7', 'title': 'Associative Memory', 'physical_index': '<physical_index_65>'}, {'structure': '1.5.8', 'title': 'Memory Mapping and Concept of Virtual Memory', 'physical_index': '<physical_index_65>'}, {'structure': '1.5.9', 'title': 'Page Replacement', 'physical_index': '<physical_index_69>'}, {'structure': '1.6.1', 'title': 'Peripheral Devices', 'physical_index': '<physical_index_70>'}, {'structure': '1.6.2', 'title': 'Interfaces', 'physical_index': '<physical_index_70>'}, {'structure': '1.6.3', 'title': 'Input-Output Interface', 'physical_index': '<physical_index_71>'}, {'structure': '1.6.4', 'title': 'Asynchronous Data Transfer', 'physical_index': '<physical_index_71>'}, {'structure': '1.6.5', 'title': 'Modes of I/O Data Transfer', 'physical_index': '<physical_index_75>'}, {'structure': '1.6.6', 'title': 'Direct Memory Access', 'physical_index': '<physical_index_76>'}, {'structure': '1.6.7', 'title': 'Input/Output Processor', 'physical_index': '<physical_index_78>'}, {'structure': '1.6.8', 'title': 'Pipelining and Vector Processing', 'physical_index': '<physical_index_79>'}, {'structure': '1.6.9', 'title': 'Applications of Vector Processors', 'physical_index': '<physical_index_81>'}]"
+  },
+  {
+    "message": "convert_physical_index_to_int: [{'structure': '1', 'title': 'Computer Organization', 'physical_index': 1}, {'structure': '1.1', 'title': 'Objectives of the course', 'physical_index': 2}, {'structure': '1.2', 'title': 'UNIT I Basic Functional units of Computers', 'physical_index': 2}, {'structure': '1.3', 'title': 'UNIT II Register Transfer Language and Micro Operations', 'physical_index': 18}, {'structure': '1.4', 'title': 'UNIT III Central Processing Unit organization', 'physical_index': 43}, {'structure': '1.5', 'title': 'UNIT IV Memory Organization', 'physical_index': 58}, {'structure': '1.6', 'title': 'UNIT V Input \u2013Output Organization', 'physical_index': 66}, {'structure': '1.7', 'title': 'Text Books', 'physical_index': 2}, {'structure': '1.8', 'title': 'Reference Books', 'physical_index': 3}, {'structure': '1.9', 'title': 'Course Outcomes', 'physical_index': 3}, {'structure': '1.10', 'title': 'INDEX', 'physical_index': 4}, {'structure': '1.5.1', 'title': 'Memory Hierarchy', 'physical_index': 62}, {'structure': '1.5.2', 'title': 'Memory Access Methods', 'physical_index': 63}, {'structure': '1.5.3', 'title': 'Main Memory', 'physical_index': 63}, {'structure': '1.5.4', 'title': 'Memory Address Map', 'physical_index': 64}, {'structure': '1.5.5', 'title': 'Auxiliary Memory', 'physical_index': 65}, {'structure': '1.5.6', 'title': 'Cache Memory', 'physical_index': 65}, {'structure': '1.5.7', 'title': 'Associative Memory', 'physical_index': 65}, {'structure': '1.5.8', 'title': 'Memory Mapping and Concept of Virtual Memory', 'physical_index': 65}, {'structure': '1.5.9', 'title': 'Page Replacement', 'physical_index': 69}, {'structure': '1.6.1', 'title': 'Peripheral Devices', 'physical_index': 70}, {'structure': '1.6.2', 'title': 'Interfaces', 'physical_index': 70}, {'structure': '1.6.3', 'title': 'Input-Output Interface', 'physical_index': 71}, {'structure': '1.6.4', 'title': 'Asynchronous Data Transfer', 'physical_index': 71}, {'structure': '1.6.5', 'title': 'Modes of I/O Data Transfer', 'physical_index': 75}, {'structure': '1.6.6', 'title': 'Direct Memory Access', 'physical_index': 76}, {'structure': '1.6.7', 'title': 'Input/Output Processor', 'physical_index': 78}, {'structure': '1.6.8', 'title': 'Pipelining and Vector Processing', 'physical_index': 79}, {'structure': '1.6.9', 'title': 'Applications of Vector Processors', 'physical_index': 81}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0.8620689655172413,
+    "incorrect_results": [
+      {
+        "list_index": 4,
+        "answer": "no",
+        "title": "UNIT III Central Processing Unit organization",
+        "page_number": 43
+      },
+      {
+        "list_index": 5,
+        "answer": "no",
+        "title": "UNIT IV Memory Organization",
+        "page_number": 58
+      },
+      {
+        "list_index": 6,
+        "answer": "no",
+        "title": "UNIT V Input \u2013Output Organization",
+        "page_number": 66
+      },
+      {
+        "list_index": 28,
+        "answer": "no",
+        "title": "Applications of Vector Processors",
+        "page_number": 81
+      }
+    ]
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 4, 'title': 'UNIT III Central Processing Unit organization', 'prev_correct': 18, 'next_correct': 2}, {'list_index': 5, 'title': 'UNIT IV Memory Organization', 'prev_correct': 18, 'next_correct': 2}, {'list_index': 6, 'title': 'UNIT V Input \u2013Output Organization', 'prev_correct': 18, 'next_correct': 2}, {'list_index': 28, 'title': 'Applications of Vector Processors', 'prev_correct': 79, 'next_correct': 82}]"
+  },
+  {
+    "message": "invalid_results: []"
+  },
+  {
+    "message": "Checking title appearance in start concurrently"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Memory Mapping and Concept of Virtual Memory' appears in the page_text, but it is preceded by other content such as 'Cache Memory', 'Hit Ratio', and 'Associative Memory'. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Modes of I/O Data Transfer' appears in the page_text, but it is preceded by other content related to handshaking lines and data transfer processes. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Memory Access Methods' appears in the page_text after some other content, specifically the number '59' and some blank lines. Therefore, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains other content such as course details, course code, and title before the section title 'Objectives of the course'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Input-Output Interface' appears at the beginning of the page_text after ignoring space inconsistencies. There is no other content before the section title in the page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Applications of Vector Processors' appears as the first meaningful content in the page_text after ignoring the page number and any space inconsistencies.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text starts with '3' and some spaces before the section title 'Reference Books'. Since there is content before the section title, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with '3' and contains content related to 'Reference Books' before the section title 'Course Outcomes'. This indicates that the section title 'Course Outcomes' does not appear at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title 'UNIT III Central Processing Unit organization' does not appear at the beginning of the page_text. Instead, the page_text starts with 'Timing and Control' and contains content related to that topic before any mention of the given section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content related to 'Direct Mapping' and 'Set Associative Mapping', which are unrelated to the section title 'UNIT V Input \u2013Output Organization'. Therefore, the section title does not appear at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Memory Address Map' appears in the page_text, but it is preceded by content about ROM and its types. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content such as 'Syllabus' and 'Introduction' before the section title 'Peripheral Devices'. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Main Memory' does not appear at the very beginning of the page_text. There is content related to 'Memory Access Methods' and its description before the section title 'Main Memory'.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains content such as course objectives and other introductory material before the section title 'UNIT I Basic Functional units of Computers' appears. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'INDEX' appears in the page_text, but there is a '4' before it. Even though there is space inconsistency, the presence of '4' indicates that the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content related to addressing modes and figures, which are unrelated to the section title 'UNIT IV Memory Organization'. This indicates that the section title does not appear at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains content such as 'auxiliary memory', 'Cache Memory', and 'Hit Ratio' before the section title 'Associative Memory'. This indicates that the section title 'Associative Memory' does not appear at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content related to course details, objectives, and units before the section titled 'Text Books' appears. Therefore, the section 'Text Books' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Page Replacement' appears in the page_text, but it is preceded by content related to 'Associative memory page table'. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text starts with '14 UNIT 2 Syllabus:' and includes other content such as the syllabus before the section title 'UNIT II Register Transfer Language and Micro Operations' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Input/Output Processor' appears at the beginning of the page_text after ignoring space inconsistencies. There is no other content before the section title except for the page number '74', which is not part of the main content.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains content such as 'Syllabus', 'Introduction', and 'Peripheral Devices' before the section title 'Interfaces'. This indicates that the section 'Interfaces' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Computer Organization' appears in the page_text, but it is not the first content. There are other contents such as '1', '[R18A0505]', and 'LECTURE NOTES' before the section title. Even though there may be space inconsistencies, the section title is not the first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Cache Memory' appears in the page_text, but it is preceded by other content about auxiliary memory and its accessibility to the CPU. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Memory Hierarchy' appears in the page_text, but it is preceded by other content such as '58', 'UNIT 4', 'Syllabus', and descriptions of memory organization topics. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content from other sections such as 'Programmed I/O' and 'Interrupt Initiated I/O' before the section title 'Direct Memory Access' appears. This indicates that the section 'Direct Memory Access' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Auxiliary Memory' does not appear as the first content in the given page_text. Instead, the page_text starts with '61' and some text before mentioning 'auxiliary memory'. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Pipelining and Vector Processing' does not appear as the first content in the page_text. There is a page number '75' and some other content before the section title, even though the title appears later in the text. Additionally, the title in the text has slight spacing inconsistencies, but it still matches the given section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text starts with content about 'Input-Output Interface' and provides an introduction to peripherals and communication links before the section title 'Asynchronous Data Transfer' appears. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "len(group_texts): 2"
+  },
+  {
+    "message": "generate_toc: [{'structure': '1', 'title': 'INDEX', 'physical_index': '<physical_index_4>'}, {'structure': '1.1', 'title': 'Basic Functional units of Computers', 'physical_index': '<physical_index_5>'}, {'structure': '1.1.1', 'title': 'Basic Structure of Computers', 'physical_index': '<physical_index_5>'}, {'structure': '1.1.2', 'title': 'Computer Types', 'physical_index': '<physical_index_6>'}, {'structure': '1.1.3', 'title': 'Generation of Computers', 'physical_index': '<physical_index_6>'}, {'structure': '1.1.3.1', 'title': 'First generation', 'physical_index': '<physical_index_7>'}, {'structure': '1.1.3.2', 'title': 'Second generation', 'physical_index': '<physical_index_7>'}, {'structure': '1.1.3.3', 'title': 'Third generation', 'physical_index': '<physical_index_7>'}, {'structure': '1.1.3.4', 'title': 'Fourth generation', 'physical_index': '<physical_index_7>'}, {'structure': '1.1.3.5', 'title': 'Beyond Fourth Generation', 'physical_index': '<physical_index_7>'}, {'structure': '1.1.4', 'title': 'Functional Unit', 'physical_index': '<physical_index_8>'}, {'structure': '1.1.4.1', 'title': 'Input Unit', 'physical_index': '<physical_index_8>'}, {'structure': '1.1.4.2', 'title': 'Memory Unit', 'physical_index': '<physical_index_8>'}, {'structure': '1.1.4.2.1', 'title': 'Primary Memory', 'physical_index': '<physical_index_9>'}, {'structure': '1.1.4.2.2', 'title': 'Secondary Memory', 'physical_index': '<physical_index_9>'}, {'structure': '1.1.4.3', 'title': 'Arithmetic and Logic Unit', 'physical_index': '<physical_index_9>'}, {'structure': '1.1.4.4', 'title': 'Output Unit', 'physical_index': '<physical_index_9>'}, {'structure': '1.1.4.5', 'title': 'Control Unit', 'physical_index': '<physical_index_9>'}, {'structure': '1.1.5', 'title': 'Basic Operational Concepts', 'physical_index': '<physical_index_10>'}, {'structure': '1.1.6', 'title': 'Bus Structures', 'physical_index': '<physical_index_12>'}, {'structure': '1.1.7', 'title': 'Software', 'physical_index': '<physical_index_12>'}, {'structure': '1.1.8', 'title': 'Performance', 'physical_index': '<physical_index_13>'}, {'structure': '1.1.9', 'title': 'Multiprocessor & Microprocessors', 'physical_index': '<physical_index_15>'}, {'structure': '1.1.10', 'title': 'Data Representation', 'physical_index': '<physical_index_15>'}, {'structure': '1.1.10.1', 'title': 'Numeric Data Representation', 'physical_index': '<physical_index_16>'}, {'structure': '1.1.10.2', 'title': 'Floating-point representation', 'physical_index': '<physical_index_17>'}, {'structure': '1.1.10.3', 'title': 'Error Detection Codes', 'physical_index': '<physical_index_17>'}, {'structure': '1.2', 'title': 'UNIT 2', 'physical_index': '<physical_index_18>'}, {'structure': '1.2.1', 'title': 'Register Transfer Language and Micro Operations', 'physical_index': '<physical_index_18>'}, {'structure': '1.2.1.1', 'title': 'Register Transfer Language', 'physical_index': '<physical_index_18>'}, {'structure': '1.2.1.2', 'title': 'Register Transfer', 'physical_index': '<physical_index_19>'}, {'structure': '1.2.1.3', 'title': 'Bus and Memory Transfers', 'physical_index': '<physical_index_20>'}, {'structure': '1.2.1.4', 'title': 'Arithmetic Microoperations', 'physical_index': '<physical_index_23>'}, {'structure': '1.2.1.5', 'title': 'Logic Microoperations', 'physical_index': '<physical_index_26>'}, {'structure': '1.2.1.6', 'title': 'Shift Microoperations', 'physical_index': '<physical_index_29>'}, {'structure': '1.2.1.7', 'title': 'Arithmetic Logic Shift Unit', 'physical_index': '<physical_index_30>'}, {'structure': '1.2.2', 'title': 'Basic Computer Organization and Design', 'physical_index': '<physical_index_32>'}, {'structure': '1.2.2.1', 'title': 'Instruction Codes', 'physical_index': '<physical_index_32>'}, {'structure': '1.2.2.2', 'title': 'Instruction Formats', 'physical_index': '<physical_index_32>'}, {'structure': '1.2.2.3', 'title': 'Addressing Modes', 'physical_index': '<physical_index_37>'}, {'structure': '1.2.2.4', 'title': 'Computer Registers', 'physical_index': '<physical_index_41>'}, {'structure': '1.2.2.5', 'title': 'Computer Instructions', 'physical_index': '<physical_index_42>'}, {'structure': '1.2.2.6', 'title': 'Timing and Control', 'physical_index': '<physical_index_43>'}, {'structure': '1.2.2.7', 'title': 'Instruction Cycle', 'physical_index': '<physical_index_43>'}, {'structure': '1.2.2.8', 'title': 'Micro Programmed Control', 'physical_index': '<physical_index_44>'}, {'structure': '1.2.2.8.1', 'title': 'Control Memory', 'physical_index': '<physical_index_44>'}, {'structure': '1.2.2.8.2', 'title': 'Address Sequencing', 'physical_index': '<physical_index_45>'}, {'structure': '1.2.2.8.3', 'title': 'Microinstruction Branching and Subroutines', 'physical_index': '<physical_index_46>'}, {'structure': '1.3', 'title': 'UNIT 3', 'physical_index': '<physical_index_47>'}, {'structure': '1.3.1', 'title': 'Central Processing Unit Organization', 'physical_index': '<physical_index_47>'}, {'structure': '1.3.1.1', 'title': 'Introduction to CPU', 'physical_index': '<physical_index_47>'}, {'structure': '1.3.1.2', 'title': 'Stack Organization', 'physical_index': '<physical_index_48>'}, {'structure': '1.3.1.2.1', 'title': 'Register Stack', 'physical_index': '<physical_index_49>'}, {'structure': '1.3.1.2.2', 'title': 'Memory Stack', 'physical_index': '<physical_index_50>'}, {'structure': '1.3.1.3', 'title': 'Instruction Formats', 'physical_index': '<physical_index_51>'}, {'structure': '1.3.1.3.1', 'title': 'Number of Addresses', 'physical_index': '<physical_index_52>'}, {'structure': '1.3.1.3.1.1', 'title': 'Three-Address Machines', 'physical_index': '<physical_index_52>'}, {'structure': '1.3.1.3.1.2', 'title': 'Two-Address Machines', 'physical_index': '<physical_index_53>'}, {'structure': '1.3.1.3.1.3', 'title': 'One-Address Machines', 'physical_index': '<physical_index_54>'}, {'structure': '1.3.1.3.1.4', 'title': 'Zero-Address Machines', 'physical_index': '<physical_index_55>'}, {'structure': '1.3.1.4', 'title': 'Instruction Types', 'physical_index': '<physical_index_56>'}, {'structure': '1.3.1.5', 'title': 'Addressing Modes', 'physical_index': '<physical_index_57>'}, {'structure': '1.3.1.5.1', 'title': 'Immediate Addressing', 'physical_index': '<physical_index_57>'}, {'structure': '1.3.1.5.2', 'title': 'Direct Addressing', 'physical_index': '<physical_index_58>'}, {'structure': '1.3.1.5.3', 'title': 'Indirect Addressing', 'physical_index': '<physical_index_58>'}, {'structure': '1.3.1.5.4', 'title': 'Register Addressing', 'physical_index': '<physical_index_59>'}, {'structure': '1.3.1.5.5', 'title': 'Register Indirect Addressing', 'physical_index': '<physical_index_59>'}, {'structure': '1.3.1.5.6', 'title': 'Displacement Addressing', 'physical_index': '<physical_index_60>'}, {'structure': '1.3.1.5.6.1', 'title': 'Relative Addressing', 'physical_index': '<physical_index_60>'}, {'structure': '1.3.1.5.6.2', 'title': 'Base-Register Addressing', 'physical_index': '<physical_index_60>'}, {'structure': '1.3.1.5.6.3', 'title': 'Indexing', 'physical_index': '<physical_index_60>'}, {'structure': '1.3.1.5.7', 'title': 'Stack Addressing', 'physical_index': '<physical_index_61>'}, {'structure': '1.4', 'title': 'UNIT 4', 'physical_index': '<physical_index_62>'}, {'structure': '1.4.1', 'title': 'Memory Organization', 'physical_index': '<physical_index_62>'}, {'structure': '1.4.1.1', 'title': 'Memory Hierarchy', 'physical_index': '<physical_index_62>'}]"
+  },
+  {
+    "message": "convert_physical_index_to_int: [{'structure': '1', 'title': 'INDEX', 'physical_index': 4}, {'structure': '1.1', 'title': 'Basic Functional units of Computers', 'physical_index': 5}, {'structure': '1.1.1', 'title': 'Basic Structure of Computers', 'physical_index': 5}, {'structure': '1.1.2', 'title': 'Computer Types', 'physical_index': 6}, {'structure': '1.1.3', 'title': 'Generation of Computers', 'physical_index': 6}, {'structure': '1.1.3.1', 'title': 'First generation', 'physical_index': 7}, {'structure': '1.1.3.2', 'title': 'Second generation', 'physical_index': 7}, {'structure': '1.1.3.3', 'title': 'Third generation', 'physical_index': 7}, {'structure': '1.1.3.4', 'title': 'Fourth generation', 'physical_index': 7}, {'structure': '1.1.3.5', 'title': 'Beyond Fourth Generation', 'physical_index': 7}, {'structure': '1.1.4', 'title': 'Functional Unit', 'physical_index': 8}, {'structure': '1.1.4.1', 'title': 'Input Unit', 'physical_index': 8}, {'structure': '1.1.4.2', 'title': 'Memory Unit', 'physical_index': 8}, {'structure': '1.1.4.2.1', 'title': 'Primary Memory', 'physical_index': 9}, {'structure': '1.1.4.2.2', 'title': 'Secondary Memory', 'physical_index': 9}, {'structure': '1.1.4.3', 'title': 'Arithmetic and Logic Unit', 'physical_index': 9}, {'structure': '1.1.4.4', 'title': 'Output Unit', 'physical_index': 9}, {'structure': '1.1.4.5', 'title': 'Control Unit', 'physical_index': 9}, {'structure': '1.1.5', 'title': 'Basic Operational Concepts', 'physical_index': 10}, {'structure': '1.1.6', 'title': 'Bus Structures', 'physical_index': 12}, {'structure': '1.1.7', 'title': 'Software', 'physical_index': 12}, {'structure': '1.1.8', 'title': 'Performance', 'physical_index': 13}, {'structure': '1.1.9', 'title': 'Multiprocessor & Microprocessors', 'physical_index': 15}, {'structure': '1.1.10', 'title': 'Data Representation', 'physical_index': 15}, {'structure': '1.1.10.1', 'title': 'Numeric Data Representation', 'physical_index': 16}, {'structure': '1.1.10.2', 'title': 'Floating-point representation', 'physical_index': 17}, {'structure': '1.1.10.3', 'title': 'Error Detection Codes', 'physical_index': 17}, {'structure': '1.2', 'title': 'UNIT 2', 'physical_index': 18}, {'structure': '1.2.1', 'title': 'Register Transfer Language and Micro Operations', 'physical_index': 18}, {'structure': '1.2.1.1', 'title': 'Register Transfer Language', 'physical_index': 18}, {'structure': '1.2.1.2', 'title': 'Register Transfer', 'physical_index': 19}, {'structure': '1.2.1.3', 'title': 'Bus and Memory Transfers', 'physical_index': 20}, {'structure': '1.2.1.4', 'title': 'Arithmetic Microoperations', 'physical_index': 23}, {'structure': '1.2.1.5', 'title': 'Logic Microoperations', 'physical_index': 26}, {'structure': '1.2.1.6', 'title': 'Shift Microoperations', 'physical_index': 29}, {'structure': '1.2.1.7', 'title': 'Arithmetic Logic Shift Unit', 'physical_index': 30}, {'structure': '1.2.2', 'title': 'Basic Computer Organization and Design', 'physical_index': 32}, {'structure': '1.2.2.1', 'title': 'Instruction Codes', 'physical_index': 32}, {'structure': '1.2.2.2', 'title': 'Instruction Formats', 'physical_index': 32}, {'structure': '1.2.2.3', 'title': 'Addressing Modes', 'physical_index': 37}, {'structure': '1.2.2.4', 'title': 'Computer Registers', 'physical_index': 41}, {'structure': '1.2.2.5', 'title': 'Computer Instructions', 'physical_index': 42}, {'structure': '1.2.2.6', 'title': 'Timing and Control', 'physical_index': 43}, {'structure': '1.2.2.7', 'title': 'Instruction Cycle', 'physical_index': 43}, {'structure': '1.2.2.8', 'title': 'Micro Programmed Control', 'physical_index': 44}, {'structure': '1.2.2.8.1', 'title': 'Control Memory', 'physical_index': 44}, {'structure': '1.2.2.8.2', 'title': 'Address Sequencing', 'physical_index': 45}, {'structure': '1.2.2.8.3', 'title': 'Microinstruction Branching and Subroutines', 'physical_index': 46}, {'structure': '1.3', 'title': 'UNIT 3', 'physical_index': 47}, {'structure': '1.3.1', 'title': 'Central Processing Unit Organization', 'physical_index': 47}, {'structure': '1.3.1.1', 'title': 'Introduction to CPU', 'physical_index': 47}, {'structure': '1.3.1.2', 'title': 'Stack Organization', 'physical_index': 48}, {'structure': '1.3.1.2.1', 'title': 'Register Stack', 'physical_index': 49}, {'structure': '1.3.1.2.2', 'title': 'Memory Stack', 'physical_index': 50}, {'structure': '1.3.1.3', 'title': 'Instruction Formats', 'physical_index': 51}, {'structure': '1.3.1.3.1', 'title': 'Number of Addresses', 'physical_index': 52}, {'structure': '1.3.1.3.1.1', 'title': 'Three-Address Machines', 'physical_index': 52}, {'structure': '1.3.1.3.1.2', 'title': 'Two-Address Machines', 'physical_index': 53}, {'structure': '1.3.1.3.1.3', 'title': 'One-Address Machines', 'physical_index': 54}, {'structure': '1.3.1.3.1.4', 'title': 'Zero-Address Machines', 'physical_index': 55}, {'structure': '1.3.1.4', 'title': 'Instruction Types', 'physical_index': 56}, {'structure': '1.3.1.5', 'title': 'Addressing Modes', 'physical_index': 57}, {'structure': '1.3.1.5.1', 'title': 'Immediate Addressing', 'physical_index': 57}, {'structure': '1.3.1.5.2', 'title': 'Direct Addressing', 'physical_index': 58}, {'structure': '1.3.1.5.3', 'title': 'Indirect Addressing', 'physical_index': 58}, {'structure': '1.3.1.5.4', 'title': 'Register Addressing', 'physical_index': 59}, {'structure': '1.3.1.5.5', 'title': 'Register Indirect Addressing', 'physical_index': 59}, {'structure': '1.3.1.5.6', 'title': 'Displacement Addressing', 'physical_index': 60}, {'structure': '1.3.1.5.6.1', 'title': 'Relative Addressing', 'physical_index': 60}, {'structure': '1.3.1.5.6.2', 'title': 'Base-Register Addressing', 'physical_index': 60}, {'structure': '1.3.1.5.6.3', 'title': 'Indexing', 'physical_index': 60}, {'structure': '1.3.1.5.7', 'title': 'Stack Addressing', 'physical_index': 61}, {'structure': '1.4', 'title': 'UNIT 4', 'physical_index': 62}, {'structure': '1.4.1', 'title': 'Memory Organization', 'physical_index': 62}, {'structure': '1.4.1.1', 'title': 'Memory Hierarchy', 'physical_index': 62}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0.9466666666666667,
+    "incorrect_results": [
+      {
+        "list_index": 3,
+        "answer": "no",
+        "title": "Computer Types",
+        "page_number": 6
+      },
+      {
+        "list_index": 58,
+        "answer": "no",
+        "title": "One-Address Machines",
+        "page_number": 54
+      },
+      {
+        "list_index": 59,
+        "answer": "no",
+        "title": "Zero-Address Machines",
+        "page_number": 55
+      },
+      {
+        "list_index": 60,
+        "answer": "no",
+        "title": "Instruction Types",
+        "page_number": 56
+      }
+    ]
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 3, 'title': 'Computer Types', 'prev_correct': 5, 'next_correct': 6}, {'list_index': 58, 'title': 'One-Address Machines', 'prev_correct': 53, 'next_correct': 57}, {'list_index': 59, 'title': 'Zero-Address Machines', 'prev_correct': 53, 'next_correct': 57}, {'list_index': 60, 'title': 'Instruction Types', 'prev_correct': 53, 'next_correct': 57}]"
+  },
+  {
+    "message": "invalid_results: []"
+  },
+  {
+    "message": "Checking title appearance in start concurrently"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Shift Microoperations' appears in the page_text, but it is preceded by other content related to insert and clear operations. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Multiprocessor & Microprocessors' appears in the page_text, but it is preceded by other content related to benchmark programs and SPEC ratings. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'UNIT 2' appears near the beginning of the page_text, but there is a page number '14' before it. Since the section title is not the first content in the page_text, the section does not start at the very beginning.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'PERFORMANCE' appears in the page_text, but it is preceded by other content such as '9', 'Figure 6', and a description of the figure. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Computer Registers' appears at the beginning of the page_text after ignoring space inconsistencies. There is no other content before the section title in the given page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'INSTRUCTION TYPES' appears in the page_text, but there is content before it, such as descriptions of stack operations and arithmetic expressions. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Generation of Computers' appears in the page_text, but it is preceded by other content such as classifications of computers and their descriptions. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Instruction Cycle' appears in the page_text, but it is preceded by content related to 'Timing and Control' and other descriptions. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Instruction Codes' appears in the page_text, but it is not the first content. The page_text starts with 'Basic Computer Organization and Design' before the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content before the section title 'Three-Address Machines', such as 'Number of Addresses' and related explanations. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content such as 'UNIT 2', 'Syllabus', and other introductory material before the section title 'Register Transfer Language' appears. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Memory Unit' does not appear at the very beginning of the page_text. There is content related to 'Functional Unit' and other descriptions before the section titled 'Memory Unit' appears.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content such as 'Basic Computer Organization and Design' and other topics before the section title 'Instruction Formats'. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content such as 'BUS STRUCTURES' and related information before the section title 'SOFTWARE'. This indicates that the section 'SOFTWARE' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Arithmetic Microoperations' appears at the beginning of the page_text after ignoring the page number and any space inconsistencies. There is no other content before the section title.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with '38', which is content unrelated to the section title 'Computer Instructions'. This indicates that there is other content before the section title in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Numeric Data Representation' appears in the page_text, but there is content ('12') before the section title. This indicates that the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains content such as the syllabus, basic structure of computers, and other introductory material before the section title 'Computer Types' appears. This indicates that the section 'Computer Types' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content from earlier sections such as 'First generation' and 'Second generation' before the 'Third generation' section title appears. This indicates that the 'Third generation' section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text starts with '1 UNIT I Syllabus' and contains other content such as syllabus details before the section title 'Basic Structure of Computers' appears. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content related to 'Immediate Addressing Mode' and includes a figure reference before the section title 'Direct Addressing' appears. This indicates that there is other content before the current section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Displacement Addressing' does not appear as the first content in the given page_text. There are other contents such as 'Relative addressing', 'Base-register addressing', and 'Indexing' listed before the section title appears in the form of 'Figure 4.6: Displacement Addressing'.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content about primary memory and its classification, which is unrelated to the section title 'Arithmetic and Logic Unit'. The section title appears later in the text, preceded by other content.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title 'Basic Functional units of Computers' does not appear as the first content in the page_text. The page_text starts with '1 UNIT I Syllabus' and other content before the section title appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Two-Address Machines' appears in the page_text, but it is not the first content in the page_text. There is a number '49' before the section title, which indicates that the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Number of Addresses' appears in the page_text, but there is content ('48') before the section title. This indicates that the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Zero-Address Machines' appears in the page_text, but it is preceded by other content such as descriptions, code examples, and tables. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Stack Organization' appears in the page_text, but it is preceded by other content such as figures and descriptions of CPU components. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Timing and Control' appears in the page_text, but it is preceded by the number '39'. This indicates that there is content before the section title, even though the title itself is present.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Floating-point representation' appears in the page_text, but it is preceded by other content such as 'NB: In all systems, the leftmost bit is 0 for positive number and 1 for negative number.' Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Address Sequencing' appears in the page_text, but it is preceded by other content such as descriptions of the address generator circuit and the advantages of microprogrammed control. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains other content such as descriptions of primary memory, arithmetic and logic unit, and output unit before the section title 'Control Unit' appears. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Logic Microoperations' appears early in the page_text, but there is content ('22') before it. Even though the section title is present, it is not the first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content about primary memory and other computer components like ALU, output unit, and control unit. The section title 'Secondary Memory' does not appear at the beginning of the page_text, and there is other content before it.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Bus and Memory Transfers' appears in the page_text, but there are other contents such as numbered text, bullet points, and microoperations before the section title. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Micro Programmed Control' appears in the page_text, but it is preceded by other content such as timing variables and operations (T0, T1, T2). Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Error Detection Codes' appears in the page_text, but there is content before it, such as information about floating-point representation. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content about primary memory and other sections like Arithmetic and Logic Unit before mentioning the section titled 'Output Unit'. Therefore, the section 'Output Unit' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text starts with content related to the 'First generation' section, which appears before the 'Second generation' section. Therefore, the 'Second generation' section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'INDEX' appears in the page_text, but there is content ('4') before the section title. Even though there is some spacing inconsistency, the first content in the page_text is not the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Bus Structures' appears near the beginning of the page_text, but there is a number '8' and some spacing before it. Additionally, the title is not the very first content in the page_text, so the section does not start at the beginning.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text starts with 'Functional Unit' and contains content related to functional units of a computer before the section titled 'Input Unit' appears. Therefore, the section 'Input Unit' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Arithmetic Logic Shift Unit' appears in the page_text, but it is preceded by other content such as a description of a bi-directional shift unit and its implementation. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Primary Memory' appears in the page_text, but there is a '5' before it, which indicates that there is other content before the section title. Additionally, the section title is not the very first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Register Transfer Language and Micro Operations' appears in the page_text after the syllabus content and other introductory text. It is not the first content in the page_text, as there are other contents like 'UNIT 2 Syllabus' and descriptions before the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Immediate Addressing' appears in the page_text, but it is preceded by other content such as a list of addressing modes and explanatory text. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content such as Figure 4.4 and descriptions about Register Addressing Mode before the section title 'Register Indirect Addressing' appears. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'One-Address Machines' appears in the page_text, but it is preceded by content related to 'Two-Address Machines'. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Microinstruction Branching and Subroutines' does not appear as the first content in the page_text. There are other contents, such as numbered points and text, before any mention of the section title or its content.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'UNIT 3' appears in the page_text, but it is preceded by the number '43'. This indicates that there is content before the section title, even though the title itself is present. Therefore, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Indexing' appears in the page_text, but there are other contents such as 'Relative addressing' and 'Base-register addressing' listed before it. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Relative Addressing' does not appear as the first content in the page_text. There are other contents such as '56', bullet points, and 'Figure 4.6: Displacement Addressing' before the section title appears.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Control Memory' appears in the page_text, but it is preceded by other content such as timing variables and microprogrammed control information. Therefore, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with '58 UNIT 4 Syllabus:' and contains content before the section title 'Memory Organization'. This indicates that the section title does not appear at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Functional Unit' appears in the page_text, but it is preceded by the number '4'. This indicates that there is content before the section title, even though the title itself is present. Therefore, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Register Stack' appears in the page_text, but it is preceded by other content describing stack operations such as PUSH and POP. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Stack Addressing' appears in the page_text, but there is content before it, such as equations, descriptions of indirect addressing, and indexing. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Instruction Formats' appears in the page_text, but it is preceded by other content such as text about stack operations and a figure description. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Memory Hierarchy' appears in the page_text, but it is preceded by other content such as '58', 'UNIT 4', 'Syllabus', and descriptions of memory organization topics. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Register Addressing' does not appear as the first content in the page_text. There is a figure description and explanation about 'Register Addressing Mode' before the section title appears.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content from earlier sections such as 'First generation', 'Second generation', and 'Third generation' before the 'Fourth generation' section title appears. This indicates that the 'Fourth generation' section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Basic Operational Concepts' appears near the beginning of the page_text, but there is a '6' before it. This indicates that the section title is not the very first content in the page_text. Additionally, ignoring space inconsistencies, the section title matches exactly where it appears.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Register Transfer' does not appear as the first content in the given page_text. Instead, the page_text starts with '15' and other content before any mention of the section title. Even though fuzzy matching is applied, there is no indication that the section title is the first content.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Base-Register Addressing' appears in the page_text, but it is preceded by other content such as 'Relative addressing' and its description. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content from earlier generations of computers (First generation, Second generation, Third generation, and Fourth generation) before the section titled 'Beyond Fourth Generation' appears. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Basic Computer Organization and Design' appears as the first content in the given page_text after ignoring space inconsistencies. There is no other content before the section title.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content related to Immediate Addressing and Direct Addressing before the section title 'Indirect Addressing' appears. This indicates that the section 'Indirect Addressing' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with '3' followed by some space and then the section title 'First generation'. Since there is content ('3') before the section title, the section does not start at the very beginning of the page_text. Additionally, ignoring space inconsistencies, the section title 'First generation' does appear in the page_text but not as the first content.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains content such as '43 UNIT 3 Syllabus' and 'Computer Processing Unit Organization' before the section title 'Introduction to CPU'. This indicates that the section title does not appear at the very beginning of the page_text. Additionally, ignoring space inconsistencies, the section title 'Introduction to CPU' is not the first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title is 'Central Processing Unit Organization', but the page_text starts with '43 UNIT 3 Syllabus' and other content before the section title appears. Additionally, there is a mismatch in the title as it appears as 'Computer Processing Unit Organization' in the page_text, which is not an exact match to the given section title. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'UNIT 4' appears after the page number '58' in the page_text. Since there is content (the page number) before the section title, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Data Representation' appears in the page_text, but it is preceded by other content such as information about benchmarks, multiprocessors, and microprocessors. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Addressing Modes' appears in the page_text, but it is preceded by the number '33'. This indicates that there is content before the section title, even though the title itself is present. Ignoring space inconsistencies, the section title is not the first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Addressing Modes' appears early in the page_text, but there is a page number '53' before it. Additionally, there is a colon after 'Addressing Modes', which matches the section title with minor formatting differences. However, since the page number appears before the section title, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Memory Stack' appears in the page_text, but there is content before it, such as descriptions of stack operations and other details. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "completeness_score": 0.0517,
+  "missing_aspects": [
+    "Node 'cache memory' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'SRAM' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'processor' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'IBM System/360 Model 85' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'Intel 486DX' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node '8 KB L1 cache' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'RAM' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'central processor and main memory' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'on-chip 8 KB L1 cache' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'hit ratio' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'Total number of hits divided by (Total number of hits + Total number of misses)' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'miss ratio' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node '1 - hit ratio' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'CPI' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'number of cycles needed to execute one instruction' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'IPC' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node '1 divided by number of instructions' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'direct mapping' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'cache mapping' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'associative mapping' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'set associative mapping' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'divided into sets, each consisting of cache lines or blocks' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'L1 cache' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'L2 cache' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Node 'L3 cache' missing attributes: levels, size, speed (Not confirmed in graph (but may appear in narrative))",
+    "Have all primary cache levels (L1, L2, L3) been identified? -> Not confirmed in graph (but may appear in narrative)",
+    "Are the functions of each cache type described? -> Not confirmed in graph (but may appear in narrative)"
+  ],
+  "conflicts": [],
+  "complete": false,
+  "node_type_counts": {
+    "concept": 25
+  },
+  "total_nodes": 25,
+  "total_edges": 21
+}

@@ -1,0 +1,214 @@
+{
+  "topic": "Computer Organization and Memory Systems",
+  "chapters": [
+    {
+      "chapter_title": "Basic Computer Organization",
+      "sections": [
+        {
+          "section_title": "Functional Units",
+          "keywords": [
+            "CPU",
+            "ALU",
+            "Control Unit"
+          ],
+          "coverage_count": 3,
+          "coverage_level": "high",
+          "supplementary": false
+        },
+        {
+          "section_title": "Registers",
+          "keywords": [
+            "Data Register",
+            "Address Register",
+            "Instruction Register"
+          ],
+          "coverage_count": 2,
+          "coverage_level": "medium",
+          "supplementary": false
+        },
+        {
+          "section_title": "Bus Structure",
+          "keywords": [
+            "Data Bus",
+            "Address Bus",
+            "Control Bus"
+          ],
+          "coverage_count": 2,
+          "coverage_level": "medium",
+          "supplementary": false
+        }
+      ]
+    },
+    {
+      "chapter_title": "Computer Architecture",
+      "sections": [
+        {
+          "section_title": "Arithmetic Logic Unit (ALU)",
+          "keywords": [
+            "Operations",
+            "Flags",
+            "Logic Gates"
+          ],
+          "coverage_count": 3,
+          "coverage_level": "high",
+          "supplementary": false
+        },
+        {
+          "section_title": "Microoperations",
+          "keywords": [
+            "Register Transfer",
+            "Arithmetic",
+            "Logic"
+          ],
+          "coverage_count": 2,
+          "coverage_level": "medium",
+          "supplementary": false
+        },
+        {
+          "section_title": "Instruction Types",
+          "keywords": [
+            "Data Transfer",
+            "Arithmetic",
+            "Control"
+          ],
+          "coverage_count": 2,
+          "coverage_level": "medium",
+          "supplementary": false
+        }
+      ]
+    },
+    {
+      "chapter_title": "Memory Hierarchy",
+      "sections": [
+        {
+          "section_title": "Primary Memory",
+          "keywords": [
+            "RAM",
+            "ROM"
+          ],
+          "coverage_count": 3,
+          "coverage_level": "high",
+          "supplementary": false
+        },
+        {
+          "section_title": "Secondary Memory",
+          "keywords": [
+            "Hard Disk",
+            "SSD"
+          ],
+          "coverage_count": 2,
+          "coverage_level": "medium",
+          "supplementary": false
+        },
+        {
+          "section_title": "Cache Levels",
+          "keywords": [
+            "L1",
+            "L2",
+            "L3"
+          ],
+          "coverage_count": 3,
+          "coverage_level": "high",
+          "supplementary": false
+        }
+      ]
+    },
+    {
+      "chapter_title": "Cache Memory",
+      "sections": [
+        {
+          "section_title": "Cache Mapping",
+          "keywords": [
+            "Direct",
+            "Associative",
+            "Set Associative"
+          ],
+          "coverage_count": 3,
+          "coverage_level": "high",
+          "supplementary": false
+        },
+        {
+          "section_title": "Hit Ratio",
+          "keywords": [
+            "Hit",
+            "Miss",
+            "Hit Time"
+          ],
+          "coverage_count": 2,
+          "coverage_level": "medium",
+          "supplementary": false
+        },
+        {
+          "section_title": "Replacement Policies",
+          "keywords": [
+            "FIFO",
+            "LRU",
+            "Random"
+          ],
+          "coverage_count": 2,
+          "coverage_level": "medium",
+          "supplementary": false
+        },
+        {
+          "section_title": "Performance",
+          "keywords": [
+            "Speed",
+            "Efficiency",
+            "Latency"
+          ],
+          "coverage_count": 2,
+          "coverage_level": "medium",
+          "supplementary": false
+        }
+      ]
+    },
+    {
+      "chapter_title": "Emerging Memory Technologies",
+      "sections": [
+        {
+          "section_title": "Non-Volatile Memory (NVM)",
+          "keywords": [
+            "Flash",
+            "SSD",
+            "MRAM"
+          ],
+          "coverage_count": 2,
+          "coverage_level": "medium",
+          "supplementary": false
+        },
+        {
+          "section_title": "High Bandwidth Memory (HBM)",
+          "keywords": [
+            "Bandwidth",
+            "Stacked DRAM",
+            "GPU"
+          ],
+          "coverage_count": 1,
+          "coverage_level": "thin",
+          "supplementary": true
+        },
+        {
+          "section_title": "Persistent Memory",
+          "keywords": [
+            "NVDIMM",
+            "Storage Class Memory"
+          ],
+          "coverage_count": 1,
+          "coverage_level": "thin",
+          "supplementary": true
+        },
+        {
+          "section_title": "Quantum Memory",
+          "keywords": [
+            "Quantum States",
+            "Superposition",
+            "Entanglement"
+          ],
+          "coverage_count": 1,
+          "coverage_level": "thin",
+          "supplementary": true
+        }
+      ]
+    }
+  ]
+}

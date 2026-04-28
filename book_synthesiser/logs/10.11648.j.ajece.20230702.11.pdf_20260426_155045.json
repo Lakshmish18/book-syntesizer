@@ -1,0 +1,181 @@
+[
+  {
+    "total_page_number": 8
+  },
+  {
+    "total_token": 7805
+  },
+  {
+    "toc_content": null,
+    "toc_page_list": [],
+    "page_index_given_in_toc": "no"
+  },
+  {
+    "message": "len(group_texts): 1"
+  },
+  {
+    "message": "generate_toc: [{'structure': '1', 'title': 'Introduction', 'physical_index': '<physical_index_1>'}, {'structure': '1.1', 'title': 'Types of Computer Memory', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.1', 'title': 'Primary or Main Memory', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.1.a', 'title': 'Random Access Memory (RAM)', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.1.b', 'title': 'Read Only Memory (RAM)', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.2', 'title': 'Cache Memory', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.2.a', 'title': 'Level 1 (L1) cache', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.2.b', 'title': 'Level 2 (L2) cache', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.3', 'title': 'Secondary Memory', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.3.a', 'title': 'Optical Media Devices', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.3.b', 'title': 'Magnetic Media Devices', 'physical_index': '<physical_index_1>'}, {'structure': '1.2', 'title': 'Primary Memory', 'physical_index': '<physical_index_2>'}, {'structure': '1.3', 'title': 'Read Only Memory (ROM)', 'physical_index': '<physical_index_2>'}, {'structure': '1.4', 'title': 'Cache Memory', 'physical_index': '<physical_index_2>'}, {'structure': '1.5', 'title': 'Secondary Memory (Storage)', 'physical_index': '<physical_index_2>'}, {'structure': '1.6', 'title': 'Virtual Memory', 'physical_index': '<physical_index_2>'}, {'structure': '1.7', 'title': 'Tertiary Memory', 'physical_index': '<physical_index_2>'}, {'structure': '1.8', 'title': 'Functions of Computer Memory', 'physical_index': '<physical_index_3>'}, {'structure': '1.9', 'title': 'Data Storage', 'physical_index': '<physical_index_3>'}, {'structure': '1.10', 'title': 'Memory Hierarchy', 'physical_index': '<physical_index_3>'}, {'structure': '2', 'title': 'Methodology', 'physical_index': '<physical_index_3>'}, {'structure': '2.1', 'title': 'Purpose and Scope', 'physical_index': '<physical_index_3>'}, {'structure': '2.2', 'title': 'Systematic Review', 'physical_index': '<physical_index_3>'}, {'structure': '2.3', 'title': 'Search Strategy', 'physical_index': '<physical_index_4>'}, {'structure': '2.4', 'title': 'Limitations', 'physical_index': '<physical_index_4>'}, {'structure': '2.5', 'title': 'Results and Bibliometric Analysis', 'physical_index': '<physical_index_4>'}, {'structure': '3', 'title': 'Emerging Trends', 'physical_index': '<physical_index_6>'}, {'structure': '3.1', 'title': 'Non-Volatile Memory (NVM)', 'physical_index': '<physical_index_6>'}, {'structure': '3.2', 'title': 'High-Bandwidth Memory (HBM)', 'physical_index': '<physical_index_6>'}, {'structure': '3.3', 'title': 'Persistent Memory (PMEM)', 'physical_index': '<physical_index_6>'}, {'structure': '3.4', 'title': 'Quantum Memory', 'physical_index': '<physical_index_6>'}, {'structure': '3.5', 'title': 'Memory in Artificial Intelligence (AI) and Machine Learning (ML)', 'physical_index': '<physical_index_6>'}, {'structure': '3.6', 'title': 'Neuromorphic Memory', 'physical_index': '<physical_index_6>'}, {'structure': '3.7', 'title': 'Challenges and Considerations of Computer Memory and Emerging Trends', 'physical_index': '<physical_index_6>'}, {'structure': '3.7.1', 'title': 'Scalability', 'physical_index': '<physical_index_7>'}, {'structure': '3.7.2', 'title': 'Energy Efficiency', 'physical_index': '<physical_index_7>'}, {'structure': '3.7.3', 'title': 'Security', 'physical_index': '<physical_index_7>'}, {'structure': '3.7.4', 'title': 'Compatibility', 'physical_index': '<physical_index_7>'}, {'structure': '3.7.5', 'title': 'Cost', 'physical_index': '<physical_index_7>'}, {'structure': '4', 'title': 'Future Prospects', 'physical_index': '<physical_index_7>'}, {'structure': '5', 'title': 'Conclusion', 'physical_index': '<physical_index_8>'}]"
+  },
+  {
+    "message": "convert_physical_index_to_int: [{'structure': '1', 'title': 'Introduction', 'physical_index': 1}, {'structure': '1.1', 'title': 'Types of Computer Memory', 'physical_index': 1}, {'structure': '1.1.1', 'title': 'Primary or Main Memory', 'physical_index': 1}, {'structure': '1.1.1.a', 'title': 'Random Access Memory (RAM)', 'physical_index': 1}, {'structure': '1.1.1.b', 'title': 'Read Only Memory (RAM)', 'physical_index': 1}, {'structure': '1.1.2', 'title': 'Cache Memory', 'physical_index': 1}, {'structure': '1.1.2.a', 'title': 'Level 1 (L1) cache', 'physical_index': 1}, {'structure': '1.1.2.b', 'title': 'Level 2 (L2) cache', 'physical_index': 1}, {'structure': '1.1.3', 'title': 'Secondary Memory', 'physical_index': 1}, {'structure': '1.1.3.a', 'title': 'Optical Media Devices', 'physical_index': 1}, {'structure': '1.1.3.b', 'title': 'Magnetic Media Devices', 'physical_index': 1}, {'structure': '1.2', 'title': 'Primary Memory', 'physical_index': 2}, {'structure': '1.3', 'title': 'Read Only Memory (ROM)', 'physical_index': 2}, {'structure': '1.4', 'title': 'Cache Memory', 'physical_index': 2}, {'structure': '1.5', 'title': 'Secondary Memory (Storage)', 'physical_index': 2}, {'structure': '1.6', 'title': 'Virtual Memory', 'physical_index': 2}, {'structure': '1.7', 'title': 'Tertiary Memory', 'physical_index': 2}, {'structure': '1.8', 'title': 'Functions of Computer Memory', 'physical_index': 3}, {'structure': '1.9', 'title': 'Data Storage', 'physical_index': 3}, {'structure': '1.10', 'title': 'Memory Hierarchy', 'physical_index': 3}, {'structure': '2', 'title': 'Methodology', 'physical_index': 3}, {'structure': '2.1', 'title': 'Purpose and Scope', 'physical_index': 3}, {'structure': '2.2', 'title': 'Systematic Review', 'physical_index': 3}, {'structure': '2.3', 'title': 'Search Strategy', 'physical_index': 4}, {'structure': '2.4', 'title': 'Limitations', 'physical_index': 4}, {'structure': '2.5', 'title': 'Results and Bibliometric Analysis', 'physical_index': 4}, {'structure': '3', 'title': 'Emerging Trends', 'physical_index': 6}, {'structure': '3.1', 'title': 'Non-Volatile Memory (NVM)', 'physical_index': 6}, {'structure': '3.2', 'title': 'High-Bandwidth Memory (HBM)', 'physical_index': 6}, {'structure': '3.3', 'title': 'Persistent Memory (PMEM)', 'physical_index': 6}, {'structure': '3.4', 'title': 'Quantum Memory', 'physical_index': 6}, {'structure': '3.5', 'title': 'Memory in Artificial Intelligence (AI) and Machine Learning (ML)', 'physical_index': 6}, {'structure': '3.6', 'title': 'Neuromorphic Memory', 'physical_index': 6}, {'structure': '3.7', 'title': 'Challenges and Considerations of Computer Memory and Emerging Trends', 'physical_index': 6}, {'structure': '3.7.1', 'title': 'Scalability', 'physical_index': 7}, {'structure': '3.7.2', 'title': 'Energy Efficiency', 'physical_index': 7}, {'structure': '3.7.3', 'title': 'Security', 'physical_index': 7}, {'structure': '3.7.4', 'title': 'Compatibility', 'physical_index': 7}, {'structure': '3.7.5', 'title': 'Cost', 'physical_index': 7}, {'structure': '4', 'title': 'Future Prospects', 'physical_index': 7}, {'structure': '5', 'title': 'Conclusion', 'physical_index': 8}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0.975609756097561,
+    "incorrect_results": [
+      {
+        "list_index": 40,
+        "answer": "no",
+        "title": "Conclusion",
+        "page_number": 8
+      }
+    ]
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 40, 'title': 'Conclusion', 'prev_correct': 7, 'next_correct': 8}]"
+  },
+  {
+    "message": "invalid_results: [{'list_index': 40, 'title': 'Conclusion', 'physical_index': 8}]"
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 40, 'title': 'Conclusion', 'prev_correct': 7, 'next_correct': 8}]"
+  },
+  {
+    "message": "invalid_results: [{'list_index': 40, 'title': 'Conclusion', 'physical_index': 8}]"
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 40, 'title': 'Conclusion', 'prev_correct': 7, 'next_correct': 8}]"
+  },
+  {
+    "message": "invalid_results: [{'list_index': 40, 'title': 'Conclusion', 'physical_index': 8}]"
+  },
+  {
+    "message": "Maximum fix attempts reached"
+  },
+  {
+    "message": "Checking title appearance in start concurrently"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content from previous sections such as 'Functions of Computer Memory', 'Data Storage', and 'Memory Hierarchy' before the 'Methodology' section appears. This indicates that the 'Methodology' section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains other content such as journal details, article metadata, abstract, and introduction before the section title 'Secondary Memory' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains other content such as journal details, article metadata, abstract, and introduction before the section title 'Types of Computer Memory' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains other content such as journal details, article title, author information, abstract, and keywords before the section title 'Introduction' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Functions of Computer Memory' appears in the page_text, but it is preceded by other content such as journal information and text about WORM disks. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains other content such as journal details, article metadata, abstract, and introduction before the section title 'Read Only Memory (RAM)' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains other content such as journal details, article metadata, abstract, and introduction before the section title 'Level 2 (L2) cache' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains other content such as journal details, article information, abstract, and introduction before the section title 'Optical Media Devices' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains a lot of content such as journal details, article metadata, abstract, and introduction before the section title 'Cache Memory' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with references and other content before the section title 'Conclusion'. This indicates that the section 'Conclusion' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Security' appears in the page_text, but it is preceded by other content such as '3.7.1. Scalability' and '3.7.2. Energy Efficiency'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains other content such as journal details, article metadata, abstract, and introduction before the section title 'Random Access Memory (RAM)' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains a significant amount of content such as journal details, abstract, introduction, and other sections before the section title 'Level 1 (L1) cache' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Search Strategy' appears in the page_text, but it is preceded by other content such as '22 Victor Worlanyo Gbedawo et al.: An Overview of Computer Memory Systems and Emerging Trends' and some additional text. Therefore, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Future Prospects' appears in the page_text, but it is preceded by other content such as discussions on scalability, energy efficiency, security, compatibility, and cost, as well as a summary of these topics. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Energy Efficiency' appears in the page_text, but it is preceded by other content such as 'American Journal of Electrical and Computer Engineering 2023; 7(2): 19-26 25' and '3.7.1. Scalability'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Scalability' appears in the page_text as '3.7.1. Scalability', but there is content before it, such as 'these issues and concerns.' and other text. This indicates that the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains other content such as journal details, article metadata, abstract, and introduction before the section title 'Primary or Main Memory' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Cache Memory' appears in the page_text, but it is preceded by other sections such as 'Primary Memory', 'Read Only Memory (ROM)', and their respective content. Therefore, the section 'Cache Memory' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': 'The page_text contains content from earlier sections such as Primary Memory, Read Only Memory (ROM), Cache Memory, Secondary Memory (Storage), and Virtual Memory before the section titled Tertiary Memory appears. This indicates that the section Tertiary Memory does not start at the beginning of the page_text.', 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Cost' appears in the page_text, but it is preceded by other content such as 'American Journal of Electrical and Computer Engineering 2023; 7(2): 19-26 25' and sections like 'Scalability', 'Energy Efficiency', 'Security', and 'Compatibility'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Memory Hierarchy' appears in the page_text, but it is preceded by other content such as 'Functions of Computer Memory' and 'Data Storage'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Primary Memory' appears as '1.2. Primary Memory' in the page_text, but there is content before it, such as '20 Victor Worlanyo Gbedawo et al.: An Overview of Computer Memory Systems and Emerging Trends'. This indicates that the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Persistent Memory (PMEM)' appears in the page_text, but it is preceded by other content such as introductory text, other section titles like 'Emerging Trends', 'Non-Volatile Memory (NVM)', and 'High-Bandwidth Memory (HBM)'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Data Storage' appears in the page_text, but it is preceded by other content, including the title 'American Journal of Electrical and Computer Engineering 2023; 7(2): 19-26', a discussion on 'Functions of Computer Memory', and other text. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Compatibility' appears in the page_text, but it is preceded by other content such as 'American Journal of Electrical and Computer Engineering 2023; 7(2): 19-26 25' and sections like 'Scalability', 'Energy Efficiency', and 'Security'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Read Only Memory (ROM)' appears in the page_text, but it is preceded by other content such as the title '1.2. Primary Memory' and its description. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Quantum Memory' appears in the page_text, but it is preceded by other content such as introductory text and other section titles like 'Emerging Trends', 'Non-Volatile Memory (NVM)', 'High-Bandwidth Memory (HBM)', and 'Persistent Memory (PMEM)'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Virtual Memory' appears in the page_text, but it is preceded by other section titles and content such as 'Primary Memory', 'Read Only Memory (ROM)', 'Cache Memory', and 'Secondary Memory (Storage)'. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Results and Bibliometric Analysis' appears in the page_text, but it is preceded by other content such as sections 'Search Strategy' and 'Limitations'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Purpose and Scope' appears in the page_text, but it is preceded by other content such as 'American Journal of Electrical and Computer Engineering 2023; 7(2): 19-26' and sections like 'Functions of Computer Memory', 'Data Storage', and 'Memory Hierarchy'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Neuromorphic Memory' appears in the page_text, but it is preceded by other content such as introductory text, other section titles (e.g., 'Emerging Trends', 'Non-Volatile Memory', 'High-Bandwidth Memory', etc.), and their respective descriptions. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content unrelated to the section title, such as '24 Victor Worlanyo Gbedawo et al.: An Overview of Computer Memory Systems and Emerging Trends'. The section title 'Challenges and Considerations of Computer Memory and Emerging Trends' appears much later in the text, after several other sections and content.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Memory in Artificial Intelligence (AI) and Machine Learning (ML)' appears in the page_text, but it is preceded by other content such as '24 Victor Worlanyo Gbedawo et al.: An Overview of Computer Memory Systems and Emerging Trends' and other sections like 'Emerging Trends', 'Non-Volatile Memory (NVM)', 'High-Bandwidth Memory (HBM)', etc. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains other content such as journal details, article information, abstract, and introduction before the section title 'Magnetic Media Devices' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Limitations' appears in the page_text under the subsection '2.4. Limitations'. However, there is content before this section, including '2.3. Search Strategy' and other details. Therefore, the section 'Limitations' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content before the section title 'Non-Volatile Memory (NVM)', such as introductory text and other section titles like 'Emerging Trends'. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Systematic Review' appears in the page_text, but it is preceded by other content such as 'American Journal of Electrical and Computer Engineering 2023; 7(2): 19-26', descriptions of computer memory, data storage, memory hierarchy, and methodology. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'High-Bandwidth Memory (HBM)' appears in the page_text, but it is preceded by other content such as introductory text, other sections like 'Emerging Trends' and 'Non-Volatile Memory (NVM)'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title 'Secondary Memory (Storage)' appears in the page_text, but it is preceded by other sections such as 'Primary Memory', 'Read Only Memory (ROM)', 'Cache Memory', etc. This indicates that the current section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Emerging Trends' appears in the page_text, but it is preceded by other content such as '24 Victor Worlanyo Gbedawo et al.: An Overview of Computer Memory Systems and Emerging Trends' and additional text. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  }
+]

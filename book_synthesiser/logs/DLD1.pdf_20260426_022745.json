@@ -1,0 +1,115 @@
+[
+  {
+    "total_page_number": 11
+  },
+  {
+    "total_token": 4872
+  },
+  {
+    "toc_content": null,
+    "toc_page_list": [],
+    "page_index_given_in_toc": "no"
+  },
+  {
+    "message": "len(group_texts): 1"
+  },
+  {
+    "message": "generate_toc: [{'structure': '1', 'title': 'COMPUTER ORGANISATION', 'physical_index': '<physical_index_1>'}, {'structure': '1.1', 'title': 'BASIC STRUCTURE OF COMPUTERS', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.1', 'title': 'Computer types', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.2', 'title': 'Functional unit', 'physical_index': '<physical_index_1>'}, {'structure': '1.1.3', 'title': 'Input unit', 'physical_index': '<physical_index_2>'}, {'structure': '1.1.4', 'title': 'Memory unit', 'physical_index': '<physical_index_2>'}, {'structure': '1.1.4.1', 'title': 'Primary memory', 'physical_index': '<physical_index_2>'}, {'structure': '1.1.4.2', 'title': 'Secondary memory', 'physical_index': '<physical_index_3>'}, {'structure': '1.1.5', 'title': 'Arithmetic logic unit (ALU)', 'physical_index': '<physical_index_3>'}, {'structure': '1.1.6', 'title': 'Output unit', 'physical_index': '<physical_index_3>'}, {'structure': '1.1.7', 'title': 'Control unit', 'physical_index': '<physical_index_3>'}, {'structure': '1.1.8', 'title': 'Basic operational concepts', 'physical_index': '<physical_index_3>'}, {'structure': '1.1.9', 'title': 'Operating steps', 'physical_index': '<physical_index_4>'}, {'structure': '1.1.10', 'title': 'Bus structure', 'physical_index': '<physical_index_6>'}, {'structure': '1.1.11', 'title': 'Performance', 'physical_index': '<physical_index_7>'}, {'structure': '1.1.12', 'title': 'Processor clock', 'physical_index': '<physical_index_8>'}, {'structure': '1.1.13', 'title': 'Basic performance equation', 'physical_index': '<physical_index_8>'}, {'structure': '1.1.14', 'title': 'Pipelining and superscalar operation', 'physical_index': '<physical_index_9>'}, {'structure': '1.1.15', 'title': 'Clock rate', 'physical_index': '<physical_index_9>'}, {'structure': '1.1.16', 'title': 'Instruction set CISC & RISC', 'physical_index': '<physical_index_10>'}, {'structure': '1.1.17', 'title': 'Performance measurements', 'physical_index': '<physical_index_10>'}, {'structure': '1.1.18', 'title': 'Multiprocessor & microprocessors', 'physical_index': '<physical_index_11>'}]"
+  },
+  {
+    "message": "convert_physical_index_to_int: [{'structure': '1', 'title': 'COMPUTER ORGANISATION', 'physical_index': 1}, {'structure': '1.1', 'title': 'BASIC STRUCTURE OF COMPUTERS', 'physical_index': 1}, {'structure': '1.1.1', 'title': 'Computer types', 'physical_index': 1}, {'structure': '1.1.2', 'title': 'Functional unit', 'physical_index': 1}, {'structure': '1.1.3', 'title': 'Input unit', 'physical_index': 2}, {'structure': '1.1.4', 'title': 'Memory unit', 'physical_index': 2}, {'structure': '1.1.4.1', 'title': 'Primary memory', 'physical_index': 2}, {'structure': '1.1.4.2', 'title': 'Secondary memory', 'physical_index': 3}, {'structure': '1.1.5', 'title': 'Arithmetic logic unit (ALU)', 'physical_index': 3}, {'structure': '1.1.6', 'title': 'Output unit', 'physical_index': 3}, {'structure': '1.1.7', 'title': 'Control unit', 'physical_index': 3}, {'structure': '1.1.8', 'title': 'Basic operational concepts', 'physical_index': 3}, {'structure': '1.1.9', 'title': 'Operating steps', 'physical_index': 4}, {'structure': '1.1.10', 'title': 'Bus structure', 'physical_index': 6}, {'structure': '1.1.11', 'title': 'Performance', 'physical_index': 7}, {'structure': '1.1.12', 'title': 'Processor clock', 'physical_index': 8}, {'structure': '1.1.13', 'title': 'Basic performance equation', 'physical_index': 8}, {'structure': '1.1.14', 'title': 'Pipelining and superscalar operation', 'physical_index': 9}, {'structure': '1.1.15', 'title': 'Clock rate', 'physical_index': 9}, {'structure': '1.1.16', 'title': 'Instruction set CISC & RISC', 'physical_index': 10}, {'structure': '1.1.17', 'title': 'Performance measurements', 'physical_index': 10}, {'structure': '1.1.18', 'title': 'Multiprocessor & microprocessors', 'physical_index': 11}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0.9090909090909091,
+    "incorrect_results": [
+      {
+        "list_index": 12,
+        "answer": "no",
+        "title": "Operating steps",
+        "page_number": 4
+      },
+      {
+        "list_index": 19,
+        "answer": "no",
+        "title": "Instruction set CISC & RISC",
+        "page_number": 10
+      }
+    ]
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 12, 'title': 'Operating steps', 'prev_correct': 3, 'next_correct': 6}, {'list_index': 19, 'title': 'Instruction set CISC & RISC', 'prev_correct': 9, 'next_correct': 10}]"
+  },
+  {
+    "message": "invalid_results: []"
+  },
+  {
+    "message": "Checking title appearance in start concurrently"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Processor clock' appears in the page_text, but it is preceded by other content related to memory and cache. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title 'Basic performance equation' appears in the page_text, but it is preceded by other content such as explanations about cache, processor clock, and clock cycles. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Performance measurements' appears in the page_text, but it is preceded by other content such as text about instructions and pipelining. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Primary memory' appears in the page_text, but it is preceded by other content such as descriptions of input devices and memory unit. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Pipelining and superscalar operation' does not appear at the very beginning of the page_text. Instead, there is introductory content about performance improvement and pipelining before the section title's content begins.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Secondary memory' appears in the page_text, but it is preceded by the number '2' and a space. This indicates that there is content before the section title, so the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Performance' appears in the page_text, but there is content before it, such as descriptions about processor instructions and data transfer. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains content related to input devices and other introductory information before the section title 'Memory unit' appears. Therefore, the section 'Memory unit' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Basic operational concepts' appears in the page_text, but it is preceded by other content such as descriptions of secondary memory, arithmetic logic unit, output unit, and control unit. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content related to 'Secondary memory' and other sections like 'Arithmetic logic unit (ALU)' and 'Control unit' appear before the section titled 'Output unit'. Therefore, the section 'Output unit' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Bus structure' matches the first content in the given page_text, ignoring any space inconsistencies. There are no other contents before the section title in the page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains content from other sections such as 'Secondary memory', 'Arithmetic logic unit (ALU)', and 'Output unit' before the 'Control unit' section appears. Therefore, the 'Control unit' section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text starts with 'COMPUTER ORGANISATION' and 'CHAPTER \u2013 1' before the section title 'BASIC STRUCTURE OF COMPUTERS'. This indicates that there is content before the section title in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Clock rate' appears in the page_text, but it is preceded by other content related to pipelining and superscalar execution. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Instruction set CISC & RISC' appears in the page_text, but it is preceded by other content such as explanations about pipelining, superscalar execution, and clock rate. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title 'Arithmetic logic unit (ALU)' appears in the page_text, but it is preceded by content related to 'Secondary memory' and examples of storage devices. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text starts with 'COMPUTER ORGANISATION CHAPTER \u2013 1 BASIC STRUCTURE OF COMPUTERS', which is content unrelated to the section title 'Computer types'. The section title 'Computer types' appears later in the page_text after this introductory content.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Multiprocessor & microprocessors' appears in the page_text, but it is preceded by other content related to SPEC ratings and performance measurements. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'COMPUTER ORGANISATION' appears as the first content in the given page_text, and there is no other content before it. Space inconsistencies are ignored, and the title matches exactly at the beginning.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text begins with content about 'COMPUTER ORGANISATION', followed by introductory information about computer types and their classifications. The section title 'Functional unit' appears later in the text, after the discussion on computer types. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Input unit' does not appear at the very beginning of the page_text. There is content about input devices and their role before the section title 'Input unit' is mentioned. Additionally, the section title appears later in the text with a colon and a dash, indicating it is not the first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains content before the section title 'Operating steps', such as descriptions of registers and their functions. This indicates that the section 'Operating steps' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  }
+]

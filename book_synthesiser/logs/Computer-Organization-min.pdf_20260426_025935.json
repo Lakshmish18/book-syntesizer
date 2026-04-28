@@ -1,0 +1,637 @@
+[
+  {
+    "total_page_number": 187
+  },
+  {
+    "total_token": 80023
+  },
+  {
+    "toc_content": "Page 1\n ANNAMACHARYA INSTITUTE OF TECHNOLOGY AND SCIENCES::TIRUPATI \nII B.Tech II Semester  \n \n(19APC0506) Computer Organization  \nCourse Objectives: \n\uf0b7 To learn the fundamentals of computer organization and its relevance to classical and modern \nproblems of computer design \n\uf0b7 To make the students understand the structure and behavior of various functional modules of a \ncomputer. \n\uf0b7 To understand the techniques that computers use to communicate with I/O devices \n\uf0b7 To study the concepts of pipelining and the way it can speed up processing. \n\uf0b7 To understand the basic characteristics of multiprocessors \n  \nUnit I: \nBasic Structure of Computer: Computer Types, Functional Units, Basic operational Concepts, Bus \nStructure, Software, Performance, Multiprocessors and Multicomputer. \nMachine Instructions and Programs: Numbers, Arithmetic Operations and Programs, Instructions and \nInstruction Sequencing, Addressing Modes, Basic Input/output Operations, Stacks and Queues, \nSubroutines, Additional Instructions. \nUnit II: \nArithmetic: Addition and Subtraction of Signed Numbers, Design and Fast Adders, Multiplication of \nPositive Numbers, Signed-operand Multiplication, Fast Multiplication, Integer Division,  Floating-Point \nNumbers and Operations. \nBasic Processing Unit: Fundamental Concepts, Execution of a Complete Instruction, Multiple-Bus \nOrganization, Hardwired Control, Multiprogrammed Control. \nUnit III: \nThe Memory System: Basic Concepts, Semiconductor RAM Memories, Read-Only Memories, Speed, \nSize and Cost, Cache Memories, Performance Considerations, Virtual Memories, Memory Management \nRequirements, Secondary Storage. \nUnit IV: \nInput/output Organization: Accessing I/O Devices, Interrupts, Processor Examples, Direct Memory \nAccess, Buses, Interface Circuits, Standard I/O Interfaces. \nUnit V: \nPipelining: Basic Concepts, Data Hazards, Instruction Hazards, Influence on Instruction Sets. \nLarge Computer Systems: Forms of Parallel Processing, Array Processors, The Structure of General-\nPurpose, Interconnection Networks. \n \nTextbook: \n1. \u201cComputer Organization\u201d,  Carl Hamacher, Zvonko Vranesic, Safwat Zaky, McGraw Hill Education, \n5th Edition, 2013. \n \nReference Textbooks: \n1. Computer System Architecture, M.Morris Mano, Pearson Education, 3rd Edition. \n2. Computer Organization and Architecture, Themes and Variations, Alan Clements, CENGAGE \nLearning. \n3. Computer Organization and Architecture, Smruti Ranjan Sarangi, McGraw Hill Education. \n4. Computer Architecture and Organization, John P.Hayes, McGraw Hill Education. \n \nCourse Outcomes: \n\uf0b7 Ability to use memory and I/O devices effectively \n\uf0b7 Able to explore the hardware requirements for cache memory and virtual memory \n\uf0b7 Ability to design algorithms to exploit pipelining and multiprocessors \n L T P C \n3 0 0 3 \nS Venkata Lakshmi , Assistant ProfessorPage 2\n UNIT-I \nBasic Structure of Computer: Computer Types, Functional Units, Basic operational Concepts, Bus \nStructure, Software, Performance, Multiprocessors and Multicomputer. \nMachine Instructions and Programs: Numbers, Arithmetic Operations and Programs, Instructions and \nInstruction Sequencing, Addressing Modes, Basic Input/output Operations, Stacks and Queues, \nSubroutines, Additional Instructions.  \nBasic Structure of Computer:  \n1.1 Computer types  \nA computer can be defined as a fast electronic calculating machine that accepts  the (data) \ndigitized input information process it as per the list of internally stored  instructions and produces \nthe resulting information. List of instructions are called programs & internal storage is called \ncomputer memory.  \nThe different types of computers are  \n1. Personal computers: - This is the most common type found in homes, schools,  Business \noffices etc., It is the most common type of desk top computers with  processing and storage units \nalong with various input and output devices.  \n2. Note book computers: - These are compact and portable versions of PC  \n3. Work stations: - These have high resolution input/output (I/O) graphics capability, but with \nsame dimensions as that of desktop computer. These are used  in engineering applications of \ninteractive design work.  \n4. Enterprise systems: - These are used for business data processing in medium to large \ncorporations that require much more computing power and storage capacity than work stations. \nInternet associated with servers has become a dominant worldwide source of all types of \ninformation.  \n5. Super computers: - These are used for large scale numerical calculations required in the \napplications like weather forecasting etc., \n1.2 Functional unit:  \nA computer consists of five functionally independent main parts input, memory, arithmetic logic \nunit (ALU), and output and control unit. \n \n \n \n \nS Venkata Lakshmi , Assistant Professor",
+    "toc_page_list": [
+      1,
+      2
+    ],
+    "page_index_given_in_toc": "no"
+  },
+  {
+    "message": "len(group_texts): 5"
+  },
+  {
+    "message": "generate_toc: [{'structure': '1', 'title': 'Department of Artificial Intelligence', 'physical_index': '<physical_index_1>'}, {'structure': '1.1', 'title': 'Academic Year 2023 -24 II. B.Tech I Semester Computer Organization (20APC3006)', 'physical_index': '<physical_index_1>'}, {'structure': '1.2', 'title': 'Prepared By Mrs. S. Venkata Lakshmi ., M.Tech(Ph.D) . Assistant Professor Department of CSE, AITS', 'physical_index': '<physical_index_1>'}, {'structure': '2', 'title': 'ANNAMACHARYA INSTITUTE OF TECHNOLOGY AND SCIENCES::TIRUPATI II B.Tech II Semester (19APC0506) Computer Organization', 'physical_index': '<physical_index_2>'}, {'structure': '2.1', 'title': 'Course Objectives', 'physical_index': '<physical_index_2>'}, {'structure': '2.2', 'title': 'Unit I: Basic Structure of Computer: Computer Types, Functional Units, Basic operational Concepts, Bus Structure, Software, Performance, Multiprocessors and Multicomputer. Machine Instructions and Programs: Numbers, Arithmetic Operations and Programs, Instructions and Instruction Sequencing, Addressing Modes, Basic Input/output Operations, Stacks and Queues, Subroutines, Additional Instructions.', 'physical_index': '<physical_index_2>'}, {'structure': '2.3', 'title': 'Unit II: Arithmetic: Addition and Subtraction of Signed Numbers, Design and Fast Adders, Multiplication of Positive Numbers, Signed-operand Multiplication, Fast Multiplication, Integer Division, Floating-Point Numbers and Operations. Basic Processing Unit: Fundamental Concepts, Execution of a Complete Instruction, Multiple-Bus Organization, Hardwired Control, Multiprogrammed Control.', 'physical_index': '<physical_index_2>'}, {'structure': '2.4', 'title': 'Unit III: The Memory System: Basic Concepts, Semiconductor RAM Memories, Read-Only Memories, Speed, Size and Cost, Cache Memories, Performance Considerations, Virtual Memories, Memory Management Requirements, Secondary Storage.', 'physical_index': '<physical_index_2>'}, {'structure': '2.5', 'title': 'Unit IV: Input/output Organization: Accessing I/O Devices, Interrupts, Processor Examples, Direct Memory Access, Buses, Interface Circuits, Standard I/O Interfaces.', 'physical_index': '<physical_index_2>'}, {'structure': '2.6', 'title': 'Unit V: Pipelining: Basic Concepts, Data Hazards, Instruction Hazards, Influence on Instruction Sets. Large Computer Systems: Forms of Parallel Processing, Array Processors, The Structure of General-Purpose, Interconnection Networks.', 'physical_index': '<physical_index_2>'}, {'structure': '3', 'title': 'UNIT-I Basic Structure of Computer: Computer Types, Functional Units, Basic operational Concepts, Bus Structure, Software, Performance, Multiprocessors and Multicomputer. Machine Instructions and Programs: Numbers, Arithmetic Operations and Programs, Instructions and Instruction Sequencing, Addressing Modes, Basic Input/output Operations, Stacks and Queues, Subroutines, Additional Instructions.', 'physical_index': '<physical_index_3>'}, {'structure': '3.1', 'title': '1.1 Computer types', 'physical_index': '<physical_index_3>'}, {'structure': '3.2', 'title': '1.2 Functional unit', 'physical_index': '<physical_index_3>'}, {'structure': '3.3', 'title': '1.3 Basic operational concepts', 'physical_index': '<physical_index_5>'}, {'structure': '3.4', 'title': '1.4 Bus STRUCTURES', 'physical_index': '<physical_index_8>'}, {'structure': '3.5', 'title': '1.5 Software', 'physical_index': '<physical_index_9>'}, {'structure': '3.6', 'title': '1.6 Performance', 'physical_index': '<physical_index_10>'}, {'structure': '4', 'title': 'UNIT-II Arithmetic: Addition and Subtraction of Signed Numbers, Design and Fast Adders, Multiplication of Positive Numbers, Signed-operand Multiplication, Fast Multiplication, Integer Division, Floating-Point Numbers and Operations. Basic Processing Unit: Fundamental Concepts, Execution of a Complete Instruction, Multiple-Bus Organization, Hardwired Control, Multiprogrammed Control.', 'physical_index': '<physical_index_38>'}, {'structure': '4.1', 'title': '2.1 ADDITION AND SUBTRACTION OF SIGNED NUMBERS', 'physical_index': '<physical_index_38>'}, {'structure': '4.2', 'title': '6.2 DESIGN OF FAST ADDERS', 'physical_index': '<physical_index_40>'}, {'structure': '4.3', 'title': '6.3 MULTIPLICATION OF POSITIVE NUMBERS', 'physical_index': '<physical_index_44>'}, {'structure': '4.4', 'title': '6.4 SIGNED -OPERAND MULTIPLICATION', 'physical_index': '<physical_index_47>'}, {'structure': '4.5', 'title': '6.5 BOOTH ALGORITHM', 'physical_index': '<physical_index_48>'}, {'structure': '4.6', 'title': '6.6 FAST MULTIPLICATION', 'physical_index': '<physical_index_51>'}, {'structure': '4.7', 'title': '6.7 INTEGER DIVISION', 'physical_index': '<physical_index_56>'}, {'structure': '4.8', 'title': '6.8 FLOATING -POINT NUMBERS AND OPERATIONS', 'physical_index': '<physical_index_59>'}, {'structure': '4.9', 'title': '6.9 IEEE STANDARD FOR FLOATING -POINT NUMBERS', 'physical_index': '<physical_index_60>'}, {'structure': '4.10', 'title': '6.10 ARITHMETIC OPERATIONS ON FLOATING -POINT NUMBERS', 'physical_index': '<physical_index_62>'}, {'structure': '4.11', 'title': '6.11 GUARD BITS AND TRUNCATION', 'physical_index': '<physical_index_63>'}, {'structure': '4.12', 'title': '6.12 IMPLEMENTING FLOATING -POINT OPERATIONS', 'physical_index': '<physical_index_64>'}, {'structure': '4.13', 'title': '7.1 FUNDAMENTAL CONCEPTS', 'physical_index': '<physical_index_65>'}, {'structure': '4.14', 'title': '7.2 EXECUTION OF A COMPLETE INSTRUCTION', 'physical_index': '<physical_index_72>'}, {'structure': '4.15', 'title': '7.3 MULTIPLE -BUS ORGANIZATION', 'physical_index': '<physical_index_74>'}, {'structure': '4.16', 'title': '7.4 HARDWIRED CONTROL', 'physical_index': '<physical_index_76>'}, {'structure': '4.17', 'title': '7.5 MICROPROGRAMMED CONTROL', 'physical_index': '<physical_index_78>'}, {'structure': '5', 'title': 'UNIT-III The Memory System: Basic Concepts, Semiconductor RAM Memories, Read-Only Memories, Speed, Size and Cost, Cache Memories, Performance Considerations, Virtual Memories, Memory Management Requirements, Secondary Storage.', 'physical_index': '<physical_index_85>'}, {'structure': '5.1', 'title': '3.1 Basic Concepts', 'physical_index': '<physical_index_85>'}, {'structure': '5.2', 'title': '3.2 Semiconductor RAM Memories', 'physical_index': '<physical_index_85>'}, {'structure': '5.3', 'title': '3.3 Internal Organization of Memory Chips', 'physical_index': '<physical_index_85>'}, {'structure': '5.4', 'title': '3.4 Static Memories', 'physical_index': '<physical_index_86>'}, {'structure': '5.5', 'title': '3.5 Asynchronous DRAMs', 'physical_index': '<physical_index_88>'}, {'structure': '5.6', 'title': '3.6 Synchronous DRAMs', 'physical_index': '<physical_index_90>'}, {'structure': '5.7', 'title': '3.7 Latency and Bandwidth', 'physical_index': '<physical_index_91>'}, {'structure': '5.8', 'title': '3.8 Double-Data-Rate SDRAM', 'physical_index': '<physical_index_92>'}, {'structure': '5.9', 'title': '3.9 Structure of Larger Memories', 'physical_index': '<physical_index_93>'}, {'structure': '5.10', 'title': '3.10 Dynamic Memory Systems', 'physical_index': '<physical_index_94>'}, {'structure': '5.11', 'title': '3.11 Memory System Considerations', 'physical_index': '<physical_index_94>'}, {'structure': '5.12', 'title': '3.12 Memory Controller', 'physical_index': '<physical_index_95>'}, {'structure': '5.13', 'title': '3.13 Refresh Overhead', 'physical_index': '<physical_index_95>'}, {'structure': '5.14', 'title': '3.14 Rambus Memory', 'physical_index': '<physical_index_96>'}, {'structure': '5.15', 'title': '3.15 Read-Only Memories', 'physical_index': '<physical_index_96>'}, {'structure': '5.16', 'title': '3.16 PROM', 'physical_index': '<physical_index_97>'}, {'structure': '5.17', 'title': '3.17 EPROM', 'physical_index': '<physical_index_97>'}, {'structure': '5.18', 'title': '3.18 EEPROM', 'physical_index': '<physical_index_97>'}, {'structure': '5.19', 'title': '3.19 Flash Memory', 'physical_index': '<physical_index_98>'}, {'structure': '5.20', 'title': '3.20 Speed, Size, and Cost', 'physical_index': '<physical_index_99>'}, {'structure': '5.21', 'title': '3.21 Cache Memories', 'physical_index': '<physical_index_99>'}, {'structure': '5.22', 'title': '3.22 Mapping Functions', 'physical_index': '<physical_index_101>'}, {'structure': '5.23', 'title': '3.23 Replacement Algorithms', 'physical_index': '<physical_index_104>'}, {'structure': '5.24', 'title': '3.24 Performance Considerations', 'physical_index': '<physical_index_105>'}, {'structure': '5.25', 'title': '3.25 Interleaving', 'physical_index': '<physical_index_106>'}, {'structure': '5.26', 'title': '3.26 Hit Rate and Miss Penalty', 'physical_index': '<physical_index_107>'}, {'structure': '5.27', 'title': '3.27 Caches on the Processor Chip', 'physical_index': '<physical_index_108>'}, {'structure': '5.28', 'title': '3.28 Other Enhancements', 'physical_index': '<physical_index_109>'}, {'structure': '5.29', 'title': '3.29 Virtual Memories', 'physical_index': '<physical_index_110>'}, {'structure': '5.30', 'title': '3.30 Address Translation', 'physical_index': '<physical_index_111>'}, {'structure': '5.31', 'title': '3.31 Memory Management Requirements', 'physical_index': '<physical_index_113>'}, {'structure': '5.32', 'title': '3.32 Secondary Storage', 'physical_index': '<physical_index_114>'}, {'structure': '5.33', 'title': '3.33 Magnetic Hard Disk', 'physical_index': '<physical_index_114>'}, {'structure': '5.34', 'title': '3.34 Organization and Accessing of Data on a Disk', 'physical_index': '<physical_index_115>'}, {'structure': '5.35', 'title': '3.35 Access Time', 'physical_index': '<physical_index_116>'}, {'structure': '5.36', 'title': '3.36 Data Buffer/Cache', 'physical_index': '<physical_index_116>'}, {'structure': '5.37', 'title': '3.37 Disk Controller', 'physical_index': '<physical_index_117>'}, {'structure': '5.38', 'title': '3.38 Floppy Disks', 'physical_index': '<physical_index_118>'}, {'structure': '5.39', 'title': '3.39 RAID Disk Arrays', 'physical_index': '<physical_index_118>'}, {'structure': '5.40', 'title': '3.40 Optical Disks', 'physical_index': '<physical_index_119>'}, {'structure': '5.41', 'title': '3.41 CD Technology', 'physical_index': '<physical_index_119>'}, {'structure': '5.42', 'title': '3.42 CD-ROM', 'physical_index': '<physical_index_120>'}, {'structure': '5.43', 'title': '3.43 CD-ROM drives', 'physical_index': '<physical_index_121>'}, {'structure': '5.44', 'title': '3.44 CD-Recordables', 'physical_index': '<physical_index_121>'}, {'structure': '5.45', 'title': '3.45 CD-ReWritables', 'physical_index': '<physical_index_121>'}, {'structure': '5.46', 'title': '3.46 DVD Technology', 'physical_index': '<physical_index_121>'}, {'structure': '5.47', 'title': '3.47 DVD-RAM', 'physical_index': '<physical_index_122>'}, {'structure': '5.48', 'title': '3.48 Magnetic Tape Systems', 'physical_index': '<physical_index_122>'}, {'structure': '5.49', 'title': '3.49 Cartridge Tape System', 'physical_index': '<physical_index_123>'}, {'structure': '6', 'title': 'UNIT-IV Input/output Organization: Accessing I/O Devices, Interrupts, Processor Examples, Direct Memory Access, Buses, Interface Circuits, Standard I/O Interfaces.', 'physical_index': '<physical_index_125>'}, {'structure': '6.1', 'title': '4.1 Accessing I/O Devices', 'physical_index': '<physical_index_125>'}, {'structure': '6.2', 'title': '4.2 Interrupts', 'physical_index': '<physical_index_127>'}, {'structure': '6.3', 'title': '4.3 Enabling and Disabling Interrupts', 'physical_index': '<physical_index_129>'}, {'structure': '6.4', 'title': '4.4 Handling Multiple Devices', 'physical_index': '<physical_index_130>'}, {'structure': '6.5', 'title': '4.5 Vectored Interrupts', 'physical_index': '<physical_index_131>'}, {'structure': '6.6', 'title': '4.6 Interrupt Nesting', 'physical_index': '<physical_index_131>'}, {'structure': '6.7', 'title': '4.7 Simultaneous Requests', 'physical_index': '<physical_index_132>'}, {'structure': '6.8', 'title': '4.8 Controlling Device Requests', 'physical_index': '<physical_index_133>'}, {'structure': '6.9', 'title': '4.9 Exceptions', 'physical_index': '<physical_index_134>'}, {'structure': '6.10', 'title': '4.10 Direct Memory Access', 'physical_index': '<physical_index_135>'}, {'structure': '6.11', 'title': '4.11 Bus Arbitration', 'physical_index': '<physical_index_137>'}, {'structure': '6.12', 'title': '4.12 Buses', 'physical_index': '<physical_index_140>'}, {'structure': '6.13', 'title': '4.13 Synchronous Bus', 'physical_index': '<physical_index_141>'}, {'structure': '6.14', 'title': '4.14 Asynchronous Bus', 'physical_index': '<physical_index_143>'}, {'structure': '6.15', 'title': '4.15 Interface Circuits', 'physical_index': '<physical_index_144>'}, {'structure': '6.16', 'title': '4.16 Parallel Port', 'physical_index': '<physical_index_145>'}, {'structure': '6.17', 'title': '4.17 Output Interface', 'physical_index': '<physical_index_147>'}, {'structure': '6.18', 'title': '4.18 Serial Port', 'physical_index': '<physical_index_149>'}, {'structure': '6.19', 'title': '4.19 Standard I/O Interfaces', 'physical_index': '<physical_index_150>'}, {'structure': '6.20', 'title': '4.20 PCI Bus', 'physical_index': '<physical_index_151>'}, {'structure': '6.21', 'title': '4.21 SCSI Bus', 'physical_index': '<physical_index_154>'}, {'structure': '6.22', 'title': '4.22 Universal Serial Bus (USB)', 'physical_index': '<physical_index_157>'}, {'structure': '6.22.1', 'title': 'Universal Serial Bus tree structure', 'physical_index': '<physical_index_158>'}, {'structure': '6.22.2', 'title': 'Addressing', 'physical_index': '<physical_index_158>'}, {'structure': '6.22.3', 'title': 'USB Protocols', 'physical_index': '<physical_index_159>'}, {'structure': '6.22.4', 'title': 'Isochronous Traffic on USB', 'physical_index': '<physical_index_160>'}, {'structure': '6.22.5', 'title': 'Electrical Characteristics', 'physical_index': '<physical_index_161>'}, {'structure': '7', 'title': 'UNIT-V Pipelining: Basic Concepts, Data Hazards, Instruction Hazards, Influence on Instruction Sets. Large Computer Systems: Forms of Parallel Processing, Array Processors, The Structure of General-Purpose, Interconnection Networks.', 'physical_index': '<physical_index_162>'}, {'structure': '7.1', 'title': 'Pipelining', 'physical_index': '<physical_index_163>'}, {'structure': '7.1.1', 'title': 'Basic Concepts', 'physical_index': '<physical_index_163>'}, {'structure': '7.1.2', 'title': 'Role of Cache Memory', 'physical_index': '<physical_index_164>'}, {'structure': '7.1.3', 'title': 'Pipeline Performance', 'physical_index': '<physical_index_165>'}, {'structure': '7.1.4', 'title': 'Data Hazards', 'physical_index': '<physical_index_166>'}, {'structure': '7.1.5', 'title': 'Operand Forwarding', 'physical_index': '<physical_index_168>'}, {'structure': '7.1.6', 'title': 'Handling Data Hazards in Software', 'physical_index': '<physical_index_169>'}, {'structure': '7.1.7', 'title': 'Instruction Hazards', 'physical_index': '<physical_index_170>'}, {'structure': '7.1.8', 'title': 'Instruction Queue and Prefetching', 'physical_index': '<physical_index_171>'}, {'structure': '7.1.9', 'title': 'Branch Prediction', 'physical_index': '<physical_index_173>'}, {'structure': '7.1.10', 'title': 'Dynamic Branch Prediction', 'physical_index': '<physical_index_175>'}, {'structure': '7.1.11', 'title': 'Influences on Instruction Sets', 'physical_index': '<physical_index_176>'}, {'structure': '7.2', 'title': 'Large Computer Systems', 'physical_index': '<physical_index_179>'}, {'structure': '7.2.1', 'title': 'Forms of Parallel Processing', 'physical_index': '<physical_index_179>'}, {'structure': '7.2.2', 'title': 'Classification of Parallel Structures', 'physical_index': '<physical_index_179>'}, {'structure': '7.2.3', 'title': 'Array Processors', 'physical_index': '<physical_index_180>'}, {'structure': '7.2.4', 'title': 'The Structure of General-Purpose Multiprocessors', 'physical_index': '<physical_index_181>'}, {'structure': '7.2.5', 'title': 'Interconnection Networks', 'physical_index': '<physical_index_182>'}, {'structure': '7.2.5.1', 'title': 'Time-Shared Common Bus', 'physical_index': '<physical_index_182>'}, {'structure': '7.2.5.2', 'title': 'Multiport Memory', 'physical_index': '<physical_index_183>'}, {'structure': '7.2.5.3', 'title': 'Crossbar Switch', 'physical_index': '<physical_index_184>'}, {'structure': '7.2.5.4', 'title': 'Multistage Switching Network', 'physical_index': '<physical_index_184>'}, {'structure': '7.2.5.5', 'title': 'Hypercube System', 'physical_index': '<physical_index_185>'}, {'structure': '7.2.5.6', 'title': 'Tree Networks', 'physical_index': '<physical_index_187>'}]"
+  },
+  {
+    "message": "convert_physical_index_to_int: [{'structure': '1', 'title': 'Department of Artificial Intelligence', 'physical_index': 1}, {'structure': '1.1', 'title': 'Academic Year 2023 -24 II. B.Tech I Semester Computer Organization (20APC3006)', 'physical_index': 1}, {'structure': '1.2', 'title': 'Prepared By Mrs. S. Venkata Lakshmi ., M.Tech(Ph.D) . Assistant Professor Department of CSE, AITS', 'physical_index': 1}, {'structure': '2', 'title': 'ANNAMACHARYA INSTITUTE OF TECHNOLOGY AND SCIENCES::TIRUPATI II B.Tech II Semester (19APC0506) Computer Organization', 'physical_index': 2}, {'structure': '2.1', 'title': 'Course Objectives', 'physical_index': 2}, {'structure': '2.2', 'title': 'Unit I: Basic Structure of Computer: Computer Types, Functional Units, Basic operational Concepts, Bus Structure, Software, Performance, Multiprocessors and Multicomputer. Machine Instructions and Programs: Numbers, Arithmetic Operations and Programs, Instructions and Instruction Sequencing, Addressing Modes, Basic Input/output Operations, Stacks and Queues, Subroutines, Additional Instructions.', 'physical_index': 2}, {'structure': '2.3', 'title': 'Unit II: Arithmetic: Addition and Subtraction of Signed Numbers, Design and Fast Adders, Multiplication of Positive Numbers, Signed-operand Multiplication, Fast Multiplication, Integer Division, Floating-Point Numbers and Operations. Basic Processing Unit: Fundamental Concepts, Execution of a Complete Instruction, Multiple-Bus Organization, Hardwired Control, Multiprogrammed Control.', 'physical_index': 2}, {'structure': '2.4', 'title': 'Unit III: The Memory System: Basic Concepts, Semiconductor RAM Memories, Read-Only Memories, Speed, Size and Cost, Cache Memories, Performance Considerations, Virtual Memories, Memory Management Requirements, Secondary Storage.', 'physical_index': 2}, {'structure': '2.5', 'title': 'Unit IV: Input/output Organization: Accessing I/O Devices, Interrupts, Processor Examples, Direct Memory Access, Buses, Interface Circuits, Standard I/O Interfaces.', 'physical_index': 2}, {'structure': '2.6', 'title': 'Unit V: Pipelining: Basic Concepts, Data Hazards, Instruction Hazards, Influence on Instruction Sets. Large Computer Systems: Forms of Parallel Processing, Array Processors, The Structure of General-Purpose, Interconnection Networks.', 'physical_index': 2}, {'structure': '3', 'title': 'UNIT-I Basic Structure of Computer: Computer Types, Functional Units, Basic operational Concepts, Bus Structure, Software, Performance, Multiprocessors and Multicomputer. Machine Instructions and Programs: Numbers, Arithmetic Operations and Programs, Instructions and Instruction Sequencing, Addressing Modes, Basic Input/output Operations, Stacks and Queues, Subroutines, Additional Instructions.', 'physical_index': 3}, {'structure': '3.1', 'title': '1.1 Computer types', 'physical_index': 3}, {'structure': '3.2', 'title': '1.2 Functional unit', 'physical_index': 3}, {'structure': '3.3', 'title': '1.3 Basic operational concepts', 'physical_index': 5}, {'structure': '3.4', 'title': '1.4 Bus STRUCTURES', 'physical_index': 8}, {'structure': '3.5', 'title': '1.5 Software', 'physical_index': 9}, {'structure': '3.6', 'title': '1.6 Performance', 'physical_index': 10}, {'structure': '4', 'title': 'UNIT-II Arithmetic: Addition and Subtraction of Signed Numbers, Design and Fast Adders, Multiplication of Positive Numbers, Signed-operand Multiplication, Fast Multiplication, Integer Division, Floating-Point Numbers and Operations. Basic Processing Unit: Fundamental Concepts, Execution of a Complete Instruction, Multiple-Bus Organization, Hardwired Control, Multiprogrammed Control.', 'physical_index': 38}, {'structure': '4.1', 'title': '2.1 ADDITION AND SUBTRACTION OF SIGNED NUMBERS', 'physical_index': 38}, {'structure': '4.2', 'title': '6.2 DESIGN OF FAST ADDERS', 'physical_index': 40}, {'structure': '4.3', 'title': '6.3 MULTIPLICATION OF POSITIVE NUMBERS', 'physical_index': 44}, {'structure': '4.4', 'title': '6.4 SIGNED -OPERAND MULTIPLICATION', 'physical_index': 47}, {'structure': '4.5', 'title': '6.5 BOOTH ALGORITHM', 'physical_index': 48}, {'structure': '4.6', 'title': '6.6 FAST MULTIPLICATION', 'physical_index': 51}, {'structure': '4.7', 'title': '6.7 INTEGER DIVISION', 'physical_index': 56}, {'structure': '4.8', 'title': '6.8 FLOATING -POINT NUMBERS AND OPERATIONS', 'physical_index': 59}, {'structure': '4.9', 'title': '6.9 IEEE STANDARD FOR FLOATING -POINT NUMBERS', 'physical_index': 60}, {'structure': '4.10', 'title': '6.10 ARITHMETIC OPERATIONS ON FLOATING -POINT NUMBERS', 'physical_index': 62}, {'structure': '4.11', 'title': '6.11 GUARD BITS AND TRUNCATION', 'physical_index': 63}, {'structure': '4.12', 'title': '6.12 IMPLEMENTING FLOATING -POINT OPERATIONS', 'physical_index': 64}, {'structure': '4.13', 'title': '7.1 FUNDAMENTAL CONCEPTS', 'physical_index': 65}, {'structure': '4.14', 'title': '7.2 EXECUTION OF A COMPLETE INSTRUCTION', 'physical_index': 72}, {'structure': '4.15', 'title': '7.3 MULTIPLE -BUS ORGANIZATION', 'physical_index': 74}, {'structure': '4.16', 'title': '7.4 HARDWIRED CONTROL', 'physical_index': 76}, {'structure': '4.17', 'title': '7.5 MICROPROGRAMMED CONTROL', 'physical_index': 78}, {'structure': '5', 'title': 'UNIT-III The Memory System: Basic Concepts, Semiconductor RAM Memories, Read-Only Memories, Speed, Size and Cost, Cache Memories, Performance Considerations, Virtual Memories, Memory Management Requirements, Secondary Storage.', 'physical_index': 85}, {'structure': '5.1', 'title': '3.1 Basic Concepts', 'physical_index': 85}, {'structure': '5.2', 'title': '3.2 Semiconductor RAM Memories', 'physical_index': 85}, {'structure': '5.3', 'title': '3.3 Internal Organization of Memory Chips', 'physical_index': 85}, {'structure': '5.4', 'title': '3.4 Static Memories', 'physical_index': 86}, {'structure': '5.5', 'title': '3.5 Asynchronous DRAMs', 'physical_index': 88}, {'structure': '5.6', 'title': '3.6 Synchronous DRAMs', 'physical_index': 90}, {'structure': '5.7', 'title': '3.7 Latency and Bandwidth', 'physical_index': 91}, {'structure': '5.8', 'title': '3.8 Double-Data-Rate SDRAM', 'physical_index': 92}, {'structure': '5.9', 'title': '3.9 Structure of Larger Memories', 'physical_index': 93}, {'structure': '5.10', 'title': '3.10 Dynamic Memory Systems', 'physical_index': 94}, {'structure': '5.11', 'title': '3.11 Memory System Considerations', 'physical_index': 94}, {'structure': '5.12', 'title': '3.12 Memory Controller', 'physical_index': 95}, {'structure': '5.13', 'title': '3.13 Refresh Overhead', 'physical_index': 95}, {'structure': '5.14', 'title': '3.14 Rambus Memory', 'physical_index': 96}, {'structure': '5.15', 'title': '3.15 Read-Only Memories', 'physical_index': 96}, {'structure': '5.16', 'title': '3.16 PROM', 'physical_index': 97}, {'structure': '5.17', 'title': '3.17 EPROM', 'physical_index': 97}, {'structure': '5.18', 'title': '3.18 EEPROM', 'physical_index': 97}, {'structure': '5.19', 'title': '3.19 Flash Memory', 'physical_index': 98}, {'structure': '5.20', 'title': '3.20 Speed, Size, and Cost', 'physical_index': 99}, {'structure': '5.21', 'title': '3.21 Cache Memories', 'physical_index': 99}, {'structure': '5.22', 'title': '3.22 Mapping Functions', 'physical_index': 101}, {'structure': '5.23', 'title': '3.23 Replacement Algorithms', 'physical_index': 104}, {'structure': '5.24', 'title': '3.24 Performance Considerations', 'physical_index': 105}, {'structure': '5.25', 'title': '3.25 Interleaving', 'physical_index': 106}, {'structure': '5.26', 'title': '3.26 Hit Rate and Miss Penalty', 'physical_index': 107}, {'structure': '5.27', 'title': '3.27 Caches on the Processor Chip', 'physical_index': 108}, {'structure': '5.28', 'title': '3.28 Other Enhancements', 'physical_index': 109}, {'structure': '5.29', 'title': '3.29 Virtual Memories', 'physical_index': 110}, {'structure': '5.30', 'title': '3.30 Address Translation', 'physical_index': 111}, {'structure': '5.31', 'title': '3.31 Memory Management Requirements', 'physical_index': 113}, {'structure': '5.32', 'title': '3.32 Secondary Storage', 'physical_index': 114}, {'structure': '5.33', 'title': '3.33 Magnetic Hard Disk', 'physical_index': 114}, {'structure': '5.34', 'title': '3.34 Organization and Accessing of Data on a Disk', 'physical_index': 115}, {'structure': '5.35', 'title': '3.35 Access Time', 'physical_index': 116}, {'structure': '5.36', 'title': '3.36 Data Buffer/Cache', 'physical_index': 116}, {'structure': '5.37', 'title': '3.37 Disk Controller', 'physical_index': 117}, {'structure': '5.38', 'title': '3.38 Floppy Disks', 'physical_index': 118}, {'structure': '5.39', 'title': '3.39 RAID Disk Arrays', 'physical_index': 118}, {'structure': '5.40', 'title': '3.40 Optical Disks', 'physical_index': 119}, {'structure': '5.41', 'title': '3.41 CD Technology', 'physical_index': 119}, {'structure': '5.42', 'title': '3.42 CD-ROM', 'physical_index': 120}, {'structure': '5.43', 'title': '3.43 CD-ROM drives', 'physical_index': 121}, {'structure': '5.44', 'title': '3.44 CD-Recordables', 'physical_index': 121}, {'structure': '5.45', 'title': '3.45 CD-ReWritables', 'physical_index': 121}, {'structure': '5.46', 'title': '3.46 DVD Technology', 'physical_index': 121}, {'structure': '5.47', 'title': '3.47 DVD-RAM', 'physical_index': 122}, {'structure': '5.48', 'title': '3.48 Magnetic Tape Systems', 'physical_index': 122}, {'structure': '5.49', 'title': '3.49 Cartridge Tape System', 'physical_index': 123}, {'structure': '6', 'title': 'UNIT-IV Input/output Organization: Accessing I/O Devices, Interrupts, Processor Examples, Direct Memory Access, Buses, Interface Circuits, Standard I/O Interfaces.', 'physical_index': 125}, {'structure': '6.1', 'title': '4.1 Accessing I/O Devices', 'physical_index': 125}, {'structure': '6.2', 'title': '4.2 Interrupts', 'physical_index': 127}, {'structure': '6.3', 'title': '4.3 Enabling and Disabling Interrupts', 'physical_index': 129}, {'structure': '6.4', 'title': '4.4 Handling Multiple Devices', 'physical_index': 130}, {'structure': '6.5', 'title': '4.5 Vectored Interrupts', 'physical_index': 131}, {'structure': '6.6', 'title': '4.6 Interrupt Nesting', 'physical_index': 131}, {'structure': '6.7', 'title': '4.7 Simultaneous Requests', 'physical_index': 132}, {'structure': '6.8', 'title': '4.8 Controlling Device Requests', 'physical_index': 133}, {'structure': '6.9', 'title': '4.9 Exceptions', 'physical_index': 134}, {'structure': '6.10', 'title': '4.10 Direct Memory Access', 'physical_index': 135}, {'structure': '6.11', 'title': '4.11 Bus Arbitration', 'physical_index': 137}, {'structure': '6.12', 'title': '4.12 Buses', 'physical_index': 140}, {'structure': '6.13', 'title': '4.13 Synchronous Bus', 'physical_index': 141}, {'structure': '6.14', 'title': '4.14 Asynchronous Bus', 'physical_index': 143}, {'structure': '6.15', 'title': '4.15 Interface Circuits', 'physical_index': 144}, {'structure': '6.16', 'title': '4.16 Parallel Port', 'physical_index': 145}, {'structure': '6.17', 'title': '4.17 Output Interface', 'physical_index': 147}, {'structure': '6.18', 'title': '4.18 Serial Port', 'physical_index': 149}, {'structure': '6.19', 'title': '4.19 Standard I/O Interfaces', 'physical_index': 150}, {'structure': '6.20', 'title': '4.20 PCI Bus', 'physical_index': 151}, {'structure': '6.21', 'title': '4.21 SCSI Bus', 'physical_index': 154}, {'structure': '6.22', 'title': '4.22 Universal Serial Bus (USB)', 'physical_index': 157}, {'structure': '6.22.1', 'title': 'Universal Serial Bus tree structure', 'physical_index': 158}, {'structure': '6.22.2', 'title': 'Addressing', 'physical_index': 158}, {'structure': '6.22.3', 'title': 'USB Protocols', 'physical_index': 159}, {'structure': '6.22.4', 'title': 'Isochronous Traffic on USB', 'physical_index': 160}, {'structure': '6.22.5', 'title': 'Electrical Characteristics', 'physical_index': 161}, {'structure': '7', 'title': 'UNIT-V Pipelining: Basic Concepts, Data Hazards, Instruction Hazards, Influence on Instruction Sets. Large Computer Systems: Forms of Parallel Processing, Array Processors, The Structure of General-Purpose, Interconnection Networks.', 'physical_index': 162}, {'structure': '7.1', 'title': 'Pipelining', 'physical_index': 163}, {'structure': '7.1.1', 'title': 'Basic Concepts', 'physical_index': 163}, {'structure': '7.1.2', 'title': 'Role of Cache Memory', 'physical_index': 164}, {'structure': '7.1.3', 'title': 'Pipeline Performance', 'physical_index': 165}, {'structure': '7.1.4', 'title': 'Data Hazards', 'physical_index': 166}, {'structure': '7.1.5', 'title': 'Operand Forwarding', 'physical_index': 168}, {'structure': '7.1.6', 'title': 'Handling Data Hazards in Software', 'physical_index': 169}, {'structure': '7.1.7', 'title': 'Instruction Hazards', 'physical_index': 170}, {'structure': '7.1.8', 'title': 'Instruction Queue and Prefetching', 'physical_index': 171}, {'structure': '7.1.9', 'title': 'Branch Prediction', 'physical_index': 173}, {'structure': '7.1.10', 'title': 'Dynamic Branch Prediction', 'physical_index': 175}, {'structure': '7.1.11', 'title': 'Influences on Instruction Sets', 'physical_index': 176}, {'structure': '7.2', 'title': 'Large Computer Systems', 'physical_index': 179}, {'structure': '7.2.1', 'title': 'Forms of Parallel Processing', 'physical_index': 179}, {'structure': '7.2.2', 'title': 'Classification of Parallel Structures', 'physical_index': 179}, {'structure': '7.2.3', 'title': 'Array Processors', 'physical_index': 180}, {'structure': '7.2.4', 'title': 'The Structure of General-Purpose Multiprocessors', 'physical_index': 181}, {'structure': '7.2.5', 'title': 'Interconnection Networks', 'physical_index': 182}, {'structure': '7.2.5.1', 'title': 'Time-Shared Common Bus', 'physical_index': 182}, {'structure': '7.2.5.2', 'title': 'Multiport Memory', 'physical_index': 183}, {'structure': '7.2.5.3', 'title': 'Crossbar Switch', 'physical_index': 184}, {'structure': '7.2.5.4', 'title': 'Multistage Switching Network', 'physical_index': 184}, {'structure': '7.2.5.5', 'title': 'Hypercube System', 'physical_index': 185}, {'structure': '7.2.5.6', 'title': 'Tree Networks', 'physical_index': 187}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0.7971014492753623,
+    "incorrect_results": [
+      {
+        "list_index": 15,
+        "answer": "no",
+        "title": "1.5 Software",
+        "page_number": 9
+      },
+      {
+        "list_index": 23,
+        "answer": "no",
+        "title": "6.6 FAST MULTIPLICATION",
+        "page_number": 51
+      },
+      {
+        "list_index": 29,
+        "answer": "no",
+        "title": "6.12 IMPLEMENTING FLOATING -POINT OPERATIONS",
+        "page_number": 64
+      },
+      {
+        "list_index": 33,
+        "answer": "no",
+        "title": "7.4 HARDWIRED CONTROL",
+        "page_number": 76
+      },
+      {
+        "list_index": 36,
+        "answer": "no",
+        "title": "3.1 Basic Concepts",
+        "page_number": 85
+      },
+      {
+        "list_index": 39,
+        "answer": "no",
+        "title": "3.4 Static Memories",
+        "page_number": 86
+      },
+      {
+        "list_index": 41,
+        "answer": "no",
+        "title": "3.6 Synchronous DRAMs",
+        "page_number": 90
+      },
+      {
+        "list_index": 42,
+        "answer": "no",
+        "title": "3.7 Latency and Bandwidth",
+        "page_number": 91
+      },
+      {
+        "list_index": 43,
+        "answer": "no",
+        "title": "3.8 Double-Data-Rate SDRAM",
+        "page_number": 92
+      },
+      {
+        "list_index": 44,
+        "answer": "no",
+        "title": "3.9 Structure of Larger Memories",
+        "page_number": 93
+      },
+      {
+        "list_index": 47,
+        "answer": "no",
+        "title": "3.12 Memory Controller",
+        "page_number": 95
+      },
+      {
+        "list_index": 50,
+        "answer": "no",
+        "title": "3.15 Read-Only Memories",
+        "page_number": 96
+      },
+      {
+        "list_index": 53,
+        "answer": "no",
+        "title": "3.18 EEPROM",
+        "page_number": 97
+      },
+      {
+        "list_index": 55,
+        "answer": "no",
+        "title": "3.20 Speed, Size, and Cost",
+        "page_number": 99
+      },
+      {
+        "list_index": 60,
+        "answer": "no",
+        "title": "3.25 Interleaving",
+        "page_number": 106
+      },
+      {
+        "list_index": 67,
+        "answer": "no",
+        "title": "3.32 Secondary Storage",
+        "page_number": 114
+      },
+      {
+        "list_index": 72,
+        "answer": "no",
+        "title": "3.37 Disk Controller",
+        "page_number": 117
+      },
+      {
+        "list_index": 78,
+        "answer": "no",
+        "title": "3.43 CD-ROM drives",
+        "page_number": 121
+      },
+      {
+        "list_index": 79,
+        "answer": "no",
+        "title": "3.44 CD-Recordables",
+        "page_number": 121
+      },
+      {
+        "list_index": 84,
+        "answer": "no",
+        "title": "3.49 Cartridge Tape System",
+        "page_number": 123
+      },
+      {
+        "list_index": 90,
+        "answer": "no",
+        "title": "4.5 Vectored Interrupts",
+        "page_number": 131
+      },
+      {
+        "list_index": 91,
+        "answer": "no",
+        "title": "4.6 Interrupt Nesting",
+        "page_number": 131
+      },
+      {
+        "list_index": 96,
+        "answer": "no",
+        "title": "4.11 Bus Arbitration",
+        "page_number": 137
+      },
+      {
+        "list_index": 98,
+        "answer": "no",
+        "title": "4.13 Synchronous Bus",
+        "page_number": 141
+      },
+      {
+        "list_index": 100,
+        "answer": "no",
+        "title": "4.15 Interface Circuits",
+        "page_number": 144
+      },
+      {
+        "list_index": 103,
+        "answer": "no",
+        "title": "4.18 Serial Port",
+        "page_number": 149
+      },
+      {
+        "list_index": 106,
+        "answer": "no",
+        "title": "4.21 SCSI Bus",
+        "page_number": 154
+      },
+      {
+        "list_index": 121,
+        "answer": "no",
+        "title": "Instruction Hazards",
+        "page_number": 170
+      }
+    ]
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 15, 'title': '1.5 Software', 'prev_correct': 8, 'next_correct': 10}, {'list_index': 23, 'title': '6.6 FAST MULTIPLICATION', 'prev_correct': 48, 'next_correct': 56}, {'list_index': 29, 'title': '6.12 IMPLEMENTING FLOATING -POINT OPERATIONS', 'prev_correct': 63, 'next_correct': 65}, {'list_index': 33, 'title': '7.4 HARDWIRED CONTROL', 'prev_correct': 74, 'next_correct': 78}, {'list_index': 36, 'title': '3.1 Basic Concepts', 'prev_correct': 85, 'next_correct': 85}, {'list_index': 39, 'title': '3.4 Static Memories', 'prev_correct': 85, 'next_correct': 88}, {'list_index': 41, 'title': '3.6 Synchronous DRAMs', 'prev_correct': 88, 'next_correct': 94}, {'list_index': 42, 'title': '3.7 Latency and Bandwidth', 'prev_correct': 88, 'next_correct': 94}, {'list_index': 43, 'title': '3.8 Double-Data-Rate SDRAM', 'prev_correct': 88, 'next_correct': 94}, {'list_index': 44, 'title': '3.9 Structure of Larger Memories', 'prev_correct': 88, 'next_correct': 94}, {'list_index': 47, 'title': '3.12 Memory Controller', 'prev_correct': 94, 'next_correct': 95}, {'list_index': 50, 'title': '3.15 Read-Only Memories', 'prev_correct': 96, 'next_correct': 97}, {'list_index': 53, 'title': '3.18 EEPROM', 'prev_correct': 97, 'next_correct': 98}, {'list_index': 55, 'title': '3.20 Speed, Size, and Cost', 'prev_correct': 98, 'next_correct': 99}, {'list_index': 60, 'title': '3.25 Interleaving', 'prev_correct': 105, 'next_correct': 107}, {'list_index': 67, 'title': '3.32 Secondary Storage', 'prev_correct': 113, 'next_correct': 114}, {'list_index': 72, 'title': '3.37 Disk Controller', 'prev_correct': 116, 'next_correct': 118}, {'list_index': 78, 'title': '3.43 CD-ROM drives', 'prev_correct': 120, 'next_correct': 121}, {'list_index': 79, 'title': '3.44 CD-Recordables', 'prev_correct': 120, 'next_correct': 121}, {'list_index': 84, 'title': '3.49 Cartridge Tape System', 'prev_correct': 122, 'next_correct': 125}, {'list_index': 90, 'title': '4.5 Vectored Interrupts', 'prev_correct': 130, 'next_correct': 132}, {'list_index': 91, 'title': '4.6 Interrupt Nesting', 'prev_correct': 130, 'next_correct': 132}, {'list_index': 96, 'title': '4.11 Bus Arbitration', 'prev_correct': 135, 'next_correct': 140}, {'list_index': 98, 'title': '4.13 Synchronous Bus', 'prev_correct': 140, 'next_correct': 143}, {'list_index': 100, 'title': '4.15 Interface Circuits', 'prev_correct': 143, 'next_correct': 145}, {'list_index': 103, 'title': '4.18 Serial Port', 'prev_correct': 147, 'next_correct': 150}, {'list_index': 106, 'title': '4.21 SCSI Bus', 'prev_correct': 151, 'next_correct': 157}, {'list_index': 121, 'title': 'Instruction Hazards', 'prev_correct': 169, 'next_correct': 171}]"
+  },
+  {
+    "message": "invalid_results: [{'list_index': 23, 'title': '6.6 FAST MULTIPLICATION', 'physical_index': 51}, {'list_index': 33, 'title': '7.4 HARDWIRED CONTROL', 'physical_index': 76}, {'list_index': 36, 'title': '3.1 Basic Concepts', 'physical_index': None}, {'list_index': 39, 'title': '3.4 Static Memories', 'physical_index': 86}, {'list_index': 41, 'title': '3.6 Synchronous DRAMs', 'physical_index': 90}, {'list_index': 42, 'title': '3.7 Latency and Bandwidth', 'physical_index': 91}, {'list_index': 43, 'title': '3.8 Double-Data-Rate SDRAM', 'physical_index': 92}, {'list_index': 47, 'title': '3.12 Memory Controller', 'physical_index': 94}, {'list_index': 50, 'title': '3.15 Read-Only Memories', 'physical_index': 96}, {'list_index': 67, 'title': '3.32 Secondary Storage', 'physical_index': 114}, {'list_index': 78, 'title': '3.43 CD-ROM drives', 'physical_index': 120}, {'list_index': 79, 'title': '3.44 CD-Recordables', 'physical_index': 121}, {'list_index': 84, 'title': '3.49 Cartridge Tape System', 'physical_index': 123}, {'list_index': 90, 'title': '4.5 Vectored Interrupts', 'physical_index': 130}, {'list_index': 91, 'title': '4.6 Interrupt Nesting', 'physical_index': 131}, {'list_index': 100, 'title': '4.15 Interface Circuits', 'physical_index': 144}, {'list_index': 103, 'title': '4.18 Serial Port', 'physical_index': 149}, {'list_index': 106, 'title': '4.21 SCSI Bus', 'physical_index': 154}]"
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 23, 'title': '6.6 FAST MULTIPLICATION', 'prev_correct': 48, 'next_correct': 56}, {'list_index': 33, 'title': '7.4 HARDWIRED CONTROL', 'prev_correct': 74, 'next_correct': 78}, {'list_index': 36, 'title': '3.1 Basic Concepts', 'prev_correct': 85, 'next_correct': 85}, {'list_index': 39, 'title': '3.4 Static Memories', 'prev_correct': 85, 'next_correct': 88}, {'list_index': 41, 'title': '3.6 Synchronous DRAMs', 'prev_correct': 88, 'next_correct': 92}, {'list_index': 42, 'title': '3.7 Latency and Bandwidth', 'prev_correct': 88, 'next_correct': 92}, {'list_index': 43, 'title': '3.8 Double-Data-Rate SDRAM', 'prev_correct': 88, 'next_correct': 92}, {'list_index': 47, 'title': '3.12 Memory Controller', 'prev_correct': 94, 'next_correct': 95}, {'list_index': 50, 'title': '3.15 Read-Only Memories', 'prev_correct': 96, 'next_correct': 97}, {'list_index': 67, 'title': '3.32 Secondary Storage', 'prev_correct': 113, 'next_correct': 114}, {'list_index': 78, 'title': '3.43 CD-ROM drives', 'prev_correct': 120, 'next_correct': 121}, {'list_index': 79, 'title': '3.44 CD-Recordables', 'prev_correct': 120, 'next_correct': 121}, {'list_index': 84, 'title': '3.49 Cartridge Tape System', 'prev_correct': 122, 'next_correct': 125}, {'list_index': 90, 'title': '4.5 Vectored Interrupts', 'prev_correct': 130, 'next_correct': 132}, {'list_index': 91, 'title': '4.6 Interrupt Nesting', 'prev_correct': 130, 'next_correct': 132}, {'list_index': 100, 'title': '4.15 Interface Circuits', 'prev_correct': 143, 'next_correct': 145}, {'list_index': 103, 'title': '4.18 Serial Port', 'prev_correct': 147, 'next_correct': 150}, {'list_index': 106, 'title': '4.21 SCSI Bus', 'prev_correct': 151, 'next_correct': 157}]"
+  },
+  {
+    "message": "invalid_results: [{'list_index': 23, 'title': '6.6 FAST MULTIPLICATION', 'physical_index': 51}, {'list_index': 33, 'title': '7.4 HARDWIRED CONTROL', 'physical_index': 76}, {'list_index': 36, 'title': '3.1 Basic Concepts', 'physical_index': None}, {'list_index': 39, 'title': '3.4 Static Memories', 'physical_index': 86}, {'list_index': 41, 'title': '3.6 Synchronous DRAMs', 'physical_index': 90}, {'list_index': 42, 'title': '3.7 Latency and Bandwidth', 'physical_index': 91}, {'list_index': 43, 'title': '3.8 Double-Data-Rate SDRAM', 'physical_index': 92}, {'list_index': 47, 'title': '3.12 Memory Controller', 'physical_index': 94}, {'list_index': 50, 'title': '3.15 Read-Only Memories', 'physical_index': 96}, {'list_index': 67, 'title': '3.32 Secondary Storage', 'physical_index': 114}, {'list_index': 78, 'title': '3.43 CD-ROM drives', 'physical_index': 120}, {'list_index': 84, 'title': '3.49 Cartridge Tape System', 'physical_index': 123}, {'list_index': 90, 'title': '4.5 Vectored Interrupts', 'physical_index': 130}, {'list_index': 100, 'title': '4.15 Interface Circuits', 'physical_index': 144}, {'list_index': 103, 'title': '4.18 Serial Port', 'physical_index': 149}, {'list_index': 106, 'title': '4.21 SCSI Bus', 'physical_index': 154}]"
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 23, 'title': '6.6 FAST MULTIPLICATION', 'prev_correct': 48, 'next_correct': 56}, {'list_index': 33, 'title': '7.4 HARDWIRED CONTROL', 'prev_correct': 74, 'next_correct': 78}, {'list_index': 36, 'title': '3.1 Basic Concepts', 'prev_correct': 85, 'next_correct': 85}, {'list_index': 39, 'title': '3.4 Static Memories', 'prev_correct': 85, 'next_correct': 88}, {'list_index': 41, 'title': '3.6 Synchronous DRAMs', 'prev_correct': 88, 'next_correct': 92}, {'list_index': 42, 'title': '3.7 Latency and Bandwidth', 'prev_correct': 88, 'next_correct': 92}, {'list_index': 43, 'title': '3.8 Double-Data-Rate SDRAM', 'prev_correct': 88, 'next_correct': 92}, {'list_index': 47, 'title': '3.12 Memory Controller', 'prev_correct': 94, 'next_correct': 95}, {'list_index': 50, 'title': '3.15 Read-Only Memories', 'prev_correct': 96, 'next_correct': 97}, {'list_index': 67, 'title': '3.32 Secondary Storage', 'prev_correct': 113, 'next_correct': 114}, {'list_index': 78, 'title': '3.43 CD-ROM drives', 'prev_correct': 120, 'next_correct': 121}, {'list_index': 84, 'title': '3.49 Cartridge Tape System', 'prev_correct': 122, 'next_correct': 125}, {'list_index': 90, 'title': '4.5 Vectored Interrupts', 'prev_correct': 130, 'next_correct': 131}, {'list_index': 100, 'title': '4.15 Interface Circuits', 'prev_correct': 143, 'next_correct': 145}, {'list_index': 103, 'title': '4.18 Serial Port', 'prev_correct': 147, 'next_correct': 150}, {'list_index': 106, 'title': '4.21 SCSI Bus', 'prev_correct': 151, 'next_correct': 157}]"
+  },
+  {
+    "message": "invalid_results: [{'list_index': 23, 'title': '6.6 FAST MULTIPLICATION', 'physical_index': 51}, {'list_index': 33, 'title': '7.4 HARDWIRED CONTROL', 'physical_index': 76}, {'list_index': 36, 'title': '3.1 Basic Concepts', 'physical_index': None}, {'list_index': 39, 'title': '3.4 Static Memories', 'physical_index': 86}, {'list_index': 41, 'title': '3.6 Synchronous DRAMs', 'physical_index': 90}, {'list_index': 42, 'title': '3.7 Latency and Bandwidth', 'physical_index': 91}, {'list_index': 43, 'title': '3.8 Double-Data-Rate SDRAM', 'physical_index': 92}, {'list_index': 47, 'title': '3.12 Memory Controller', 'physical_index': 94}, {'list_index': 50, 'title': '3.15 Read-Only Memories', 'physical_index': 96}, {'list_index': 67, 'title': '3.32 Secondary Storage', 'physical_index': 114}, {'list_index': 78, 'title': '3.43 CD-ROM drives', 'physical_index': 120}, {'list_index': 84, 'title': '3.49 Cartridge Tape System', 'physical_index': 123}, {'list_index': 90, 'title': '4.5 Vectored Interrupts', 'physical_index': 130}, {'list_index': 100, 'title': '4.15 Interface Circuits', 'physical_index': 144}, {'list_index': 103, 'title': '4.18 Serial Port', 'physical_index': 149}, {'list_index': 106, 'title': '4.21 SCSI Bus', 'physical_index': 154}]"
+  },
+  {
+    "message": "Maximum fix attempts reached"
+  },
+  {
+    "message": "Checking title appearance in start concurrently"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.3 MULTIPLICATION OF POSITIVE NUMBERS' appears as the first content in the page_text after ignoring the page number and any spacing inconsistencies.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text begins with 'Page 18 LARGE COMPUTER SYSTEMS' before the section title 'FORMS OF PARALLEL PROCESSING'. This indicates that there is content before the section title in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Isochronous Traffic on USB' appears in the page_text after some other content, such as 'Page 37' and blank spaces. Therefore, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Time-Shared Common Bus' does not appear at the very beginning of the page_text. There is other content, including text about multiprocessor systems and interconnection networks, before the section title appears.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Dynamic Branch Prediction' appears in the page_text, but it is preceded by other content discussing static branch prediction. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.27 Caches on the Processor Chip' does not appear at the beginning of the page_text. There is other content, including a discussion about cache performance and hit rates, before the section title appears in uppercase as 'CACHES ON THE PROCESSOR CHIP'.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Pipeline Performance' appears in the page_text as 'PIPELINE PERF ORMANCE :'. However, there is content before this title, such as 'Page 4' and a description of pipeline stages. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.32 Secondary Storage' does not appear at the very beginning of the page_text. There is content about processor states and privileged instructions before the section title appears in uppercase as 'SECONDARY STORAGE'.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Instruction Queue and Prefetching' appears at the beginning of the page_text, but it is written as 'Instruction Queue und Prefetching' with a slight variation in wording. Ignoring space inconsistencies and considering fuzzy matching, the section title matches the first content in the page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Handling Data Hazards in Software' appears in the page_text, but it is preceded by other content such as 'Page 8' and text about register RSLT and execution of I2. Therefore, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Department of Artificial Intelligence' matches the first content in the given page_text, ignoring any space inconsistencies. There are no other contents before this title in the page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '1.6 Performance' appears in the page_text, but it is preceded by other content discussing multiprogramming and multitasking. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.12 IMPLEMENTING FLOATING -POINT OPERATIONS' does not appear at the very beginning of the page_text. There is content related to truncation methods before the section title appears.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Tree Networks' appears in the page_text as 'TREE NETWORKS:' after 'Page 26'. However, there is additional content ('Page 26') before the section title in the page_text. Ignoring space inconsistencies, the section title is not the first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'USB Protocols' appears in the page_text, but it is preceded by other content such as descriptions about the host, hub, and device interactions. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Electrical Characteristics' appears at the beginning of the page_text after ignoring space inconsistencies. There is no other content before the section title.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.47 DVD-RAM' does not appear at the very beginning of the page_text. There is content related to DVDs and their specifications before the section title 'DVD-RAM' appears. Additionally, the section title '3.47 DVD-RAM' itself is not explicitly mentioned in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains other content such as 'Page 2', 'UNIT -II', and a description of the unit before the section title '2.1 ADDITION AND SUBTRACTION OF SIGNED NUMBERS' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.2 DESIGN OF FAST ADDERS' appears in the page_text, but it is preceded by other content related to overflow detection and subtraction operations. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content that does not match the section title 'Data Hazards'. Instead, it begins with a description of a data hazard, but the section title itself is not explicitly mentioned at the start of the page_text. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'ANNAMACHARYA INSTITUTE OF TECHNOLOGY AND SCIENCES::TIRUPATI II B.Tech II Semester (19APC0506) Computer Organization' matches the first content in the page_text after ignoring space inconsistencies. There is no other content before the section title in the page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.13 Refresh Overhead' does not appear as the first content in the page_text. There is other content, such as text about the CS signal and memory controller, before the section title or its content appears.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Crossbar Switch' appears at the beginning of the page_text after ignoring space inconsistencies. There is no other content before the section title.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': 'The given page_text contains content such as the course objectives, Unit I, Unit II, and other introductory material before the title of Unit III appears. This indicates that the section title does not start at the beginning of the page_text.', 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '1.4 Bus STRUCTURES' appears as the first content in the given page_text after the page number. There is no other content before it, and the title matches exactly, ignoring space inconsistencies.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content such as 'Page 2', 'UNIT-I', and 'Basic Structure of Computer' before the section title '1.2 Functional unit'. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Multiport Memory' appears in the page_text, but it is preceded by other content such as 'Page 22' and 'Fig: System bus structure for multiprocessors'. Therefore, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Classification of Parallel Structures' appears in the page_text, but it is preceded by other content such as 'LARGE COMPUTER SYSTEMS' and 'FORMS OF PARALLEL PROCESSING'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.26 Hit Rate and Miss Penalty' does not appear at the very beginning of the page_text. There is other content before the section title, such as a discussion on interleaving and block transfer time.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.8 Controlling Device Requests' does not appear exactly at the beginning of the page_text. Instead, the content starts with 'CONTROLLING DEVICE REQUESTS:' which is a variation of the section title but lacks the numbering '4.8'. Additionally, there are spaces and the page number before the content begins.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'UNIT-IV Input/output Organization: Accessing I/O Devices, Interrupts, Processor Examples, Direct Memory Access, Buses, Interface Circuits, Standard I/O Interfaces.' appears in the page_text after 'Page 2' and some introductory text 'Unit IV:'. This indicates that there is content before the section title in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content about main memory locations and floppy disks before introducing the section titled 'RAID Disk Arrays'. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title 'Unit II: Arithmetic: Addition and Subtraction of Signed Numbers, Design and Fast Adders, Multiplication of Positive Numbers, Signed-operand Multiplication, Fast Multiplication, Integer Division, Floating-Point Numbers and Operations. Basic Processing Unit: Fundamental Concepts, Execution of a Complete Instruction, Multiple-Bus Organization, Hardwired Control, Multiprogrammed Control.' appears in the page_text, but it is preceded by other content such as the course objectives, Unit I details, and other introductory information. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.5 BOOTH ALGORITHM' does not appear as the first content in the page_text. Instead, the page_text starts with 'Page 12' and then 'Booth Algorithm' appears without the section number '6.5'. This indicates that there is other content before the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Basic Concepts' appears in the page_text, but it is preceded by other content such as 'Page 2', 'Unit V:', and 'Pipelining'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains content about CD-ROM drives, CD-Recordables, and CD-ReWritables before the section titled 'DVD Technology' appears. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains other content such as the institute name, course objectives, and details about previous units before the section title 'Unit IV: Input/output Organization: Accessing I/O Devices, Interrupts, Processor Examples, Direct Memory Access, Buses, Interface Circuits, Standard I/O Interfaces.' appears. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Course Objectives' appears in the page_text after some introductory content such as the institution name, course details, and other information. Therefore, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Academic Year 2023 -24 II. B.Tech I Semester Computer Organization (20APC3006)' appears in the page_text after some other content, specifically 'Department of Artificial Intelligence'. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.4 SIGNED -OPERAND MULTIPLICATION' appears in the page_text, but it is preceded by other content such as explanations, figures, and text. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.23 Replacement Algorithms' does not appear at the beginning of the page_text. Instead, the page_text starts with 'Page 23' followed by empty spaces and then the content begins with 'REPLACEMENT ALGORITHMS'. This indicates that there is content before the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.22 Universal Serial Bus (USB)' does not appear at the very beginning of the page_text. There is other content, such as 'Main Phases involved: Arbitration' and related descriptions, before the section title or its content appears. Additionally, the section title 'UNIVERSAL SERIAL BUS (USB):' appears later in the text, but it is not at the start of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.17 EPROM' does not appear at the very beginning of the page_text. Instead, there is content about PROM before the section on EPROM starts. Even though the EPROM section is present in the page_text, it is not the first content.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Instruction Hazards' appears in the page_text, but it is preceded by other content such as text about handling data hazards in software and NOP instructions. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Branch Prediction' appears in the page_text, but there is content before it, including a discussion about delayed branch and other related topics. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'The Structure of General-Purpose Multiprocessors' matches the content at the beginning of the page_text after ignoring space inconsistencies. There is no other content before the section title in the page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Addressing' appears in the page_text, but it is preceded by content about the USB tree structure. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '7.3 MULTIPLE -BUS ORGANIZATION' does not appear at the beginning of the page_text. Instead, there is content related to conditional branches before the section title appears. Additionally, the section title itself is slightly modified as 'MULTIPLE -BUS ORGANIZATION' without the '7.3' prefix in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content such as the institute name, course objectives, and other introductory information before the section title 'Unit I' appears. This indicates that the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title '3.43 CD-ROM drives' does not appear at the beginning of the page_text. Instead, the page_text starts with content about CD-ROM drives without explicitly mentioning the section title. Additionally, there are other contents like 'Page 40' and introductory text before the section title could appear.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.9 Structure of Larger Memories' does not appear at the beginning of the page_text. There is other content, including discussions on memory latency, bandwidth, and DDR SDRAMs, before the section title 'STRUCTURE OF LARGER MEMORIES' appears, which seems to correspond to the given section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '7.1 FUNDAMENTAL CONCEPTS' appears in the page_text, but there is other content such as 'Part -II BASIC PROCESSING UNIT' and related text before the section title. This indicates that the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.29 Virtual Memories' does not appear at the very beginning of the page_text. There is content related to cache, prefetching, and lockup-free cache before the section title 'VIRTUAL MEMORIES' appears. Additionally, the section title '3.29 Virtual Memories' is not explicitly mentioned in the page_text, and the content preceding 'VIRTUAL MEMORIES' is unrelated to the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.2 Semiconductor RAM Memories' does not appear at the very beginning of the page_text. Instead, there is other content before the section title, such as text about virtual memory and its mapping function. Additionally, the section title appears as 'SEMICONDUCTOR RAM MEMORIES' in the page_text, which matches the given title after ignoring case and space inconsistencies.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.7 Latency and Bandwidth' does not appear at the beginning of the page_text. There is other content related to SDRAMs and their operations before the section title appears. Additionally, the section title itself is slightly modified to 'Latency and Bandwidth' without the prefix '3.7'.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title 'Prepared By Mrs. S. Venkata Lakshmi ., M.Tech(Ph.D) . Assistant Professor Department of CSE, AITS' appears in the page_text, but it is preceded by other content such as 'Department of Artificial Intelligence', 'Academic Year 2023 -24', and other details. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '7.2 EXECUTION OF A COMPLETE INSTRUCTION' appears at the beginning of the page_text after the page number. There is no other content before the section title except for the page number and formatting spaces, which can be ignored.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title is '4.9 Exceptions', but the page_text starts with 'EXCEPTIONS:' and does not include the section number '4.9' or the exact title at the beginning. This indicates that there is other content before the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.9 IEEE STANDARD FOR FLOATING -POINT NUMBERS' does not appear as the first content in the page_text. Instead, the page_text starts with 'Page 24' and then continues with 'IEEE STANDARD FOR FLOATING -POINT NUMBERS' without the section number '6.9'. This indicates that there is other content before the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text starts with the title '1.4 Bus STRUCTURES' and contains content related to that section before the title '1.5 Software' appears. Therefore, the section '1.5 Software' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.1 Accessing I/O Devices' does not appear as the first content in the page_text. There are other contents such as 'Page 2', 'Unit IV:', and 'Input/output Organization' before the section title. Even though 'ACCESSING I/O DEVICES' appears later, it is not at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Universal Serial Bus tree structure' appears as the first content in the given page_text after ignoring spaces and formatting inconsistencies. There is no other content before the section title.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Influences on Instruction Sets' appears in the page_text, but it is preceded by other content related to branch prediction and execution history. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains content before the section title '3.1 Basic Concepts', such as descriptions of virtual memory, semiconductor RAM memories, and internal organization of memory chips. The section title does not appear as the first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.14 Asynchronous Bus' does not appear verbatim at the beginning of the page_text. Instead, the page_text starts with 'ASYNCHRONOUS BUS:' which is a variation of the section title but does not include the numbering '4.14'. Therefore, the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.21 Cache Memories' does not appear at the beginning of the page_text. There is other content, including text about secondary storage and memory hierarchy, before the section title 'CACHE MEMORIES' appears. Additionally, the section title '3.21 Cache Memories' itself is not explicitly mentioned in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Multistage Switching Network' appears in the page_text, but it is preceded by content related to 'Crossbar Switch' and its description. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.33 Magnetic Hard Disk' does not appear at the very beginning of the page_text. Instead, there is content about processor states and privileged instructions before the section title appears. Additionally, the section title itself is not explicitly present in the page_text, but 'MAGNETIC HARD DISK' appears, which is part of the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text begins with content about buses in general, including their types and functions, before introducing the section titled 'SYNCHRONOUS BUS'. This indicates that the section '4.13 Synchronous Bus' does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title '3.11 Memory System Considerations' does not appear at the beginning of the page_text. Instead, the page_text starts with content about 'Dynamic Memory Systems' and other topics before mentioning anything related to 'Memory System Considerations'. Additionally, the section title itself is not explicitly present in the page_text, even with fuzzy matching.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.11 GUARD BITS AND TRUNCATION' does not appear at the beginning of the page_text. Instead, the page_text starts with content about truncation methods and other topics before the section title is mentioned.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.19 Flash Memory' does not appear at the beginning of the page_text. Instead, the page_text starts with 'Page 17' and then 'Flash Memory:' appears later. Additionally, there is no exact match for '3.19 Flash Memory' at the start of the page_text, even with fuzzy matching.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The page_text contains content such as 'Page 2', 'UNIT-I', and 'Basic Structure of Computer' before the section title '1.1 Computer types'. These contents appear before the section title, even though the section title is present later in the text. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains other content such as the institute name, course objectives, and details of previous units before the current section title 'Unit V: Pipelining: Basic Concepts, Data Hazards, Instruction Hazards, Influence on Instruction Sets. Large Computer Systems: Forms of Parallel Processing, Array Processors, The Structure of General-Purpose, Interconnection Networks.' appears. Therefore, the current section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Large Computer Systems' does not appear as the first content in the page_text. Instead, the page starts with 'Page 18' before the section title. Even though the section title appears shortly after, it is not the very first content.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Operand Forwarding' appears in the page_text, but it is preceded by other content such as a discussion on data dependency and an example involving instructions. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.18 EEPROM' does not appear at the beginning of the page_text. Instead, there are other contents such as 'PROM' and 'EPROM' sections before the 'EEPROM' section. Additionally, the section title '3.18 EEPROM' itself is not explicitly mentioned in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'UNIT-III The Memory System: Basic Concepts, Semiconductor RAM Memories, Read-Only Memories, Speed, Size and Cost, Cache Memories, Performance Considerations, Virtual Memories, Memory Management Requirements, Secondary Storage.' does not appear at the beginning of the page_text. Instead, there is other content related to virtual memory and memory management before the mention of 'SEMICONDUCTOR RAM MEMORIES', which is part of the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Role of Cache Memory' appears in the page_text, but it is preceded by other content such as descriptions of pipelining and buffer operations. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.6 FAST MULTIPLICATION' does not appear at the beginning of the page_text. Instead, there is content about the Booth algorithm before the section title. Additionally, the section title itself is slightly altered as 'FAST MULIPLICATION' in the page_text, which suggests it is not the exact start of the section.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.16 PROM' does not appear at the very beginning of the page_text. Instead, the page starts with 'Page 16' followed by empty spaces and then the content begins with 'PROM:' without the section number. This indicates that there is other content before the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.36 Data Buffer/Cache' appears in the page_text, but it is preceded by other content such as descriptions of data bits, access time, and other topics. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Interconnection Networks' appears in the page_text, but it is preceded by other content discussing multiprocessor systems and memory access. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.12 Buses' does not appear exactly at the beginning of the page_text. Instead, the page_text starts with 'Page 17' and then 'BUSES', which is a variation of the section title but does not include the numbering '4.12'. Therefore, there is content before the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Array Processors' appears in the page_text, but it is not the first content in the page_text. There is other content before the section title, such as a description of processing elements and their operations.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.18 Serial Port' does not appear at the beginning of the page_text. Instead, there is other content before the section title, such as descriptions of registers, control lines, and interface circuits.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title '4.20 PCI Bus' does not appear at the beginning of the page_text. Instead, there are other contents such as 'For example, IBM\u2019s Industry Standard Architecture' and a list of bus standards before the section content related to PCI Bus starts. Additionally, the section title '4.20 PCI Bus' is not explicitly mentioned in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text contains a lot of content before the section title 'UNIT-V Pipelining: Basic Concepts, Data Hazards, Instruction Hazards, Influence on Instruction Sets. Large Computer Systems: Forms of Parallel Processing, Array Processors, The Structure of General-Purpose, Interconnection Networks.' appears. The page_text starts with the title of the institute, course objectives, and details of previous units before reaching Unit V.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.10 Dynamic Memory Systems' does not appear as the first content in the page_text. Instead, the page_text starts with 'Page 13' and then 'Dynamic Memory Systems:' appears, which is not an exact match to the section title. Additionally, there is no indication of the section number '3.10' in the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.10 Direct Memory Access' does not appear at the very beginning of the page_text. There is content related to debugging routines and privilege exceptions before the section title content begins. Additionally, the section title itself is not explicitly mentioned in the page_text, but the content related to 'Direct Memory Access' starts later in the text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.34 Organization and Accessing of Data on a Disk' does not appear exactly at the beginning of the page_text. Instead, there are spaces and the title appears as 'Organization and Accessing of Data on a Disk:' later in the text. Even though the title matches after ignoring spaces, it is not the first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.48 Magnetic Tape Systems' does not appear at the very beginning of the page_text. There is content about DVDs and DVD-RAM before the section on Magnetic Tape Systems starts. Additionally, the section title itself is written as 'MAGNETIC TAPE SYSTEMS' in the page_text, which matches the intended section but is not at the start of the text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.7 Simultaneous Requests' does not appear exactly at the beginning of the page_text. Instead, the page_text starts with 'Page 9' and then has some blank spaces before the content begins with 'Simultaneous Requests'. Additionally, the section title '4.7' is missing, and there is a slight variation in the phrasing of the title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.20 Speed, Size, and Cost' does not appear at the beginning of the page_text. There are other contents, such as discussions about Flash Memory, Applications, Flash Cards, and Flash Drives, before the section title appears. Additionally, the section title appears later in the text as 'SPEED, SIZE, AND COST', which matches the given title despite the case difference.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.16 Parallel Port' does not appear at the beginning of the page_text. Instead, there is content about parallel and serial ports, I/O interface functions, and other details before the section title 'PARALLEL PORT' appears. Additionally, the section title '4.16 Parallel Port' is not explicitly mentioned in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.17 Output Interface' does not appear exactly at the beginning of the page_text. Instead, the page_text starts with 'Page 24' and then has a lot of blank spaces before the content begins with 'Output Interface'. Additionally, the section title '4.17' is missing in the page_text, which indicates that the section does not start at the beginning.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title '3.3 Internal Organization of Memory Chips' does not appear at the beginning of the page_text. Instead, there is other content such as 'where data are actually stored...' and 'SEMICONDUCTOR RAM MEMORIES' before the section title appears in a slightly modified form as 'INTERNAL ORGANIZATION OF MEMORY CHIPS'.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '7.5 MICROPROGRAMMED CONTROL' does not appear exactly at the beginning of the page_text. Instead, there is other content, such as text about 'hardwired' and blank spaces, before the section title 'MICROPROGRAMMED CONTROL' appears. Additionally, the section title is not fully matched as '7.5 MICROPROGRAMMED CONTROL' but only as 'MICROPROGRAMMED CONTROL'.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '7.4 HARDWIRED CONTROL' does not appear at the beginning of the page_text. Instead, there is other content, including a description of steps and processes, before the section title 'HARDWIRED CONTROL' appears. Additionally, the section title in the page_text does not include the '7.4' prefix, but the content clearly transitions into the section later.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.8 FLOATING -POINT NUMBERS AND OPERATIONS' does not appear at the very beginning of the page_text. There is content before the section title, such as descriptions of a division algorithm and references to figures. Additionally, the section title itself appears as 'FLOATING -POINT NUMBERS AND OPERATIONS' without the '6.8' prefix, which suggests it is not the first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.21 SCSI Bus' does not appear at the beginning of the page_text. There are other contents, such as descriptions of clock cycles, device configuration, and electrical characteristics, before the section title 'SCSI BUS' appears. Additionally, the section title itself is not explicitly mentioned as '4.21 SCSI Bus' but as 'SCSI BUS' later in the text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.22 Mapping Functions' does not appear at the beginning of the page_text. There is other content related to cache memory and write protocols before the section title appears. Additionally, the section title itself is written as 'MAPPING FUNCTIONS' in the page_text, which matches the latter part of the section title but not the full title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.35 Access Time' does not appear at the very beginning of the page_text. There is other content, including text about data bits, sector headers, and formatting, before the section title 'Access Time' appears. Additionally, the section title itself is not explicitly written as '3.35 Access Time' but rather as 'Access Time', which appears later in the text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.49 Cartridge Tape System' does not appear at the beginning of the page_text. Instead, there is other content related to tape systems and operations before the section title appears. Additionally, the section title itself is slightly different in the page_text ('Cartridge Tape System:'), but even with fuzzy matching, it is clear that it does not start at the beginning.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title '3.14 Rambus Memory' does not appear at the beginning of the page_text. Instead, the page_text starts with content about 'Differential signaling and high transmission rates' and other details before transitioning into Rambus-related content. Additionally, the section title itself is not explicitly mentioned in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'UNIT-I Basic Structure of Computer: Computer Types, Functional Units, Basic operational Concepts, Bus Structure, Software, Performance, Multiprocessors and Multicomputer. Machine Instructions and Programs: Numbers, Arithmetic Operations and Programs, Instructions and Instruction Sequencing, Addressing Modes, Basic Input/output Operations, Stacks and Queues, Subroutines, Additional Instructions.' matches the content at the beginning of the page_text after 'Page 2' and 'UNIT-I'. There is no other content before the section title in the page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title '3.12 Memory Controller' does not appear at the beginning of the page_text. Instead, there is other content related to memory concepts and RAMBUS technology before the section title. Additionally, the section title itself is not present in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.5 Asynchronous DRAMs' does not appear at the beginning of the page_text. Instead, there is content related to CMOS cells and SRAMs before the mention of 'ASYNCHRONOUS DRAMs'. Additionally, the section title itself is not explicitly present in the page_text, and the content transitions into discussing DRAMs without a clear match to the section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Hypercube System' appears in the page_text, but it is preceded by other content such as descriptions of request patterns and multiprocessor systems. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.15 Read-Only Memories' does not appear at the beginning of the page_text. There is content related to Rambus and RDRAMs before the section title 'READ-ONLY MEMORIES' appears, which seems to correspond to the section title but is not at the start of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.30 Address Translation' does not appear at the beginning of the page_text. Instead, there is introductory content about the Memory Management Unit (MMU) and other details before the section title or its content appears. Additionally, the section title itself is not explicitly present in the page_text, though related content like 'ADDRESS TRANSLATION' appears later.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.15 Interface Circuits' does not appear at the beginning of the page_text. Instead, there is content about the difference between synchronous and asynchronous buses before the section titled 'INTERFACE CIRCUITS', which is similar but not the same as the given section title. Therefore, the current section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.19 Standard I/O Interfaces' does not appear at the very beginning of the page_text. There is content about standard serial interfaces and other introductory text before the section title appears, even though the title itself is present later in the text. Additionally, spacing inconsistencies are ignored as instructed.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.44 CD-Recordables' does not appear at the very beginning of the page_text. There is content about CD-ROM drives and their speeds before the section title 'CD-Recordables' appears. Additionally, the section title itself is not prefixed with '3.44' in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.31 Memory Management Requirements' does not appear at the beginning of the page_text. Instead, there is content about page faults and memory operations before the section title appears. Additionally, the section title is written as 'MEMORY MANAGEMENT REQUIREMENTS' in the page_text, which matches the section title but is not at the start of the text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.38 Floppy Disks' does not appear at the beginning of the page_text. Instead, there is content about main memory locations and the boot block before the section title. Additionally, the section title itself is not explicitly mentioned in the page_text, only 'Floppy Disks' appears, which does not match the full section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Pipelining' does not appear as the first content in the page_text. There is other content such as 'Page 2', 'Unit V:', and a description of topics before the section title 'Pipelining' appears. Even though the section title is present later in the text, it is not at the very beginning.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.42 CD-ROM' does not appear exactly at the beginning of the page_text. Instead, the page_text starts with 'Page 39' and has several blank lines before the content related to CD-ROM begins. Additionally, the section title '3.42' is missing, and only 'CD-ROM:' appears, which does not match the full section title.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.11 Bus Arbitration' does not appear at the beginning of the page_text. Instead, there is other content related to DMA transfer and memory access before the section title appears. Additionally, the section title itself is written as 'BUS ARBITRATION' in the page_text, which matches the intended section title but is not at the start.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.4 Static Memories' does not appear at the beginning of the page_text. Instead, there is other content, including descriptions of memory circuits and figures, before the section title appears. Additionally, the section title appears as 'STATIC MEMORIES:' later in the text, which matches the section title but is not at the start of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.41 CD Technology' does not appear at the very beginning of the page_text. There is content before it, such as information about RAID 10 and optical disks. Additionally, the section title 'CD Technology' appears later in the text, but it is not preceded by '3.41', and there is other content before it.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.25 Interleaving' does not appear at the very beginning of the page_text. There is other content, such as discussions on performance considerations and memory hierarchy, before the section title 'INTERLEAVING' appears. Additionally, the section title '3.25 Interleaving' itself is not explicitly mentioned in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.7 INTEGER DIVISION' does not appear at the very beginning of the page_text. There is content before the section title, including a discussion about multiplication techniques. Additionally, the section title appears as 'INTEGER DIVISION' without the '6.7' prefix, but this can be considered a fuzzy match. However, since there is preceding content, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.4 Handling Multiple Devices' does not appear at the beginning of the page_text. Instead, there are other contents, such as numbered points and text, before the section title appears (as 'HANDLING MULTIPLE DEVICES'). Even though the title appears later in the text, it is not the first content in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given page_text starts with content that is unrelated to the section title '4.5 Vectored Interrupts'. The section title does not appear at the beginning of the page_text, and there is other content before it.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.2 Interrupts' does not appear at the beginning of the page_text. Instead, the page_text starts with 'Page 4 INTERRUPTS', which does not match the section title exactly. Additionally, there is no indication of '4.2' or the exact section title at the very start of the text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.8 Double-Data-Rate SDRAM' does not appear at the beginning of the page_text. Instead, there is content about memory latency, memory bandwidth, and other related topics before the section title appears. Additionally, the section title itself is slightly modified in the text as 'Double-Data-Rate SDRAM' without the '3.8' prefix, but it does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The given section title '3.45 CD-ReWritables' does not appear at the very beginning of the page_text. There is content about CD-ROM drives, CD-Recordables, and other introductory material before the section titled 'CD-ReWritables' appears. Additionally, the section title '3.45 CD-ReWritables' is not explicitly mentioned in the page_text, and the section starts with 'CD-ReWritables' instead.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.37 Disk Controller' does not appear at the very beginning of the page_text. There is other content, such as descriptions about data bits, access time, and data buffer/cache, before the section titled 'Disk Controller' begins. Even though the section title 'Disk Controller' appears later in the text, it is not at the start of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.40 Optical Disks' does not appear at the beginning of the page_text. Instead, there is content about hybrid arrangements and RAID before the section title. Additionally, the section title itself is not explicitly present in the page_text, but 'OPTICAL DISKS:' appears later, which could be a related heading. However, since there is content before this heading, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '1.3 Basic operational concepts' appears in the page_text, but it is preceded by other content such as descriptions of secondary memory, arithmetic logic unit, output unit, and control unit. Therefore, the section does not start at the beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.6 Interrupt Nesting' does not appear at the very beginning of the page_text. There is other content related to interrupt-service routines and interrupt vectors before the section title appears. Additionally, the section title itself is slightly altered as 'Interrupt Nesting' without the '4.6' prefix in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.28 Other Enhancements' does not appear at the beginning of the page_text. Instead, there is other content related to cache and memory performance before the section title appears. Additionally, the section title appears as 'OTHER ENHANCEMENTS' later in the text, which matches the given title but is not at the start of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.24 Performance Considerations' does not appear at the beginning of the page_text. Instead, there is content related to block counters, the LRU algorithm, and other text before the section title 'PERFORMANCE CONSIDERATIONS' appears. Additionally, the section title '3.24 Performance Considerations' is not explicitly mentioned in the page_text, and even if 'PERFORMANCE CONSIDERATIONS' is considered, it is preceded by other content.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '4.3 Enabling and Disabling Interrupts' does not appear verbatim at the beginning of the page_text. Instead, the content starts with 'ENABLING AND DISABLING INTERRUPTS:', which is a variation of the section title but not an exact match. Additionally, there is no indication of the section number '4.3' in the page_text. This suggests that the section does not start at the very beginning of the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'UNIT-II Arithmetic: Addition and Subtraction of Signed Numbers, Design and Fast Adders, Multiplication of Positive Numbers, Signed-operand Multiplication, Fast Multiplication, Integer Division, Floating-Point Numbers and Operations. Basic Processing Unit: Fundamental Concepts, Execution of a Complete Instruction, Multiple-Bus Organization, Hardwired Control, Multiprogrammed Control.' appears in the page_text after 'Page 2' and some formatting content. However, there is no other content or text before the section title apart from formatting and page number. The section title is the first meaningful content in the page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '3.6 Synchronous DRAMs' does not appear at the beginning of the page_text. There is other content, including a discussion on asynchronous DRAMs and Fast Page Mode, before the mention of 'SYNCHRONOUS DRAMS' in the text. Additionally, the section title itself is not explicitly present in the page_text.\", 'start_begin': 'no'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title '6.10 ARITHMETIC OPERATIONS ON FLOATING -POINT NUMBERS' does not appear at the very beginning of the page_text. There is other content, including descriptions of denormal numbers, exceptions, and other details, before the section title appears. Even though the section title is present in the text, it is preceded by other content.\", 'start_begin': 'no'}"
+  }
+]

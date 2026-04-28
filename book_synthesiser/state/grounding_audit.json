@@ -1,0 +1,285 @@
+{
+  "summary": {
+    "content_sentences": 138,
+    "sentences_with_src": 35,
+    "sentences_without_src": 103,
+    "invalid_src_tags": 35,
+    "known_doc_page_pairs": 30
+  },
+  "sample_without_src": [
+    "A computer's architecture is fundamentally characterized by its use of a bus system for efficient data transfer.",
+    "Instead of directly connecting wires between all registers, a common bus is employed.",
+    "This bus structure consists of a set of common lines, each corresponding to a bit in a register, and is controlled by signals that determine which register is selected during each transfer.",
+    "Multiplexers play a crucial role here, selecting the source register whose binary information is placed on the bus.",
+    "These multiplexers are configured such that they multiplex k registers of n bits each to produce an n-line common bus, requiring n multiplexers—one for each bit.",
+    "The size of each multiplexer is k x 1, and the number of select lines needed is log k.",
+    "In addition to multiplexers, three-state gates can also be used to construct the bus system.",
+    "The bus system is integral to the efficient operation of the Arithmetic Logic Unit (ALU), a core component connected to multiple storage registers.",
+    "The ALU performs operations by receiving inputs from specified registers, executing the operation, and transferring the result to a destination register.",
+    "Shifting operations within a processor unit, especially one with numerous registers, are optimized by using a combinational circuit.",
+    "The content of a register to be shifted is first placed onto a common bus, then connected to a combinational shifter.",
+    "The shifted number is subsequently loaded back into the register.",
+    "The efficient design of these systems ensures that microoperations, which are the basic operations performed on data stored in registers, can be executed swiftly.",
+    "All microoperations written on a single line are executed simultaneously, provided that all transfers occur during a clock edge transition.",
+    "In summary, the architecture of a computer is a sophisticated interplay of components like buses, multiplexers, ALUs, and combinational circuits.",
+    "These elements work in concert to facilitate rapid and efficient data processing, which is the cornerstone of modern computing systems.",
+    "Data processing in computer systems involves a series of transformations that convert raw data into a more useful format.",
+    "The process begins with data acquisition, where input devices collect information from various sources.",
+    "Once acquired, data undergoes a series of transformations.",
+    "The first step is data cleaning, which involves correcting errors and inconsistencies to ensure that the data set is accurate and reliable.",
+    "Following cleaning, data integration combines data from different sources into a coherent data set.",
+    "This process involves resolving differences in data formats and structures, ensuring that the integrated data is consistent and usable for further processing.",
+    "Data transformation further refines the data by converting it into a format suitable for analysis.",
+    "This step may include normalization, which scales data to a common range, and aggregation, which summarizes data to provide insights at a higher level.",
+    "Once transformed, data is stored in a structured format within databases or data warehouses."
+  ],
+  "sample_invalid_src_tags": [
+    {
+      "sentence": "To transfer data from the bus to a register, the bus lines connect to the inputs of all destination registers, and the corresponding load control line must be activated [src:47f83557:20-21].",
+      "doc_id": "47f83557",
+      "pages": "20-21"
+    },
+    {
+      "sentence": "This flexibility in design allows for various implementations depending on the specific requirements or constraints of the system [src:47f83557:21].",
+      "doc_id": "47f83557",
+      "pages": "21"
+    },
+    {
+      "sentence": "As a combinational circuit, the ALU enables the entire register transfer operation—from source registers through the ALU and into the destination register—to be completed within one clock pulse period [src:47f83557:30].",
+      "doc_id": "47f83557",
+      "pages": "30"
+    },
+    {
+      "sentence": "This process can also be constructed using multiplexers, highlighting the versatility and efficiency of these components in computer architecture [src:47f83557:30].",
+      "doc_id": "47f83557",
+      "pages": "30"
+    },
+    {
+      "sentence": "This synchronization is crucial for maintaining the integrity and speed of operations within the processor unit [src:47f83557:20].",
+      "doc_id": "47f83557",
+      "pages": "20"
+    },
+    {
+      "sentence": "The design choices, such as using a common bus and multiplexers, reflect a balance between complexity and performance, ensuring that operations are executed with precision and speed [src:47f83557:20-21, 30].",
+      "doc_id": "47f83557",
+      "pages": "20-21, 30"
+    },
+    {
+      "sentence": "This data is often in a raw, unstructured form that requires organization and refinement before it can be effectively used by the computer system [src:e16c88cb:1-3].",
+      "doc_id": "e16c88cb",
+      "pages": "1-3"
+    },
+    {
+      "sentence": "This step is crucial for maintaining data integrity and involves removing duplicates, correcting inaccuracies, and filling in missing values [src:1c3f4b2d:4-5].",
+      "doc_id": "1c3f4b2d",
+      "pages": "4-5"
+    },
+    {
+      "sentence": "Integration is particularly important in enterprise systems, where data from various departments must be combined to provide a comprehensive view of the organization's operations [src:1c3f4b2d:4-5; 3f4b2d1c:6].",
+      "doc_id": "1c3f4b2d",
+      "pages": "4-5; 3f4b2d1c:6"
+    },
+    {
+      "sentence": "These transformations are essential for preparing data for subsequent stages of processing, such as analysis and visualization [src:3f4b2d1c:6; e16c88cb:1-3].",
+      "doc_id": "3f4b2d1c",
+      "pages": "6; e16c88cb:1-3"
+    },
+    {
+      "sentence": "The choice of storage technology can significantly impact the speed and efficiency of data processing, with enterprise systems often relying on large-scale databases to manage vast amounts of information [src:e16c88cb:1-3; 1c3f4b2d:4-5].",
+      "doc_id": "e16c88cb",
+      "pages": "1-3; 1c3f4b2d:4-5"
+    },
+    {
+      "sentence": "This step is where the true value of data processing is realized, as it transforms raw data into actionable knowledge [src:3f4b2d1c:6].",
+      "doc_id": "3f4b2d1c",
+      "pages": "6"
+    },
+    {
+      "sentence": "Security measures include encryption, access controls, and regular audits to safeguard data integrity and confidentiality [src:1c3f4b2d:4-5].",
+      "doc_id": "1c3f4b2d",
+      "pages": "4-5"
+    },
+    {
+      "sentence": "Parallel processing leverages the capabilities of modern multi-core processors to deliver faster results, which is crucial for applications requiring real-time data analysis [src:e16c88cb:1-3].",
+      "doc_id": "e16c88cb",
+      "pages": "1-3"
+    },
+    {
+      "sentence": "The integration of security measures and the use of advanced processing techniques like parallel processing ensure that data processing is both efficient and secure, meeting the demands of modern computing environments [src:3f4b2d1c:6].",
+      "doc_id": "3f4b2d1c",
+      "pages": "6"
+    },
+    {
+      "sentence": "These cells are typically accessed in groups rather than individually, allowing for efficient data processing [src:b732199b:4].",
+      "doc_id": "b732199b",
+      "pages": "4"
+    },
+    {
+      "sentence": "This type of memory is crucial for maintaining a vast amount of information that can be retrieved when needed, albeit with a delay compared to primary memory [src:b732199b:4].",
+      "doc_id": "b732199b",
+      "pages": "4"
+    },
+    {
+      "sentence": "For instance, an ADD operation would involve fetching data from memory, performing the addition, and storing the result back [src:47f83557:42].",
+      "doc_id": "47f83557",
+      "pages": "42"
+    },
+    {
+      "sentence": "An example of such an operation is the complement accumulator (CMA) instruction, which inverts the bits of the accumulator register [src:47f83557:42].",
+      "doc_id": "47f83557",
+      "pages": "42"
+    },
+    {
+      "sentence": "This is essential for tasks such as reading data from an input device or sending results to an output device [src:47f83557:42].",
+      "doc_id": "47f83557",
+      "pages": "42"
+    },
+    {
+      "sentence": "The select lines are connected to the selection inputs of the multiplexers, allowing for efficient data routing within the system [src:47f83557:20-21].",
+      "doc_id": "47f83557",
+      "pages": "20-21"
+    },
+    {
+      "sentence": "The control unit also manages the interaction between the input devices, memory, and processor, ensuring seamless data processing and output generation [src:b732199b:4].",
+      "doc_id": "b732199b",
+      "pages": "4"
+    },
+    {
+      "sentence": "Memory is broadly categorized into two types: primary and secondary memory [src:e16c88cb:2-2].",
+      "doc_id": "e16c88cb",
+      "pages": "2-2"
+    },
+    {
+      "sentence": "These bits are processed in groups of fixed size known as words [src:e16c88cb:2-2].",
+      "doc_id": "e16c88cb",
+      "pages": "2-2"
+    },
+    {
+      "sentence": "It is typically implemented using RAM (Random Access Memory), which allows data to be read and written quickly [src:e16c88cb:2-2].",
+      "doc_id": "e16c88cb",
+      "pages": "2-2"
+    }
+  ],
+  "known_doc_page_pairs": [
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee",
+      "1-3"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee",
+      "15-17"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee",
+      "19-21"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee",
+      "2-3"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee",
+      "2-4"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee",
+      "20-22"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee",
+      "28-30"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee",
+      "30-32"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee",
+      "42-44"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee",
+      "5-7"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee+b732199b-3ca8-4862-9dde-c5d30184d47d",
+      "1-3+1-3"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee+b732199b-3ca8-4862-9dde-c5d30184d47d",
+      "1-3+2-2"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee+b732199b-3ca8-4862-9dde-c5d30184d47d",
+      "2-3+1-2"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee+b732199b-3ca8-4862-9dde-c5d30184d47d",
+      "2-4+2-2"
+    ],
+    [
+      "47f83557-ed5f-4aa7-a3aa-de1a2de0dbee+e16c88cb-3479-46a0-859e-7e9f825bc3b2",
+      "5-7+1-3"
+    ],
+    [
+      "b732199b-3ca8-4862-9dde-c5d30184d47d",
+      "1-1"
+    ],
+    [
+      "b732199b-3ca8-4862-9dde-c5d30184d47d",
+      "1-2"
+    ],
+    [
+      "b732199b-3ca8-4862-9dde-c5d30184d47d",
+      "1-3"
+    ],
+    [
+      "b732199b-3ca8-4862-9dde-c5d30184d47d",
+      "2-2"
+    ],
+    [
+      "b732199b-3ca8-4862-9dde-c5d30184d47d",
+      "3-3"
+    ],
+    [
+      "b732199b-3ca8-4862-9dde-c5d30184d47d",
+      "4-4"
+    ],
+    [
+      "b732199b-3ca8-4862-9dde-c5d30184d47d+e16c88cb-3479-46a0-859e-7e9f825bc3b2",
+      "3-3+1-2"
+    ],
+    [
+      "b732199b-3ca8-4862-9dde-c5d30184d47d+e16c88cb-3479-46a0-859e-7e9f825bc3b2",
+      "3-3+1-3"
+    ],
+    [
+      "e16c88cb-3479-46a0-859e-7e9f825bc3b2",
+      "1-1"
+    ],
+    [
+      "e16c88cb-3479-46a0-859e-7e9f825bc3b2",
+      "1-2"
+    ],
+    [
+      "e16c88cb-3479-46a0-859e-7e9f825bc3b2",
+      "1-3"
+    ],
+    [
+      "e16c88cb-3479-46a0-859e-7e9f825bc3b2",
+      "2-2"
+    ],
+    [
+      "e16c88cb-3479-46a0-859e-7e9f825bc3b2",
+      "2-3"
+    ],
+    [
+      "e16c88cb-3479-46a0-859e-7e9f825bc3b2",
+      "3-4"
+    ],
+    [
+      "e16c88cb-3479-46a0-859e-7e9f825bc3b2+e16c88cb-3479-46a0-859e-7e9f825bc3b2",
+      "3-4+2-3"
+    ]
+  ]
+}
