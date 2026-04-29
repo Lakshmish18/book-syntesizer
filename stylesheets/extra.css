@@ -1,3 +1,6 @@
+:root {
+  --md-primary-fg-color: #283593;
+}
 .md-typeset h1 {
   font-weight: 800;
 }

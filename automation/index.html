@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://lakshmish18.github.io/book-syntesizer/developer-guide/">
+        <link rel="canonical" href="https://lakshmish18.github.io/book-syntesizer/automation/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../bevel-integration/">
       
       
-        <link rel="next" href="../pipeline-stages/">
+        <link rel="next" href="../troubleshooting/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Developer Guide - code_to_graph Developer Docs</title>
+        <title>Automation - code_to_graph Developer Docs</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#developer-guide" class="md-skip">
+        <a href="#automation" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Developer Guide
+              Automation
             
           </span>
         </div>
@@ -262,37 +262,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Developer Guide
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../developer-guide/" class="md-nav__link">
         
   
   
@@ -308,70 +281,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#architecture-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Architecture Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mentor-requirement-mapping" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Mentor Requirement Mapping
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Commands
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output-artifacts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Output Artifacts
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -434,10 +343,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../automation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -453,6 +389,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docs-auto-generation-on-git-push" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docs Auto-Generation on Git Push
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#required-secret" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required Secret
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guarded-auto-fix-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guarded Auto-Fix Flow
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -511,10 +500,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#architecture-overview" class="md-nav__link">
+  <a href="#docs-auto-generation-on-git-push" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture Overview
+        Docs Auto-Generation on Git Push
       
     </span>
   </a>
@@ -522,10 +511,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mentor-requirement-mapping" class="md-nav__link">
+  <a href="#required-secret" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mentor Requirement Mapping
+        Required Secret
       
     </span>
   </a>
@@ -533,21 +522,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#guarded-auto-fix-flow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Commands
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output-artifacts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Output Artifacts
+        Guarded Auto-Fix Flow
       
     </span>
   </a>
@@ -571,66 +549,39 @@
 
 
 
-<h1 id="developer-guide">Developer Guide<a class="headerlink" href="#developer-guide" title="Permanent link">&para;</a></h1>
-<h2 id="architecture-overview">Architecture Overview<a class="headerlink" href="#architecture-overview" title="Permanent link">&para;</a></h2>
-<p>Core execution flow:</p>
+<h1 id="automation">Automation<a class="headerlink" href="#automation" title="Permanent link">&para;</a></h1>
+<h2 id="docs-auto-generation-on-git-push">Docs Auto-Generation on Git Push<a class="headerlink" href="#docs-auto-generation-on-git-push" title="Permanent link">&para;</a></h2>
+<p>Workflow file: <code>.github/workflows/docs-on-push.yml</code></p>
+<p>The workflow triggers on every push (<code>**</code>) and performs:</p>
 <ol>
-<li>CLI entry (<code>main.py</code>)</li>
-<li>Pipeline orchestration (<code>pipeline.py</code>)</li>
-<li>Graph generation (standard mode) or graph ingestion (Bevel mode)</li>
-<li>GPT enrichment (<code>lang_q/query_engine.py</code>)</li>
-<li>Workflow tracing (<code>functions/workflow_builder.py</code>)</li>
-<li>Function metadata + test scenario generation</li>
-<li>PDF generation (<code>functions/pdf_generator.py</code>)</li>
+<li>dependency installation</li>
+<li>documentation pipeline run (<code>python main.py --folder .</code>)</li>
+<li>debug agent smoke test</li>
+<li>auto-fix agent smoke test (dry-run)</li>
+<li>MkDocs strict build</li>
+<li>artifact upload</li>
+<li>GitHub Pages publish for <code>main/master</code></li>
 </ol>
-<div class="highlight"><pre><span></span><code>flowchart LR
-  A[main.py] --&gt; B[pipeline.py]
-  B --&gt; C[Parse or Ingest Graph]
-  C --&gt; D[GPT Enrichment]
-  D --&gt; E[Workflow Trace]
-  E --&gt; F[PDF + JSON Assets]
-</code></pre></div>
-<h2 id="mentor-requirement-mapping">Mentor Requirement Mapping<a class="headerlink" href="#mentor-requirement-mapping" title="Permanent link">&para;</a></h2>
+<h2 id="required-secret">Required Secret<a class="headerlink" href="#required-secret" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Every function description in assets/report</strong><br />
-  Implemented via <code>functions/function_descriptions_asset.py</code> and rendered in Chapter 2.</li>
-<li><strong>Function route (project/module/submodule)</strong><br />
-  Included as <code>route</code> in function asset and PDF function reference.</li>
-<li><strong>Business/domain tags</strong><br />
-  Implemented by <code>functions/metadata_builder.py</code>.</li>
-<li><strong>Function/workflow test scenarios with sample I/O</strong><br />
-  Implemented by <code>functions/test_scenarios.py</code>, rendered in Chapter 5.</li>
-<li><strong>Debugging agent for description/trace input</strong><br />
-<code>debug_agent.py</code> + <code>functions/debugging_agent.py</code>.</li>
-<li><strong>Error-to-fix automatic flow</strong><br />
-<code>autofix_agent.py</code> + <code>functions/autofix_agent.py</code> (guarded mode).</li>
-<li><strong>Docs on git push</strong><br />
-<code>.github/workflows/docs-on-push.yml</code>.</li>
+<li><code>OPENAI_API_KEY</code> (recommended for richer enrichment/fix suggestions)</li>
 </ul>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
-<p>Standard mode:</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser
+<p>Without this secret, fallback logic still runs and pipeline remains operational.</p>
+<h2 id="guarded-auto-fix-flow">Guarded Auto-Fix Flow<a class="headerlink" href="#guarded-auto-fix-flow" title="Permanent link">&para;</a></h2>
+<p>Use <code>autofix_agent.py</code> for a controlled patch cycle:</p>
+<ol>
+<li>ingest error text/trace</li>
+<li>propose minimal file edits</li>
+<li>optionally apply edits (<code>--apply</code>)</li>
+<li>run validation command</li>
+<li>rollback automatically if validation fails</li>
+</ol>
+<p>Dry-run (proposal only):</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>autofix_agent.py<span class="w"> </span>--error-file<span class="w"> </span>./error_trace.txt<span class="w"> </span>--project-folder<span class="w"> </span>.
 </code></pre></div>
-<p>Bevel mode:</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser<span class="w"> </span>--bevel-graph<span class="w"> </span>../bevel-export.json
+<p>Apply mode (guarded):</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>autofix_agent.py<span class="w"> </span>--error-file<span class="w"> </span>./error_trace.txt<span class="w"> </span>--project-folder<span class="w"> </span>.<span class="w"> </span>--apply<span class="w"> </span>--validation-command<span class="w"> </span><span class="s2">&quot;python -m pytest -q&quot;</span>
 </code></pre></div>
-<p>Debugging agent (error text):</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>debug_agent.py<span class="w"> </span>--error-text<span class="w"> </span><span class="s2">&quot;ValueError: invalid payload shape&quot;</span>
-</code></pre></div>
-<p>Debugging agent (trace file):</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>debug_agent.py<span class="w"> </span>--error-file<span class="w"> </span>./sample_trace.txt
-</code></pre></div>
-<p>Safe auto-fix (dry-run):</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>autofix_agent.py<span class="w"> </span>--error-file<span class="w"> </span>./sample_trace.txt<span class="w"> </span>--project-folder<span class="w"> </span>.
-</code></pre></div>
-<h2 id="output-artifacts">Output Artifacts<a class="headerlink" href="#output-artifacts" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>outputs/code_documentation.pdf</code></li>
-<li><code>outputs/assets/function_descriptions.json</code></li>
-<li><code>outputs/test_scenarios.json</code></li>
-<li><code>outputs/debug_fix_report.json</code></li>
-<li><code>outputs/autofix_report.json</code></li>
-</ul>
 
 
 
@@ -668,7 +619,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../bevel-integration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bevel Integration">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -678,20 +629,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Bevel Integration
               </div>
             </div>
           </a>
         
         
           
-          <a href="../pipeline-stages/" class="md-footer__link md-footer__link--next" aria-label="Next: Pipeline Stages">
+          <a href="../troubleshooting/" class="md-footer__link md-footer__link--next" aria-label="Next: Troubleshooting">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Pipeline Stages
+                Troubleshooting
               </div>
             </div>
             <div class="md-footer__button md-icon">

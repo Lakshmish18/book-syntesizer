@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://lakshmish18.github.io/book-syntesizer/troubleshooting/">
       
       
-        <link rel="prev" href="../bevel-integration/">
+        <link rel="prev" href="../automation/">
       
       
       
@@ -341,6 +341,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -404,10 +431,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#missing-openai-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing OpenAI Key
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#invalid-folder-path" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Invalid folder path
+        Invalid Folder Path
       
     </span>
   </a>
@@ -418,7 +456,7 @@
   <a href="#no-python-files-found" class="md-nav__link">
     <span class="md-ellipsis">
       
-        No Python files found
+        No Python Files Found
       
     </span>
   </a>
@@ -429,7 +467,7 @@
   <a href="#bevel-graph-format-error" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bevel graph format error
+        Bevel Graph Format Error
       
     </span>
   </a>
@@ -437,10 +475,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#generic-function-descriptions" class="md-nav__link">
+  <a href="#debug-agent-input-issues" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Generic function descriptions
+        Debug Agent Input Issues
       
     </span>
   </a>
@@ -448,10 +486,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#docs-site-not-opening" class="md-nav__link">
+  <a href="#auto-fix-apply-rollback" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Docs site not opening
+        Auto-Fix Apply Rollback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs-build-or-publish-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MkDocs Build or Publish Issues
       
     </span>
   </a>
@@ -504,10 +553,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#missing-openai-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Missing OpenAI Key
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#invalid-folder-path" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Invalid folder path
+        Invalid Folder Path
       
     </span>
   </a>
@@ -518,7 +578,7 @@
   <a href="#no-python-files-found" class="md-nav__link">
     <span class="md-ellipsis">
       
-        No Python files found
+        No Python Files Found
       
     </span>
   </a>
@@ -529,7 +589,7 @@
   <a href="#bevel-graph-format-error" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bevel graph format error
+        Bevel Graph Format Error
       
     </span>
   </a>
@@ -537,10 +597,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#generic-function-descriptions" class="md-nav__link">
+  <a href="#debug-agent-input-issues" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Generic function descriptions
+        Debug Agent Input Issues
       
     </span>
   </a>
@@ -548,10 +608,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#docs-site-not-opening" class="md-nav__link">
+  <a href="#auto-fix-apply-rollback" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Docs site not opening
+        Auto-Fix Apply Rollback
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs-build-or-publish-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MkDocs Build or Publish Issues
       
     </span>
   </a>
@@ -589,64 +660,50 @@
 <h1 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h1>
 <div class="admonition question">
 <p class="admonition-title">First check</p>
-<p>Confirm your command path and mode (<code>standard</code> vs <code>--bevel-graph</code>) before deeper debugging.</p>
+<p>Confirm command path and mode (<code>standard</code> vs <code>--bevel-graph</code>) before deeper debugging.</p>
 </div>
-<h2 id="invalid-folder-path">Invalid folder path<a class="headerlink" href="#invalid-folder-path" title="Permanent link">&para;</a></h2>
-<p>Symptom:</p>
+<h2 id="missing-openai-key">Missing OpenAI Key<a class="headerlink" href="#missing-openai-key" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>ValueError: Invalid folder path</code></li>
+<li>Symptom: enrichment/fix quality drops to fallback heuristics.</li>
+<li>Fix: set <code>OPENAI_API_KEY</code> in environment or <code>.env</code>.</li>
 </ul>
-<p>Fix:</p>
+<h2 id="invalid-folder-path">Invalid Folder Path<a class="headerlink" href="#invalid-folder-path" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Verify <code>--folder</code> points to a real directory.</li>
+<li>Symptom: <code>ValueError: Invalid folder path</code>.</li>
+<li>Fix: verify <code>--folder</code> points to a real Python project directory.</li>
 </ul>
-<h2 id="no-python-files-found">No Python files found<a class="headerlink" href="#no-python-files-found" title="Permanent link">&para;</a></h2>
-<p>Symptom:</p>
+<h2 id="no-python-files-found">No Python Files Found<a class="headerlink" href="#no-python-files-found" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>RuntimeError: No Python files found under ...</code></li>
+<li>Symptom: <code>RuntimeError: No Python files found under ...</code>.</li>
+<li>Fix: ensure the target contains <code>.py</code> files and pass the correct root folder.</li>
 </ul>
-<p>Fix:</p>
+<h2 id="bevel-graph-format-error">Bevel Graph Format Error<a class="headerlink" href="#bevel-graph-format-error" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Ensure target contains <code>.py</code> files.</li>
-<li>Point <code>--folder</code> to correct project root.</li>
+<li>Symptom: adapter schema/format parsing error.</li>
+<li>Fix: re-export valid Bevel JSON and pass correct <code>--bevel-graph</code> file path.</li>
 </ul>
-<h2 id="bevel-graph-format-error">Bevel graph format error<a class="headerlink" href="#bevel-graph-format-error" title="Permanent link">&para;</a></h2>
-<p>Symptom:</p>
+<h2 id="debug-agent-input-issues">Debug Agent Input Issues<a class="headerlink" href="#debug-agent-input-issues" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Adapter raises schema/format error.</li>
+<li>Provide exactly one source: <code>--error-text</code> or <code>--error-file</code>.</li>
+<li>For large traces, include failing frame + final exception line.</li>
 </ul>
-<p>Fix:</p>
+<h2 id="auto-fix-apply-rollback">Auto-Fix Apply Rollback<a class="headerlink" href="#auto-fix-apply-rollback" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Re-export valid Bevel JSON.</li>
-<li>Ensure file path passed to <code>--bevel-graph</code> is correct.</li>
+<li>Symptom: edits applied and then reverted.</li>
+<li>Cause: validation command returned non-zero exit code.</li>
+<li>Fix: inspect <code>outputs/autofix_report.json</code>, adjust patch/validation command, rerun.</li>
 </ul>
-<h2 id="generic-function-descriptions">Generic function descriptions<a class="headerlink" href="#generic-function-descriptions" title="Permanent link">&para;</a></h2>
-<p>Symptom:</p>
+<h2 id="mkdocs-build-or-publish-issues">MkDocs Build or Publish Issues<a class="headerlink" href="#mkdocs-build-or-publish-issues" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Function text feels fallback-heavy.</li>
-</ul>
-<p>Fix:</p>
-<ul>
-<li>Set <code>OPENAI_API_KEY</code> in <code>.env</code>.</li>
-<li>Re-run pipeline.</li>
-</ul>
-<h2 id="docs-site-not-opening">Docs site not opening<a class="headerlink" href="#docs-site-not-opening" title="Permanent link">&para;</a></h2>
-<p>Symptom:</p>
-<ul>
-<li>Local docs link unavailable.</li>
-</ul>
-<p>Fix:</p>
-<div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>serve
-</code></pre></div>
-<p>Open:</p>
-<ul>
-<li><a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></li>
+<li>Ensure all files in <code>mkdocs.yml</code> nav exist under <code>docs/</code>.</li>
+<li>Run <code>mkdocs build --strict</code> locally before push.</li>
+<li>Ensure GitHub Pages is enabled for the repository branch/pages setup.</li>
 </ul>
 <h2 id="quick-diagnostics">Quick Diagnostics<a class="headerlink" href="#quick-diagnostics" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser
-python<span class="w"> </span>main.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser<span class="w"> </span>--bevel-graph<span class="w"> </span>../bevel-export.json
-mkdocs<span class="w"> </span>build
-mkdocs<span class="w"> </span>serve<span class="w"> </span>-a<span class="w"> </span><span class="m">127</span>.0.0.1:8000
+python<span class="w"> </span>debug_agent.py<span class="w"> </span>--error-text<span class="w"> </span><span class="s2">&quot;ValueError: invalid payload shape&quot;</span>
+python<span class="w"> </span>autofix_agent.py<span class="w"> </span>--error-text<span class="w"> </span><span class="s2">&quot;ValueError: invalid payload shape in run_pipeline&quot;</span>
+mkdocs<span class="w"> </span>build<span class="w"> </span>--strict
 </code></pre></div>
 
 
@@ -685,7 +742,7 @@ mkdocs<span class="w"> </span>serve<span class="w"> </span>-a<span class="w"> </
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../bevel-integration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bevel Integration">
+          <a href="../automation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Automation">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -695,7 +752,7 @@ mkdocs<span class="w"> </span>serve<span class="w"> </span>-a<span class="w"> </
                 Previous
               </span>
               <div class="md-ellipsis">
-                Bevel Integration
+                Automation
               </div>
             </div>
           </a>

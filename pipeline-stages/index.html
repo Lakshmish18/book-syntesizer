@@ -301,24 +301,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Pipeline Stages
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -335,91 +317,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#stage-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage 1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage 2
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-3-enrichment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage 3 - Enrichment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-4-workflow-trace" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage 4 - Workflow Trace
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-5-pdf-generation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage 5 - PDF Generation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-summary-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage Summary Table
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -440,6 +337,33 @@
     
   
     Bevel Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation
   
 
     
@@ -499,80 +423,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#stage-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage 1
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage 2
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-3-enrichment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage 3 - Enrichment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-4-workflow-trace" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage 4 - Workflow Trace
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-5-pdf-generation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage 5 - PDF Generation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stage-summary-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stage Summary Table
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -589,6 +439,15 @@
 
 
 <h1 id="pipeline-stages">Pipeline Stages<a class="headerlink" href="#pipeline-stages" title="Permanent link">&para;</a></h1>
+<ol>
+<li><strong>Scan files</strong>: discover Python source files in target folder.</li>
+<li><strong>Build graph</strong>: create node/edge model from code structure.</li>
+<li><strong>Enrich nodes</strong>: add LLM summaries and metadata.</li>
+<li><strong>Trace workflow</strong>: identify entry points and execution flow.</li>
+<li><strong>Generate outputs</strong>: PDF, function asset JSON, and test scenarios.</li>
+</ol>
+<p>Outputs are written to <code>outputs/</code>.</p>
+<h1 id="pipeline-stages_1">Pipeline Stages<a class="headerlink" href="#pipeline-stages_1" title="Permanent link">&para;</a></h1>
 <p><code>pipeline.py</code> runs five explicit stages and prints progress logs.</p>
 <div class="admonition abstract">
 <p class="admonition-title">Execution model</p>
@@ -631,6 +490,12 @@
 <li>removes duplicate/redundant steps</li>
 <li>outputs ordered narrative-friendly sequence</li>
 </ul>
+<p>After tracing, metadata and QA artifacts are generated:</p>
+<ul>
+<li><code>functions/metadata_builder.py</code> adds route path + business tags + logic detail per function</li>
+<li><code>functions/test_scenarios.py</code> builds function/workflow sample test scenarios</li>
+<li>output is saved to <code>outputs/test_scenarios.json</code></li>
+</ul>
 <h2 id="stage-5-pdf-generation">Stage 5 - PDF Generation<a class="headerlink" href="#stage-5-pdf-generation" title="Permanent link">&para;</a></h2>
 <p><code>functions/pdf_generator.py</code> generates a professional report with:</p>
 <ul>
@@ -638,7 +503,8 @@
 <li>Chapter 2: function reference</li>
 <li>Chapter 3: execution workflow</li>
 <li>Chapter 4: dependency map + architecture snapshot</li>
-<li>Chapter 5: summary</li>
+<li>Chapter 5: generated testing scenarios</li>
+<li>Chapter 6: summary</li>
 </ul>
 <h2 id="stage-summary-table">Stage Summary Table<a class="headerlink" href="#stage-summary-table" title="Permanent link">&para;</a></h2>
 <table>
@@ -667,8 +533,8 @@
 </tr>
 <tr>
 <td>4</td>
-<td>workflow builder</td>
-<td>ordered workflow steps</td>
+<td>workflow + metadata + scenarios</td>
+<td>ordered workflow + test_scenarios.json</td>
 </tr>
 <tr>
 <td>5</td>
