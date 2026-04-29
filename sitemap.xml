@@ -1,47 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/</loc>
+         <loc>http://127.0.0.1:8010/</loc>
          <lastmod>2026-04-29</lastmod>
     </url>
     <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/architecture/</loc>
+         <loc>http://127.0.0.1:8010/architecture/</loc>
          <lastmod>2026-04-29</lastmod>
     </url>
     <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/automation/</loc>
+         <loc>http://127.0.0.1:8010/artifacts/</loc>
          <lastmod>2026-04-29</lastmod>
     </url>
     <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/bevel-integration/</loc>
+         <loc>http://127.0.0.1:8010/execution-modes/</loc>
          <lastmod>2026-04-29</lastmod>
     </url>
     <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/demo-runbook/</loc>
-         <lastmod>2026-04-29</lastmod>
-    </url>
-    <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/developer-guide/</loc>
-         <lastmod>2026-04-29</lastmod>
-    </url>
-    <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/operational-readiness/</loc>
-         <lastmod>2026-04-29</lastmod>
-    </url>
-    <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/pipeline-stages/</loc>
-         <lastmod>2026-04-29</lastmod>
-    </url>
-    <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/project-implementation-guide/</loc>
-         <lastmod>2026-04-29</lastmod>
-    </url>
-    <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/troubleshooting/</loc>
-         <lastmod>2026-04-29</lastmod>
-    </url>
-    <url>
-         <loc>https://lakshmish18.github.io/book-syntesizer/user-manual/</loc>
+         <loc>http://127.0.0.1:8010/workflow/</loc>
          <lastmod>2026-04-29</lastmod>
     </url>
 </urlset>

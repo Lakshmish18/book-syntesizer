@@ -1,0 +1,3633 @@
+[
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\chat.py::chat",
+    "name": "chat",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\chat.py",
+    "route": "Memory/app/api/chat.py::chat",
+    "description": "Function `chat` executes domain-specific processing. Implements API/service handler behavior and returns normalized response data. Inputs: payload. Outputs: unspecified return value. Called by: no internal callers detected. Calls: orchestrator.run.",
+    "inputs": [
+      "payload"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "orchestrator.run"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\debug.py::interactions",
+    "name": "interactions",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\debug.py",
+    "route": "Memory/app/api/debug.py::interactions",
+    "description": "Function `interactions` executes domain-specific processing. Coordinates downstream calls such as sqlite_store.list_interactions. Inputs: limit. Outputs: unspecified return value. Called by: no internal callers detected. Calls: sqlite_store.list_interactions.",
+    "inputs": [
+      "limit"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "sqlite_store.list_interactions"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\debug.py::recent",
+    "name": "recent",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\debug.py",
+    "route": "Memory/app/api/debug.py::recent",
+    "description": "Function `recent` serves application-facing request handling. Implements API/service handler behavior and returns normalized response data. Inputs: no explicit parameters. Outputs: unspecified return value. Called by: no internal callers detected. Calls: sqlite_store.list_recent.",
+    "inputs": [],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "sqlite_store.list_recent"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\debug.py::stats",
+    "name": "stats",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\debug.py",
+    "route": "Memory/app/api/debug.py::stats",
+    "description": "Function `stats` serves application-facing request handling. Implements API/service handler behavior and returns normalized response data. Inputs: no explicit parameters. Outputs: unspecified return value. Called by: no internal callers detected. Calls: sqlite_store.interaction_stats, sqlite_store.is_available, sqlite_store.list_recent.",
+    "inputs": [],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "sqlite_store.interaction_stats",
+      "sqlite_store.is_available",
+      "sqlite_store.list_recent"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\graph.py::graph_data",
+    "name": "graph_data",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\graph.py",
+    "route": "Memory/app/api/graph.py::graph_data",
+    "description": "Function `graph_data` executes domain-specific processing. JSON graph data: center node + neighbors + labeled edges. Inputs: memory_id. Outputs: unspecified return value. Called by: no internal callers detected. Calls: graph_store.rich_neighborhood.",
+    "inputs": [
+      "memory_id"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Tagging",
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "graph_store.rich_neighborhood"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\graph.py::graph_view",
+    "name": "graph_view",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\graph.py",
+    "route": "Memory/app/api/graph.py::graph_view",
+    "description": "Function `graph_view` serves application-facing request handling. Interactive visual graph viewer using vis-network. Inputs: memory_id. Outputs: unspecified return value. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "memory_id"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Tagging",
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points as part of execution path."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\router_api.py::debug_route",
+    "name": "debug_route",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\router_api.py",
+    "route": "Memory/app/api/router_api.py::debug_route",
+    "description": "Function `debug_route` serves application-facing request handling. Test the intent classifier and router logic without running the full pipeline. Inputs: req. Outputs: unspecified return value. Called by: no internal callers detected. Calls: query_router.route.",
+    "inputs": [
+      "req"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "query_router.route"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\router_api.py::router_stats",
+    "name": "router_stats",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\router_api.py",
+    "route": "Memory/app/api/router_api.py::router_stats",
+    "description": "Function `router_stats` serves application-facing request handling. Returns general stats or config of the router. Inputs: no explicit parameters. Outputs: unspecified return value. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points as part of execution path."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\tree.py::get_tree",
+    "name": "get_tree",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\api\\tree.py",
+    "route": "Memory/app/api/tree.py::get_tree",
+    "description": "Function `get_tree` loads required project data. Retrieves module data required by downstream functions. Inputs: no explicit parameters. Outputs: unspecified return value. Called by: no internal callers detected. Calls: persistent_tree_store.load, tree.to_dict.",
+    "inputs": [],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "persistent_tree_store.load",
+      "tree.to_dict"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\embeddings.py::EmbeddingClient.embed",
+    "name": "embed",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\embeddings.py",
+    "route": "Memory/app/core/embeddings.py::embed",
+    "description": "Function `embed` executes domain-specific processing. Coordinates downstream calls such as math.sqrt, ord. Inputs: self, text, dim. Outputs: List. Called by: no internal callers detected. Calls: math.sqrt, ord.",
+    "inputs": [
+      "self",
+      "text",
+      "dim"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "math.sqrt",
+      "ord"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\llm.py::LLMClient.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\llm.py",
+    "route": "Memory/app/core/llm.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as GeminiProvider, OpenAIProvider. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: GeminiProvider, OpenAIProvider.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "GeminiProvider",
+      "OpenAIProvider"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\llm.py::LLMClient.chat",
+    "name": "chat",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\llm.py",
+    "route": "Memory/app/core/llm.py::chat",
+    "description": "Function `chat` executes domain-specific processing. Implements API/service handler behavior and returns normalized response data. Inputs: self, system, user, temperature. Outputs: str. Called by: no internal callers detected. Calls: self.backend.chat.",
+    "inputs": [
+      "self",
+      "system",
+      "user",
+      "temperature"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "self.backend.chat"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\gemini_provider.py::GeminiProvider.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\gemini_provider.py",
+    "route": "Memory/app/core/providers/gemini_provider.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as os.getenv. Inputs: self, api_key, model. Outputs: unspecified return value. Called by: no internal callers detected. Calls: os.getenv.",
+    "inputs": [
+      "self",
+      "api_key",
+      "model"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "os.getenv"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\gemini_provider.py::GeminiProvider._client_init",
+    "name": "_client_init",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\gemini_provider.py",
+    "route": "Memory/app/core/providers/gemini_provider.py::client_init",
+    "description": "Function `_client_init` executes domain-specific processing. Coordinates downstream calls such as RuntimeError, genai.Client. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: RuntimeError, genai.Client.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "RuntimeError",
+      "genai.Client"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\gemini_provider.py::GeminiProvider.chat",
+    "name": "chat",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\gemini_provider.py",
+    "route": "Memory/app/core/providers/gemini_provider.py::chat",
+    "description": "Function `chat` executes domain-specific processing. Implements API/service handler behavior and returns normalized response data. Inputs: self, system, user, temperature. Outputs: str. Called by: no internal callers detected. Calls: client.models.generate_content, getattr, self._client_init.",
+    "inputs": [
+      "self",
+      "system",
+      "user",
+      "temperature"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "client.models.generate_content",
+      "getattr",
+      "self._client_init"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\openai_provider.py::OpenAIProvider.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\openai_provider.py",
+    "route": "Memory/app/core/providers/openai_provider.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as os.getenv. Inputs: self, api_key, model. Outputs: unspecified return value. Called by: no internal callers detected. Calls: os.getenv.",
+    "inputs": [
+      "self",
+      "api_key",
+      "model"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "os.getenv"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\openai_provider.py::OpenAIProvider._client_init",
+    "name": "_client_init",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\openai_provider.py",
+    "route": "Memory/app/core/providers/openai_provider.py::client_init",
+    "description": "Function `_client_init` executes domain-specific processing. Coordinates downstream calls such as OpenAI, RuntimeError. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: OpenAI, RuntimeError.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "OpenAI",
+      "RuntimeError"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\openai_provider.py::OpenAIProvider.chat",
+    "name": "chat",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\core\\providers\\openai_provider.py",
+    "route": "Memory/app/core/providers/openai_provider.py::chat",
+    "description": "Function `chat` executes domain-specific processing. Implements API/service handler behavior and returns normalized response data. Inputs: self, system, user, temperature. Outputs: str. Called by: no internal callers detected. Calls: client.chat.completions.create, self._client_init.",
+    "inputs": [
+      "self",
+      "system",
+      "user",
+      "temperature"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "client.chat.completions.create",
+      "self._client_init"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\jobs\\sleep_consolidation_job.py::SleepConsolidationJob.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\jobs\\sleep_consolidation_job.py",
+    "route": "Memory/app/jobs/sleep_consolidation_job.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as CompactionEngine, MemoryLifecycle, ReflectEngine. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: CompactionEngine, MemoryLifecycle, ReflectEngine.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "CompactionEngine",
+      "MemoryLifecycle",
+      "ReflectEngine",
+      "TreeIndexer"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\jobs\\sleep_consolidation_job.py::SleepConsolidationJob.run_forever",
+    "name": "run_forever",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\jobs\\sleep_consolidation_job.py",
+    "route": "Memory/app/jobs/sleep_consolidation_job.py::run_forever",
+    "description": "Function `run_forever` orchestrates execution flow. orchestrates workflow execution steps Inputs: self, interval_seconds. Outputs: unspecified return value. Called by: no internal callers detected. Calls: self.run_once, time.sleep.",
+    "inputs": [
+      "self",
+      "interval_seconds"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "self.run_once",
+      "time.sleep"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\jobs\\sleep_consolidation_job.py::SleepConsolidationJob.run_once",
+    "name": "run_once",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\jobs\\sleep_consolidation_job.py",
+    "route": "Memory/app/jobs/sleep_consolidation_job.py::run_once",
+    "description": "Function `run_once` orchestrates execution flow. orchestrates workflow execution steps Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: defaultdict, graph_store.prune, memory_service.store.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "defaultdict",
+      "graph_store.prune",
+      "memory_service.store",
+      "persistent_tree_store.save",
+      "self.compactor.compact",
+      "self.lifecycle.decay",
+      "self.reflector.reflect",
+      "self.tree_indexer.build_from_memories",
+      "sqlite_store.list_recent",
+      "sqlite_store.prune_interactions",
+      "sqlite_store.update_status"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\jobs\\start_background_jobs.py::start_background_jobs",
+    "name": "start_background_jobs",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\jobs\\start_background_jobs.py",
+    "route": "Memory/app/jobs/start_background_jobs.py::start_background_jobs",
+    "description": "Function `start_background_jobs` executes domain-specific processing. Coordinates downstream calls such as _thread.is_alive, _thread.start, threading.Thread. Inputs: no explicit parameters. Outputs: unspecified return value. Called by: no internal callers detected. Calls: _thread.is_alive, _thread.start, threading.Thread.",
+    "inputs": [],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "_thread.is_alive",
+      "_thread.start",
+      "threading.Thread"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\main.py::root",
+    "name": "root",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\main.py",
+    "route": "Memory/app/main.py::root",
+    "description": "Function `root` executes domain-specific processing. Performs `root` behavior for this module. Inputs: no explicit parameters. Outputs: unspecified return value. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\main.py::startup_event",
+    "name": "startup_event",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\main.py",
+    "route": "Memory/app/main.py::startup_event",
+    "description": "Function `startup_event` executes domain-specific processing. Coordinates downstream calls such as RuntimeError, app.on_event, faiss_store.initialize. Inputs: no explicit parameters. Outputs: unspecified return value. Called by: no internal callers detected. Calls: RuntimeError, app.on_event, faiss_store.initialize.",
+    "inputs": [],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "RuntimeError",
+      "app.on_event",
+      "faiss_store.initialize",
+      "sqlite_store.initialize",
+      "start_background_jobs"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\mcp\\server.py::mcp_recent",
+    "name": "mcp_recent",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\mcp\\server.py",
+    "route": "Memory/app/mcp/server.py::mcp_recent",
+    "description": "Function `mcp_recent` serves application-facing request handling. Implements API/service handler behavior and returns normalized response data. Inputs: no explicit parameters. Outputs: unspecified return value. Called by: no internal callers detected. Calls: sqlite_store.list_recent.",
+    "inputs": [],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "sqlite_store.list_recent"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\mcp\\server.py::mcp_search",
+    "name": "mcp_search",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\mcp\\server.py",
+    "route": "Memory/app/mcp/server.py::mcp_search",
+    "description": "Function `mcp_search` serves application-facing request handling. Processes `mcp search` request flow and returns structured response data. Inputs: query. Outputs: unspecified return value. Called by: no internal callers detected. Calls: memory_service.retrieve.",
+    "inputs": [
+      "query"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "memory_service.retrieve"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\behavior\\emotional_analyzer.py::analyze_emotional_signals",
+    "name": "analyze_emotional_signals",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\behavior\\emotional_analyzer.py",
+    "route": "Memory/app/memory/behavior/emotional_analyzer.py::analyze_emotional_signals",
+    "description": "Function `analyze_emotional_signals` executes domain-specific processing. Run all signal layers and produce an EmotionalSignals object. Inputs: text. Outputs: EmotionalSignals. Called by: no internal callers detected. Calls: EmotionalSignals, _AGGRESSION_PHRASES.search, _ALL_CAPS_WORD.findall.",
+    "inputs": [
+      "text"
+    ],
+    "outputs": "EmotionalSignals",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "EmotionalSignals",
+      "_AGGRESSION_PHRASES.search",
+      "_ALL_CAPS_WORD.findall",
+      "_EXPLICIT_CONFUSION.search",
+      "_GRATITUDE_PHRASES.search",
+      "_INTERROBANG.search",
+      "_MULTI_EXCLAIM.search",
+      "_MULTI_QUESTION.search",
+      "re.findall",
+      "round"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\compaction_engine.py::CompactionEngine._group_by_topic",
+    "name": "_group_by_topic",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\compaction_engine.py",
+    "route": "Memory/app/memory/consolidation/compaction_engine.py::group_by_topic",
+    "description": "Function `_group_by_topic` executes domain-specific processing. Group memories by memory_type, then cluster similar ones. Inputs: self, memories. Outputs: dict. Called by: no internal callers detected. Calls: defaultdict.",
+    "inputs": [
+      "self",
+      "memories"
+    ],
+    "outputs": "dict",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "defaultdict"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\compaction_engine.py::CompactionEngine._similarity",
+    "name": "_similarity",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\compaction_engine.py",
+    "route": "Memory/app/memory/consolidation/compaction_engine.py::similarity",
+    "description": "Function `_similarity` executes domain-specific processing. Token-level Jaccard similarity. Inputs: self, a, b. Outputs: float. Called by: no internal callers detected. Calls: a.lower.split, b.lower.split.",
+    "inputs": [
+      "self",
+      "a",
+      "b"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "a.lower.split",
+      "b.lower.split"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\compaction_engine.py::CompactionEngine.compact",
+    "name": "compact",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\compaction_engine.py",
+    "route": "Memory/app/memory/consolidation/compaction_engine.py::compact",
+    "description": "Function `compact` executes domain-specific processing. Coordinates downstream calls such as MemoryNode, assigned.add, dict.fromkeys. Inputs: self, memories. Outputs: List. Called by: no internal callers detected. Calls: MemoryNode, assigned.add, dict.fromkeys.",
+    "inputs": [
+      "self",
+      "memories"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "MemoryNode",
+      "assigned.add",
+      "dict.fromkeys",
+      "getattr",
+      "seen_snippets.add",
+      "self._group_by_topic",
+      "self._similarity"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\memory_lifecycle.py::MemoryLifecycle.decay",
+    "name": "decay",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\memory_lifecycle.py",
+    "route": "Memory/app/memory/consolidation/memory_lifecycle.py::decay",
+    "description": "Function `decay` executes domain-specific processing. Performs `decay` behavior for this module. Inputs: self, memories. Outputs: List. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "memories"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\memory_lifecycle.py::MemoryLifecycle.reinforce",
+    "name": "reinforce",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\memory_lifecycle.py",
+    "route": "Memory/app/memory/consolidation/memory_lifecycle.py::reinforce",
+    "description": "Function `reinforce` executes domain-specific processing. Performs `reinforce` behavior for this module. Inputs: self, memories. Outputs: List. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "memories"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\reflect_engine.py::ReflectEngine.reflect",
+    "name": "reflect",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\reflect_engine.py",
+    "route": "Memory/app/memory/consolidation/reflect_engine.py::reflect",
+    "description": "Function `reflect` executes domain-specific processing. Coordinates downstream calls such as Counter, MemoryNode, entity_counter.most_common. Inputs: self, memories. Outputs: List. Called by: no internal callers detected. Calls: Counter, MemoryNode, entity_counter.most_common.",
+    "inputs": [
+      "self",
+      "memories"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "Counter",
+      "MemoryNode",
+      "entity_counter.most_common",
+      "entity_counter.update",
+      "m.content.lower.split",
+      "m.content.split",
+      "word_counter.most_common",
+      "word_counter.update"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\sleep_cycle.py::SleepCycle.consolidate",
+    "name": "consolidate",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\consolidation\\sleep_cycle.py",
+    "route": "Memory/app/memory/consolidation/sleep_cycle.py::consolidate",
+    "description": "Function `consolidate` executes domain-specific processing. Performs `consolidate` behavior for this module. Inputs: self, memories. Outputs: List. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "memories"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\contradiction_detector.py::ContradictionDetector._has_negation_flip",
+    "name": "_has_negation_flip",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\contradiction_detector.py",
+    "route": "Memory/app/memory/extraction/contradiction_detector.py::has_negation_flip",
+    "description": "Function `_has_negation_flip` executes domain-specific processing. Check if one text negates the other. Inputs: self, text_a, text_b. Outputs: bool. Called by: no internal callers detected. Calls: self._tokenize.",
+    "inputs": [
+      "self",
+      "text_a",
+      "text_b"
+    ],
+    "outputs": "bool",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._tokenize"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\contradiction_detector.py::ContradictionDetector._jaccard",
+    "name": "_jaccard",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\contradiction_detector.py",
+    "route": "Memory/app/memory/extraction/contradiction_detector.py::jaccard",
+    "description": "Function `_jaccard` executes domain-specific processing. Coordinates downstream calls such as self._tokenize. Inputs: self, a, b. Outputs: float. Called by: no internal callers detected. Calls: self._tokenize.",
+    "inputs": [
+      "self",
+      "a",
+      "b"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._tokenize"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\contradiction_detector.py::ContradictionDetector._tokenize",
+    "name": "_tokenize",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\contradiction_detector.py",
+    "route": "Memory/app/memory/extraction/contradiction_detector.py::tokenize",
+    "description": "Function `_tokenize` executes domain-specific processing. parses and extracts structured information Inputs: self, text. Outputs: set. Called by: no internal callers detected. Calls: text.lower.split.",
+    "inputs": [
+      "self",
+      "text"
+    ],
+    "outputs": "set",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "text.lower.split"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\contradiction_detector.py::ContradictionDetector.find_contradictions",
+    "name": "find_contradictions",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\contradiction_detector.py",
+    "route": "Memory/app/memory/extraction/contradiction_detector.py::find_contradictions",
+    "description": "Function `find_contradictions` executes domain-specific processing. Returns list of (existing_id, new_id) pairs where existing Inputs: self, new_memories, existing. Outputs: List. Called by: no internal callers detected. Calls: self._has_negation_flip, self._jaccard.",
+    "inputs": [
+      "self",
+      "new_memories",
+      "existing"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._has_negation_flip",
+      "self._jaccard"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py::MemoryExtractor._compress_episode",
+    "name": "_compress_episode",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py",
+    "route": "Memory/app/memory/extraction/memory_extractor.py::compress_episode",
+    "description": "Function `_compress_episode` executes domain-specific processing. Create a ≤2 sentence event summary instead of storing raw output. Inputs: user_text, assistant_text. Outputs: str. Called by: no internal callers detected. Calls: assistant_text.split.",
+    "inputs": [
+      "user_text",
+      "assistant_text"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "assistant_text.split"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py::MemoryExtractor._compute_quality",
+    "name": "_compute_quality",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py",
+    "route": "Memory/app/memory/extraction/memory_extractor.py::compute_quality",
+    "description": "Function `_compute_quality` executes domain-specific processing. Coordinates downstream calls such as c.isupper, round. Inputs: text, importance. Outputs: float. Called by: no internal callers detected. Calls: c.isupper, round.",
+    "inputs": [
+      "text",
+      "importance"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "c.isupper",
+      "round"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py::MemoryExtractor._extract_entities",
+    "name": "_extract_entities",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py",
+    "route": "Memory/app/memory/extraction/memory_extractor.py::extract_entities",
+    "description": "Function `_extract_entities` extracts and structures data. Pull capitalised words / tech terms as entity candidates. Inputs: text. Outputs: List. Called by: no internal callers detected. Calls: dict.fromkeys, re.findall, t.title.",
+    "inputs": [
+      "text"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Parsing"
+    ],
+    "called_by": [],
+    "calls": [
+      "dict.fromkeys",
+      "re.findall",
+      "t.title"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py::MemoryExtractor._extract_relations",
+    "name": "_extract_relations",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py",
+    "route": "Memory/app/memory/extraction/memory_extractor.py::extract_relations",
+    "description": "Function `_extract_relations` extracts and structures data. Extract (subject, predicate, object) triples from text. Inputs: text. Outputs: List. Called by: no internal callers detected. Calls: builder, m.group, re.finditer.",
+    "inputs": [
+      "text"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Parsing"
+    ],
+    "called_by": [],
+    "calls": [
+      "builder",
+      "m.group",
+      "re.finditer"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py::MemoryExtractor._split_atomic_facts",
+    "name": "_split_atomic_facts",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py",
+    "route": "Memory/app/memory/extraction/memory_extractor.py::split_atomic_facts",
+    "description": "Function `_split_atomic_facts` executes domain-specific processing. Break a user utterance into individual factual claims. Inputs: text. Outputs: List. Called by: no internal callers detected. Calls: re.split, seen.add.",
+    "inputs": [
+      "text"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "re.split",
+      "seen.add"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py::MemoryExtractor.extract",
+    "name": "extract",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_extractor.py",
+    "route": "Memory/app/memory/extraction/memory_extractor.py::extract",
+    "description": "Function `extract` extracts and structures data. parses and extracts structured information Inputs: self, user_text, assistant_text, state. Outputs: ExtractionResult. Called by: no internal callers detected. Calls: ExtractionResult, MemoryNode, self._compress_episode.",
+    "inputs": [
+      "self",
+      "user_text",
+      "assistant_text",
+      "state"
+    ],
+    "outputs": "ExtractionResult",
+    "business_tags": [
+      "Parsing"
+    ],
+    "called_by": [],
+    "calls": [
+      "ExtractionResult",
+      "MemoryNode",
+      "self._compress_episode",
+      "self._compute_quality",
+      "self._extract_entities",
+      "self._extract_relations",
+      "self._split_atomic_facts"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_validator.py::MemoryValidator.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_validator.py",
+    "route": "Memory/app/memory/extraction/memory_validator.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as ContradictionDetector. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: ContradictionDetector.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "ContradictionDetector"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_validator.py::MemoryValidator._similarity",
+    "name": "_similarity",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_validator.py",
+    "route": "Memory/app/memory/extraction/memory_validator.py::similarity",
+    "description": "Function `_similarity` executes domain-specific processing. Coordinates downstream calls such as self._tokenize. Inputs: self, a, b. Outputs: float. Called by: no internal callers detected. Calls: self._tokenize.",
+    "inputs": [
+      "self",
+      "a",
+      "b"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._tokenize"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_validator.py::MemoryValidator._tokenize",
+    "name": "_tokenize",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_validator.py",
+    "route": "Memory/app/memory/extraction/memory_validator.py::tokenize",
+    "description": "Function `_tokenize` executes domain-specific processing. parses and extracts structured information Inputs: self, text. Outputs: set. Called by: no internal callers detected. Calls: text.strip.lower.split.",
+    "inputs": [
+      "self",
+      "text"
+    ],
+    "outputs": "set",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "text.strip.lower.split"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_validator.py::MemoryValidator.validate",
+    "name": "validate",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\extraction\\memory_validator.py",
+    "route": "Memory/app/memory/extraction/memory_validator.py::validate",
+    "description": "Function `validate` validates constraints and expected state. validates inputs and enforces constraints Inputs: self, new_memories, existing_memories. Outputs: Tuple. Called by: no internal callers detected. Calls: self._similarity, self.detector.find_contradictions.",
+    "inputs": [
+      "self",
+      "new_memories",
+      "existing_memories"
+    ],
+    "outputs": "Tuple",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._similarity",
+      "self.detector.find_contradictions"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\attention_engine.py::_phrase_score",
+    "name": "_phrase_score",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\attention_engine.py",
+    "route": "Memory/app/memory/orchestration/attention_engine.py::phrase_score",
+    "description": "Function `_phrase_score` executes domain-specific processing. Score based on phrase matching with logarithmic stacking. Inputs: text, strong, moderate, strong_weight, moderate_weight. Outputs: float. Called by: analyze. Calls: no internal downstream calls.",
+    "inputs": [
+      "text",
+      "strong",
+      "moderate",
+      "strong_weight",
+      "moderate_weight"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [
+      "analyze"
+    ],
+    "calls": [],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points as part of execution path."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\attention_engine.py::AttentionEngine.analyze",
+    "name": "analyze",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\attention_engine.py",
+    "route": "Memory/app/memory/orchestration/attention_engine.py::analyze",
+    "description": "Function `analyze` executes domain-specific processing. Coordinates downstream calls such as BehaviorState, _phrase_score, analyze_emotional_signals. Inputs: self, query. Outputs: BehaviorState. Called by: no internal callers detected. Calls: BehaviorState, _phrase_score, analyze_emotional_signals.",
+    "inputs": [
+      "self",
+      "query"
+    ],
+    "outputs": "BehaviorState",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "BehaviorState",
+      "_phrase_score",
+      "analyze_emotional_signals",
+      "q.count",
+      "round"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\decision_engine.py::DecisionEngine.decide",
+    "name": "decide",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\decision_engine.py",
+    "route": "Memory/app/memory/orchestration/decision_engine.py::decide",
+    "description": "Function `decide` executes domain-specific processing. Performs `decide` behavior for this module. Inputs: self, route_flags. Outputs: str. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "route_flags"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\episode_engine.py::EpisodeEngine.segment",
+    "name": "segment",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\episode_engine.py",
+    "route": "Memory/app/memory/orchestration/episode_engine.py::segment",
+    "description": "Function `segment` executes domain-specific processing. Performs `segment` behavior for this module. Inputs: self, memories. Outputs: List. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "memories"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py::InteractionFilter.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py",
+    "route": "Memory/app/memory/orchestration/interaction_filter.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Args: Inputs: self, lookback_minutes. Outputs: unspecified return value. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "lookback_minutes"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py::InteractionFilter._check_duplicate",
+    "name": "_check_duplicate",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py",
+    "route": "Memory/app/memory/orchestration/interaction_filter.py::check_duplicate",
+    "description": "Function `_check_duplicate` validates constraints and expected state. Check if interaction is a duplicate of recent interactions. Inputs: self, interaction, recent_interactions. Outputs: Tuple. Called by: no internal callers detected. Calls: self._compute_query_hash, self._compute_token_overlap.",
+    "inputs": [
+      "self",
+      "interaction",
+      "recent_interactions"
+    ],
+    "outputs": "Tuple",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._compute_query_hash",
+      "self._compute_token_overlap"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py::InteractionFilter._compute_query_hash",
+    "name": "_compute_query_hash",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py",
+    "route": "Memory/app/memory/orchestration/interaction_filter.py::compute_query_hash",
+    "description": "Function `_compute_query_hash` executes domain-specific processing. Compute hash of normalized query for fast comparison. Inputs: self, query. Outputs: str. Called by: no internal callers detected. Calls: hashlib.md5, hashlib.md5.hexdigest, normalized.encode.",
+    "inputs": [
+      "self",
+      "query"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "hashlib.md5",
+      "hashlib.md5.hexdigest",
+      "normalized.encode",
+      "self._normalize_query"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py::InteractionFilter._compute_token_overlap",
+    "name": "_compute_token_overlap",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py",
+    "route": "Memory/app/memory/orchestration/interaction_filter.py::compute_token_overlap",
+    "description": "Function `_compute_token_overlap` executes domain-specific processing. Compute Jaccard similarity between token sets. Inputs: self, query1, query2. Outputs: float. Called by: no internal callers detected. Calls: self._normalize_query, self._normalize_query.split.",
+    "inputs": [
+      "self",
+      "query1",
+      "query2"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._normalize_query",
+      "self._normalize_query.split"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py::InteractionFilter._normalize_query",
+    "name": "_normalize_query",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py",
+    "route": "Memory/app/memory/orchestration/interaction_filter.py::normalize_query",
+    "description": "Function `_normalize_query` filters and normalizes intermediate data. Normalize query for comparison. Inputs: self, query. Outputs: str. Called by: no internal callers detected. Calls: re.sub.",
+    "inputs": [
+      "self",
+      "query"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "re.sub"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py::InteractionFilter._score_importance",
+    "name": "_score_importance",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py",
+    "route": "Memory/app/memory/orchestration/interaction_filter.py::score_importance",
+    "description": "Function `_score_importance` executes domain-specific processing. Score interaction importance (0.0 to 1.0). Inputs: self, interaction. Outputs: float. Called by: no internal callers detected. Calls: re.search.",
+    "inputs": [
+      "self",
+      "interaction"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "re.search"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py::InteractionFilter.should_store",
+    "name": "should_store",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\orchestration\\interaction_filter.py",
+    "route": "Memory/app/memory/orchestration/interaction_filter.py::should_store",
+    "description": "Function `should_store` executes domain-specific processing. Determine if interaction should be stored. Inputs: self, interaction, recent_interactions. Outputs: Tuple. Called by: no internal callers detected. Calls: self._check_duplicate, self._score_importance.",
+    "inputs": [
+      "self",
+      "interaction",
+      "recent_interactions"
+    ],
+    "outputs": "Tuple",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._check_duplicate",
+      "self._score_importance"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\context_manager.py::ContextManager.build_context",
+    "name": "build_context",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\context_manager.py",
+    "route": "Memory/app/memory/retrieval/context_manager.py::build_context",
+    "description": "Function `build_context` builds and composes output artifacts. Builds structured artifacts consumed by downstream stages. Inputs: self, memories, max_chars. Outputs: str. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "memories",
+      "max_chars"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\context_tree.py::ContextTree.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\context_tree.py",
+    "route": "Memory/app/memory/retrieval/context_tree.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as TreeNode. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: TreeNode.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "TreeNode"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\context_tree.py::ContextTree.add_path",
+    "name": "add_path",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\context_tree.py",
+    "route": "Memory/app/memory/retrieval/context_tree.py::add_path",
+    "description": "Function `add_path` executes domain-specific processing. Coordinates downstream calls such as TreeNode, next. Inputs: self, titles, summary, raw_text. Outputs: no explicit return value. Called by: no internal callers detected. Calls: TreeNode, next.",
+    "inputs": [
+      "self",
+      "titles",
+      "summary",
+      "raw_text"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "TreeNode",
+      "next"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\context_tree.py::ContextTree.to_dict",
+    "name": "to_dict",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\context_tree.py",
+    "route": "Memory/app/memory/retrieval/context_tree.py::to_dict",
+    "description": "Function `to_dict` executes domain-specific processing. Coordinates downstream calls such as walk. Inputs: self. Outputs: dict. Called by: no internal callers detected. Calls: walk.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "dict",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "walk"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\context_tree.py::ContextTree.walk",
+    "name": "walk",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\context_tree.py",
+    "route": "Memory/app/memory/retrieval/context_tree.py::walk",
+    "description": "Function `walk` executes domain-specific processing. Coordinates downstream calls such as walk. Inputs: n. Outputs: dict. Called by: to_dict, walk. Calls: walk.",
+    "inputs": [
+      "n"
+    ],
+    "outputs": "dict",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [
+      "to_dict",
+      "walk"
+    ],
+    "calls": [
+      "walk"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and actively participates in call flow."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\hierarchical_summarizer.py::HierarchicalSummarizer.summarize",
+    "name": "summarize",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\hierarchical_summarizer.py",
+    "route": "Memory/app/memory/retrieval/hierarchical_summarizer.py::summarize",
+    "description": "Function `summarize` executes domain-specific processing. Performs `summarize` behavior for this module. Inputs: self, memories. Outputs: str. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "memories"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\hybrid_retriever.py::HybridRetriever.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\hybrid_retriever.py",
+    "route": "Memory/app/memory/retrieval/hybrid_retriever.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as RetrievalRanker. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: RetrievalRanker.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "RetrievalRanker"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\hybrid_retriever.py::HybridRetriever.retrieve",
+    "name": "retrieve",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\hybrid_retriever.py",
+    "route": "Memory/app/memory/retrieval/hybrid_retriever.py::retrieve",
+    "description": "Function `retrieve` executes domain-specific processing. loads and retrieves required data Inputs: self, query, route_decision, behavior, with_audit. Outputs: computed value. Called by: no internal callers detected. Calls: TreeRetriever, faiss_store.search, graph_store.neighborhood.",
+    "inputs": [
+      "self",
+      "query",
+      "route_decision",
+      "behavior",
+      "with_audit"
+    ],
+    "outputs": "computed value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "TreeRetriever",
+      "faiss_store.search",
+      "graph_store.neighborhood",
+      "persistent_tree_store.load",
+      "self.ranker.rank",
+      "sqlite_store.get_memory",
+      "sqlite_store.list_recent",
+      "sqlite_store.search",
+      "tree_retriever.retrieve"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\persistent_tree_store.py::PersistentTreeStore.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\persistent_tree_store.py",
+    "route": "Memory/app/memory/retrieval/persistent_tree_store.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as Path. Inputs: self, path. Outputs: unspecified return value. Called by: no internal callers detected. Calls: Path.",
+    "inputs": [
+      "self",
+      "path"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "Path"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\persistent_tree_store.py::PersistentTreeStore.load",
+    "name": "load",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\persistent_tree_store.py",
+    "route": "Memory/app/memory/retrieval/persistent_tree_store.py::load",
+    "description": "Function `load` loads required project data. loads and retrieves required data Inputs: self. Outputs: ContextTree. Called by: no internal callers detected. Calls: ContextTree, json.load, open.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "ContextTree",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "ContextTree",
+      "json.load",
+      "open",
+      "rebuild",
+      "self.path.exists"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\persistent_tree_store.py::PersistentTreeStore.rebuild",
+    "name": "rebuild",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\persistent_tree_store.py",
+    "route": "Memory/app/memory/retrieval/persistent_tree_store.py::rebuild",
+    "description": "Function `rebuild` builds and composes output artifacts. Builds structured artifacts consumed by downstream stages. Inputs: node_data. Outputs: unspecified return value. Called by: load, rebuild. Calls: TreeNode, rebuild.",
+    "inputs": [
+      "node_data"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [
+      "load",
+      "rebuild"
+    ],
+    "calls": [
+      "TreeNode",
+      "rebuild"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and actively participates in call flow."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\persistent_tree_store.py::PersistentTreeStore.save",
+    "name": "save",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\persistent_tree_store.py",
+    "route": "Memory/app/memory/retrieval/persistent_tree_store.py::save",
+    "description": "Function `save` persists outputs and artifacts. persists results to storage Inputs: self, tree. Outputs: unspecified return value. Called by: no internal callers detected. Calls: json.dump, open, tree.to_dict.",
+    "inputs": [
+      "self",
+      "tree"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "json.dump",
+      "open",
+      "tree.to_dict"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\query_resolver.py::QueryResolver.resolve",
+    "name": "resolve",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\query_resolver.py",
+    "route": "Memory/app/memory/retrieval/query_resolver.py::resolve",
+    "description": "Function `resolve` executes domain-specific processing. Performs `resolve` behavior for this module. Inputs: self, query. Outputs: dict. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "query"
+    ],
+    "outputs": "dict",
+    "business_tags": [
+      "Retrieval",
+      "Parsing"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\retrieval_ranker.py::RetrievalRanker.rank",
+    "name": "rank",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\retrieval_ranker.py",
+    "route": "Memory/app/memory/retrieval/retrieval_ranker.py::rank",
+    "description": "Function `rank` executes domain-specific processing. Coordinates downstream calls such as scored.sort, seen.add, self.score. Inputs: self, query, memories, top_k, behavior. Outputs: List. Called by: no internal callers detected. Calls: scored.sort, seen.add, self.score.",
+    "inputs": [
+      "self",
+      "query",
+      "memories",
+      "top_k",
+      "behavior"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "scored.sort",
+      "seen.add",
+      "self.score"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\retrieval_ranker.py::RetrievalRanker.score",
+    "name": "score",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\retrieval_ranker.py",
+    "route": "Memory/app/memory/retrieval/retrieval_ranker.py::score",
+    "description": "Function `score` executes domain-specific processing. Coordinates downstream calls such as getattr, query.lower.split, round. Inputs: self, query, memory, behavior. Outputs: float. Called by: no internal callers detected. Calls: getattr, query.lower.split, round.",
+    "inputs": [
+      "self",
+      "query",
+      "memory",
+      "behavior"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "getattr",
+      "query.lower.split",
+      "round"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_indexer.py::TreeIndexer._classify",
+    "name": "_classify",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_indexer.py",
+    "route": "Memory/app/memory/retrieval/tree_indexer.py::classify",
+    "description": "Function `_classify` executes domain-specific processing. Classify into (topic, subtopic) by keyword matching. Inputs: self, text. Outputs: Tuple. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "text"
+    ],
+    "outputs": "Tuple",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_indexer.py::TreeIndexer._generate_branch_summary",
+    "name": "_generate_branch_summary",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_indexer.py",
+    "route": "Memory/app/memory/retrieval/tree_indexer.py::generate_branch_summary",
+    "description": "Function `_generate_branch_summary` builds and composes output artifacts. Create a compressed summary of memories in a branch. Inputs: self, mems. Outputs: str. Called by: no internal callers detected. Calls: Counter, entity_freq.most_common, entity_freq.update.",
+    "inputs": [
+      "self",
+      "mems"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "Counter",
+      "entity_freq.most_common",
+      "entity_freq.update"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_indexer.py::TreeIndexer.build_from_memories",
+    "name": "build_from_memories",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_indexer.py",
+    "route": "Memory/app/memory/retrieval/tree_indexer.py::build_from_memories",
+    "description": "Function `build_from_memories` builds and composes output artifacts. Builds structured artifacts consumed by downstream stages. Inputs: self, memories. Outputs: ContextTree. Called by: no internal callers detected. Calls: ContextTree, defaultdict, self._classify.",
+    "inputs": [
+      "self",
+      "memories"
+    ],
+    "outputs": "ContextTree",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "ContextTree",
+      "defaultdict",
+      "self._classify",
+      "self._generate_branch_summary",
+      "tree.add_path"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_retriever.py::TreeRetriever.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_retriever.py",
+    "route": "Memory/app/memory/retrieval/tree_retriever.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as ContextTree. Inputs: self, tree. Outputs: unspecified return value. Called by: no internal callers detected. Calls: ContextTree.",
+    "inputs": [
+      "self",
+      "tree"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "ContextTree"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_retriever.py::TreeRetriever._score_node",
+    "name": "_score_node",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_retriever.py",
+    "route": "Memory/app/memory/retrieval/tree_retriever.py::score_node",
+    "description": "Function `_score_node` executes domain-specific processing. Coordinates downstream calls such as q.split. Inputs: self, query, node. Outputs: float. Called by: no internal callers detected. Calls: q.split.",
+    "inputs": [
+      "self",
+      "query",
+      "node"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Retrieval",
+      "Tagging"
+    ],
+    "called_by": [],
+    "calls": [
+      "q.split"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_retriever.py::TreeRetriever.retrieve",
+    "name": "retrieve",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_retriever.py",
+    "route": "Memory/app/memory/retrieval/tree_retriever.py::retrieve",
+    "description": "Function `retrieve` executes domain-specific processing. loads and retrieves required data Inputs: self, query, top_k. Outputs: List. Called by: no internal callers detected. Calls: scored.sort, walk.",
+    "inputs": [
+      "self",
+      "query",
+      "top_k"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "scored.sort",
+      "walk"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_retriever.py::TreeRetriever.walk",
+    "name": "walk",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\retrieval\\tree_retriever.py",
+    "route": "Memory/app/memory/retrieval/tree_retriever.py::walk",
+    "description": "Function `walk` executes domain-specific processing. Coordinates downstream calls such as self._score_node, walk. Inputs: node. Outputs: unspecified return value. Called by: retrieve, walk. Calls: self._score_node, walk.",
+    "inputs": [
+      "node"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [
+      "retrieve",
+      "walk"
+    ],
+    "calls": [
+      "self._score_node",
+      "walk"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and actively participates in call flow."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\bert_router.py::_get_router",
+    "name": "_get_router",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\bert_router.py",
+    "route": "Memory/app/memory/routing/bert_router.py::get_router",
+    "description": "Function `_get_router` loads required project data. Lazy singleton loader for the BERT classification pipeline. Inputs: no explicit parameters. Outputs: Pipeline. Called by: predict_route, warmup. Calls: pipeline.",
+    "inputs": [],
+    "outputs": "Pipeline",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [
+      "predict_route",
+      "warmup"
+    ],
+    "calls": [
+      "pipeline"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and actively participates in call flow."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\bert_router.py::is_model_available",
+    "name": "is_model_available",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\bert_router.py",
+    "route": "Memory/app/memory/routing/bert_router.py::is_model_available",
+    "description": "Function `is_model_available` executes domain-specific processing. Check if the model files exist at the expected path. Inputs: no explicit parameters. Outputs: bool. Called by: no internal callers detected. Calls: MODEL_PATH.exists.",
+    "inputs": [],
+    "outputs": "bool",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "MODEL_PATH.exists"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\bert_router.py::predict_route",
+    "name": "predict_route",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\bert_router.py",
+    "route": "Memory/app/memory/routing/bert_router.py::predict_route",
+    "description": "Function `predict_route` serves application-facing request handling. Predict intent scores using BERT semantic classification. Inputs: query, behavior_state. Outputs: Dict. Called by: no internal callers detected. Calls: _get_router, round, router.",
+    "inputs": [
+      "query",
+      "behavior_state"
+    ],
+    "outputs": "Dict",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "_get_router",
+      "round",
+      "router"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\bert_router.py::warmup",
+    "name": "warmup",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\bert_router.py",
+    "route": "Memory/app/memory/routing/bert_router.py::warmup",
+    "description": "Function `warmup` executes domain-specific processing. Pre-load the model into memory (call during startup if desired). Inputs: no explicit parameters. Outputs: unspecified return value. Called by: no internal callers detected. Calls: _get_router.",
+    "inputs": [],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "_get_router"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\fallback_manager.py::FallbackManager.apply_fallback",
+    "name": "apply_fallback",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\fallback_manager.py",
+    "route": "Memory/app/memory/routing/fallback_manager.py::apply_fallback",
+    "description": "Function `apply_fallback` executes domain-specific processing. Returns a system prompt modification or action directive based on the fallback. Inputs: self, decision, retrieved_memories. Outputs: str. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "decision",
+      "retrieved_memories"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Performs `init` behavior for this module. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._detect_conflicts",
+    "name": "_detect_conflicts",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::detect_conflicts",
+    "description": "Function `_detect_conflicts` executes domain-specific processing. Coordinates downstream calls such as IntentType, self._priority_index. Inputs: self, scores. Outputs: List. Called by: no internal callers detected. Calls: IntentType, self._priority_index.",
+    "inputs": [
+      "self",
+      "scores"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "IntentType",
+      "self._priority_index"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._extract_secondary",
+    "name": "_extract_secondary",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::extract_secondary",
+    "description": "Function `_extract_secondary` extracts and structures data. Return non-dominant intents above the secondary threshold. Inputs: self, scores, dominant. Outputs: List. Called by: no internal callers detected. Calls: IntentType, candidates.sort, self._priority_index.",
+    "inputs": [
+      "self",
+      "scores",
+      "dominant"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Parsing"
+    ],
+    "called_by": [],
+    "calls": [
+      "IntentType",
+      "candidates.sort",
+      "self._priority_index"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._greeting_token_count",
+    "name": "_greeting_token_count",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::greeting_token_count",
+    "description": "Function `_greeting_token_count` executes domain-specific processing. How many leading tokens are greeting words. Inputs: self, q. Outputs: int. Called by: no internal callers detected. Calls: self._GREETING_TIME_OF_DAY.match, self._GREETING_WORDS.match.",
+    "inputs": [
+      "self",
+      "q"
+    ],
+    "outputs": "int",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._GREETING_TIME_OF_DAY.match",
+      "self._GREETING_WORDS.match"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._is_stem_chitchat",
+    "name": "_is_stem_chitchat",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::is_stem_chitchat",
+    "description": "Function `_is_stem_chitchat` executes domain-specific processing. Return true when a social stem has only a social tail. Inputs: self, q. Outputs: bool. Called by: no internal callers detected. Calls: match.end, q.split, self._CHITCHAT_STEM.match.",
+    "inputs": [
+      "self",
+      "q"
+    ],
+    "outputs": "bool",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "match.end",
+      "q.split",
+      "self._CHITCHAT_STEM.match",
+      "self._SOCIAL_STEM_TAIL.match"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._normalize",
+    "name": "_normalize",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::normalize",
+    "description": "Function `_normalize` filters and normalizes intermediate data. Cleans intermediate values before downstream processing. Inputs: self, scores. Outputs: Dict. Called by: no internal callers detected. Calls: round.",
+    "inputs": [
+      "self",
+      "scores"
+    ],
+    "outputs": "Dict",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "round"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._priority_index",
+    "name": "_priority_index",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::priority_index",
+    "description": "Function `_priority_index` executes domain-specific processing. Supports document retrieval and indexing flow. Inputs: self, intent. Outputs: int. Called by: no internal callers detected. Calls: self._PRIORITY.index.",
+    "inputs": [
+      "self",
+      "intent"
+    ],
+    "outputs": "int",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._PRIORITY.index"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._score_chitchat",
+    "name": "_score_chitchat",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::score_chitchat",
+    "description": "Function `_score_chitchat` executes domain-specific processing. Score chitchat signals in the query. Inputs: self, q. Outputs: float. Called by: no internal callers detected. Calls: q.split, self._CHITCHAT_PREFIX.match, self._CHITCHAT_STANDALONE.match.",
+    "inputs": [
+      "self",
+      "q"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "q.split",
+      "self._CHITCHAT_PREFIX.match",
+      "self._CHITCHAT_STANDALONE.match",
+      "self._CONVERSATIONAL_FILLER.match",
+      "self._is_stem_chitchat",
+      "self._strip_greeting_prefix",
+      "tail.split"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._score_factual",
+    "name": "_score_factual",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::score_factual",
+    "description": "Function `_score_factual` executes domain-specific processing. Score factual intent. Only triggers for queries with enough Inputs: self, q. Outputs: float. Called by: no internal callers detected. Calls: pat.search, self._CHITCHAT_PREFIX.match, self._CHITCHAT_STANDALONE.match.",
+    "inputs": [
+      "self",
+      "q"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "pat.search",
+      "self._CHITCHAT_PREFIX.match",
+      "self._CHITCHAT_STANDALONE.match",
+      "self._CONVERSATIONAL_FILLER.match",
+      "self._HISTORICAL_PATTERNS.search",
+      "self._RELATIONAL_PATTERNS.search",
+      "self._SUMMARY_PATTERNS.search",
+      "self._is_stem_chitchat",
+      "self._strip_greeting_prefix",
+      "tail.split"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._score_greeting",
+    "name": "_score_greeting",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::score_greeting",
+    "description": "Function `_score_greeting` executes domain-specific processing. Greeting gets a high score ONLY when the query is purely social. Inputs: self, q. Outputs: float. Called by: no internal callers detected. Calls: q.split, self._CHITCHAT_PREFIX.match, self._CHITCHAT_STANDALONE.match.",
+    "inputs": [
+      "self",
+      "q"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "q.split",
+      "self._CHITCHAT_PREFIX.match",
+      "self._CHITCHAT_STANDALONE.match",
+      "self._greeting_token_count",
+      "self._strip_greeting_prefix"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._score_historical",
+    "name": "_score_historical",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::score_historical",
+    "description": "Function `_score_historical` executes domain-specific processing. Score historical/episodic intent based on temporal keywords. Inputs: self, q. Outputs: float. Called by: no internal callers detected. Calls: self._HISTORICAL_PATTERNS.findall, self._strip_greeting_prefix.",
+    "inputs": [
+      "self",
+      "q"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._HISTORICAL_PATTERNS.findall",
+      "self._strip_greeting_prefix"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._score_oos",
+    "name": "_score_oos",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::score_oos",
+    "description": "Function `_score_oos` executes domain-specific processing. Score out-of-scope intent by checking across all OOS thematic groups. Inputs: self, q. Outputs: float. Called by: no internal callers detected. Calls: pat.search, self._strip_greeting_prefix.",
+    "inputs": [
+      "self",
+      "q"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "pat.search",
+      "self._strip_greeting_prefix"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._score_relational",
+    "name": "_score_relational",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::score_relational",
+    "description": "Function `_score_relational` executes domain-specific processing. Score relational/graph intent based on relationship keywords. Inputs: self, q. Outputs: float. Called by: no internal callers detected. Calls: self._RELATIONAL_PATTERNS.findall, self._strip_greeting_prefix.",
+    "inputs": [
+      "self",
+      "q"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._RELATIONAL_PATTERNS.findall",
+      "self._strip_greeting_prefix"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._score_summary",
+    "name": "_score_summary",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::score_summary",
+    "description": "Function `_score_summary` executes domain-specific processing. Score summary intent based on keyword matches. Inputs: self, q. Outputs: float. Called by: no internal callers detected. Calls: self._SUMMARY_PATTERNS.findall, self._strip_greeting_prefix.",
+    "inputs": [
+      "self",
+      "q"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._SUMMARY_PATTERNS.findall",
+      "self._strip_greeting_prefix"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._select_dominant",
+    "name": "_select_dominant",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::select_dominant",
+    "description": "Function `_select_dominant` executes domain-specific processing. Pick the intent with the highest score. Inputs: self, scores. Outputs: Tuple. Called by: no internal callers detected. Calls: IntentType.",
+    "inputs": [
+      "self",
+      "scores"
+    ],
+    "outputs": "Tuple",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "IntentType"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier._strip_greeting_prefix",
+    "name": "_strip_greeting_prefix",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::strip_greeting_prefix",
+    "description": "Function `_strip_greeting_prefix` executes domain-specific processing. Remove leading greeting words and return the rest. Inputs: self, q. Outputs: str. Called by: no internal callers detected. Calls: re.sub.",
+    "inputs": [
+      "self",
+      "q"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "re.sub"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier.classify",
+    "name": "classify",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::classify",
+    "description": "Function `classify` executes domain-specific processing. Score all intents, then return: Inputs: self, query. Outputs: Tuple. Called by: no internal callers detected. Calls: self._detect_conflicts, self._extract_secondary, self._normalize.",
+    "inputs": [
+      "self",
+      "query"
+    ],
+    "outputs": "Tuple",
+    "business_tags": [
+      "Tagging"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._detect_conflicts",
+      "self._extract_secondary",
+      "self._normalize",
+      "self._select_dominant",
+      "self.score_all"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py::IntentClassifier.score_all",
+    "name": "score_all",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\intent_classifier.py",
+    "route": "Memory/app/memory/routing/intent_classifier.py::score_all",
+    "description": "Function `score_all` executes domain-specific processing. Evaluate every intent category against *query* and return Inputs: self, query. Outputs: Dict. Called by: no internal callers detected. Calls: self._score_chitchat, self._score_factual, self._score_greeting.",
+    "inputs": [
+      "self",
+      "query"
+    ],
+    "outputs": "Dict",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._score_chitchat",
+      "self._score_factual",
+      "self._score_greeting",
+      "self._score_historical",
+      "self._score_oos",
+      "self._score_relational",
+      "self._score_summary"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\oos_detector.py::OOSDetector.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\oos_detector.py",
+    "route": "Memory/app/memory/routing/oos_detector.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as IntentClassifier. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: IntentClassifier.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "IntentClassifier"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\oos_detector.py::OOSDetector.is_oos",
+    "name": "is_oos",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\oos_detector.py",
+    "route": "Memory/app/memory/routing/oos_detector.py::is_oos",
+    "description": "Function `is_oos` executes domain-specific processing. Returns True if the OOS score for the query exceeds the threshold. Inputs: self, query. Outputs: bool. Called by: no internal callers detected. Calls: self._classifier._score_oos.",
+    "inputs": [
+      "self",
+      "query"
+    ],
+    "outputs": "bool",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._classifier._score_oos"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\query_router.py::QueryRouter.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\query_router.py",
+    "route": "Memory/app/memory/routing/query_router.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as IntentClassifier, RoutingPolicies. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: IntentClassifier, RoutingPolicies.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "IntentClassifier",
+      "RoutingPolicies"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\query_router.py::QueryRouter._build_intent_reasoning",
+    "name": "_build_intent_reasoning",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\query_router.py",
+    "route": "Memory/app/memory/routing/query_router.py::build_intent_reasoning",
+    "description": "Function `_build_intent_reasoning` builds and composes output artifacts. Structured intent reasoning for debug output. Inputs: primary, secondary, scores. Outputs: str. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "primary",
+      "secondary",
+      "scores"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\query_router.py::QueryRouter._build_orchestration_plan",
+    "name": "_build_orchestration_plan",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\query_router.py",
+    "route": "Memory/app/memory/routing/query_router.py::build_orchestration_plan",
+    "description": "Function `_build_orchestration_plan` builds and composes output artifacts. Build an orchestration plan based on the set of active intents. Inputs: active_intents. Outputs: list. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "active_intents"
+    ],
+    "outputs": "list",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\query_router.py::QueryRouter._build_reasoning",
+    "name": "_build_reasoning",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\query_router.py",
+    "route": "Memory/app/memory/routing/query_router.py::build_reasoning",
+    "description": "Function `_build_reasoning` builds and composes output artifacts. Build a human-readable explanation of why this intent won. Inputs: intent, confidence, scores, secondary. Outputs: str. Called by: no internal callers detected. Calls: round.",
+    "inputs": [
+      "intent",
+      "confidence",
+      "scores",
+      "secondary"
+    ],
+    "outputs": "str",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "round"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\query_router.py::QueryRouter.route",
+    "name": "route",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\query_router.py",
+    "route": "Memory/app/memory/routing/query_router.py::route",
+    "description": "Function `route` serves application-facing request handling. Implements API/service handler behavior and returns normalized response data. Inputs: self, query. Outputs: RouteDecision. Called by: no internal callers detected. Calls: IntentType, RouteDecision, analyze_emotional_signals.",
+    "inputs": [
+      "self",
+      "query"
+    ],
+    "outputs": "RouteDecision",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "IntentType",
+      "RouteDecision",
+      "analyze_emotional_signals",
+      "predict_route",
+      "priority_order.index",
+      "query.split",
+      "round",
+      "self._build_intent_reasoning",
+      "self._build_orchestration_plan",
+      "self._build_reasoning",
+      "self.intent_classifier._CHITCHAT_PREFIX.match",
+      "self.intent_classifier._CHITCHAT_STANDALONE.match",
+      "self.intent_classifier._CONVERSATIONAL_FILLER.match",
+      "self.intent_classifier._strip_greeting_prefix",
+      "self.intent_classifier.classify",
+      "self.policies.get_policy",
+      "stripped.split"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\routing_policies.py::RoutingPolicies.get_policy",
+    "name": "get_policy",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\routing\\routing_policies.py",
+    "route": "Memory/app/memory/routing/routing_policies.py::get_policy",
+    "description": "Function `get_policy` loads required project data. Retrieves module data required by downstream functions. Inputs: self, intent. Outputs: Dict. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self",
+      "intent"
+    ],
+    "outputs": "Dict",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\supermemory.py::SuperMemoryService._passes_admission",
+    "name": "_passes_admission",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\supermemory.py",
+    "route": "Memory/app/memory/supermemory.py::passes_admission",
+    "description": "Function `_passes_admission` executes domain-specific processing. Gate: only high-value memories enter long-term storage. Inputs: self, m. Outputs: bool. Called by: no internal callers detected. Calls: getattr.",
+    "inputs": [
+      "self",
+      "m"
+    ],
+    "outputs": "bool",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "getattr"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\supermemory.py::SuperMemoryService.retrieve",
+    "name": "retrieve",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\supermemory.py",
+    "route": "Memory/app/memory/supermemory.py::retrieve",
+    "description": "Function `retrieve` executes domain-specific processing. loads and retrieves required data Inputs: self, query, limit. Outputs: List. Called by: no internal callers detected. Calls: sqlite_store.search.",
+    "inputs": [
+      "self",
+      "query",
+      "limit"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "sqlite_store.search"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\supermemory.py::SuperMemoryService.store",
+    "name": "store",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\memory\\supermemory.py",
+    "route": "Memory/app/memory/supermemory.py::store",
+    "description": "Function `store` executes domain-specific processing. Coordinates downstream calls such as faiss_store.add, getattr, self._passes_admission. Inputs: self, memories. Outputs: List. Called by: no internal callers detected. Calls: faiss_store.add, getattr, self._passes_admission.",
+    "inputs": [
+      "self",
+      "memories"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "faiss_store.add",
+      "getattr",
+      "self._passes_admission",
+      "sqlite_store.add_memory",
+      "sqlite_store.delete_memory",
+      "time.sleep"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py::FAISSVectorStore.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py",
+    "route": "Memory/app/storage/faiss_vector_store.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as Path, faiss.IndexFlatL2, threading.RLock. Inputs: self, dim, index_path. Outputs: unspecified return value. Called by: no internal callers detected. Calls: Path, faiss.IndexFlatL2, threading.RLock.",
+    "inputs": [
+      "self",
+      "dim",
+      "index_path"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "Path",
+      "faiss.IndexFlatL2",
+      "threading.RLock"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py::FAISSVectorStore._load",
+    "name": "_load",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py",
+    "route": "Memory/app/storage/faiss_vector_store.py::load",
+    "description": "Function `_load` loads required project data. loads and retrieves required data Inputs: self. Outputs: no explicit return value. Called by: no internal callers detected. Calls: faiss.IndexFlatL2, faiss.read_index, open.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "faiss.IndexFlatL2",
+      "faiss.read_index",
+      "open",
+      "pickle.load",
+      "self.index_path.exists",
+      "self.meta_path.exists"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py::FAISSVectorStore._persist",
+    "name": "_persist",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py",
+    "route": "Memory/app/storage/faiss_vector_store.py::persist",
+    "description": "Function `_persist` executes domain-specific processing. Coordinates downstream calls such as faiss.write_index, open, pickle.dump. Inputs: self. Outputs: no explicit return value. Called by: no internal callers detected. Calls: faiss.write_index, open, pickle.dump.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "faiss.write_index",
+      "open",
+      "pickle.dump",
+      "self.index_path.with_suffix",
+      "self.meta_path.with_suffix",
+      "tmp_index.replace",
+      "tmp_meta.replace"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py::FAISSVectorStore.add",
+    "name": "add",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py",
+    "route": "Memory/app/storage/faiss_vector_store.py::add",
+    "description": "Function `add` executes domain-specific processing. Coordinates downstream calls such as embedder.embed, np.array, self._load. Inputs: self, item_id, text. Outputs: no explicit return value. Called by: no internal callers detected. Calls: embedder.embed, np.array, self._load.",
+    "inputs": [
+      "self",
+      "item_id",
+      "text"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "embedder.embed",
+      "np.array",
+      "self._load",
+      "self._persist",
+      "self.index.add",
+      "self.initialize"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py::FAISSVectorStore.initialize",
+    "name": "initialize",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py",
+    "route": "Memory/app/storage/faiss_vector_store.py::initialize",
+    "description": "Function `initialize` executes domain-specific processing. Coordinates downstream calls such as self._load. Inputs: self. Outputs: no explicit return value. Called by: no internal callers detected. Calls: self._load.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._load"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py::FAISSVectorStore.search",
+    "name": "search",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\faiss_vector_store.py",
+    "route": "Memory/app/storage/faiss_vector_store.py::search",
+    "description": "Function `search` serves application-facing request handling. Processes `search` request flow and returns structured response data. Inputs: self, query, top_k. Outputs: List. Called by: no internal callers detected. Calls: embedder.embed, np.array, self.index.search.",
+    "inputs": [
+      "self",
+      "query",
+      "top_k"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Retrieval",
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "embedder.embed",
+      "np.array",
+      "self.index.search",
+      "self.initialize"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\graph_store.py::GraphStore.add_relation",
+    "name": "add_relation",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\graph_store.py",
+    "route": "Memory/app/storage/graph_store.py::add_relation",
+    "description": "Function `add_relation` executes domain-specific processing. Add an edge, skipping duplicates via unique index constraints. Inputs: self, from_id, to_id, relation, weight. Outputs: no explicit return value. Called by: no internal callers detected. Calls: sqlite_store.add_edge.",
+    "inputs": [
+      "self",
+      "from_id",
+      "to_id",
+      "relation",
+      "weight"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Tagging"
+    ],
+    "called_by": [],
+    "calls": [
+      "sqlite_store.add_edge"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\graph_store.py::GraphStore.connect_related_memories",
+    "name": "connect_related_memories",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\graph_store.py",
+    "route": "Memory/app/storage/graph_store.py::connect_related_memories",
+    "description": "Function `connect_related_memories` executes domain-specific processing. Connect a set of memories that were extracted from the same interaction. Inputs: self, memory_ids, relation. Outputs: no explicit return value. Called by: no internal callers detected. Calls: self.add_relation.",
+    "inputs": [
+      "self",
+      "memory_ids",
+      "relation"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Tagging"
+    ],
+    "called_by": [],
+    "calls": [
+      "self.add_relation"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\graph_store.py::GraphStore.neighborhood",
+    "name": "neighborhood",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\graph_store.py",
+    "route": "Memory/app/storage/graph_store.py::neighborhood",
+    "description": "Function `neighborhood` executes domain-specific processing. Get all edges touching this memory node. Inputs: self, memory_id. Outputs: List. Called by: no internal callers detected. Calls: sqlite_store.get_edges.",
+    "inputs": [
+      "self",
+      "memory_id"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Tagging"
+    ],
+    "called_by": [],
+    "calls": [
+      "sqlite_store.get_edges"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\graph_store.py::GraphStore.prune",
+    "name": "prune",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\graph_store.py",
+    "route": "Memory/app/storage/graph_store.py::prune",
+    "description": "Function `prune` orchestrates execution flow. orchestrates workflow execution steps Inputs: self, retention_days, max_edges. Outputs: int. Called by: no internal callers detected. Calls: sqlite_store.prune_edges.",
+    "inputs": [
+      "self",
+      "retention_days",
+      "max_edges"
+    ],
+    "outputs": "int",
+    "business_tags": [
+      "Tagging",
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "sqlite_store.prune_edges"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\graph_store.py::GraphStore.rich_neighborhood",
+    "name": "rich_neighborhood",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\graph_store.py",
+    "route": "Memory/app/storage/graph_store.py::rich_neighborhood",
+    "description": "Function `rich_neighborhood` executes domain-specific processing. Full graph view: center node + connected nodes + labeled edges. Inputs: self, memory_id. Outputs: Dict. Called by: no internal callers detected. Calls: node_ids.add, self.neighborhood, sqlite_store.get_memory.",
+    "inputs": [
+      "self",
+      "memory_id"
+    ],
+    "outputs": "Dict",
+    "business_tags": [
+      "Tagging"
+    ],
+    "called_by": [],
+    "calls": [
+      "node_ids.add",
+      "self.neighborhood",
+      "sqlite_store.get_memory"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as threading.RLock, threading.local. Inputs: self, db_path. Outputs: unspecified return value. Called by: no internal callers detected. Calls: threading.RLock, threading.local.",
+    "inputs": [
+      "self",
+      "db_path"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "threading.RLock",
+      "threading.local"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore._configure_connection",
+    "name": "_configure_connection",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::configure_connection",
+    "description": "Function `_configure_connection` executes domain-specific processing. Coordinates downstream calls such as conn.commit, conn.execute. Inputs: self, conn. Outputs: no explicit return value. Called by: no internal callers detected. Calls: conn.commit, conn.execute.",
+    "inputs": [
+      "self",
+      "conn"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.commit",
+      "conn.execute"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore._connect",
+    "name": "_connect",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::connect",
+    "description": "Function `_connect` executes domain-specific processing. Coordinates downstream calls such as sqlite3.connect. Inputs: self. Outputs: sqlite3.Connection. Called by: no internal callers detected. Calls: sqlite3.connect.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "sqlite3.Connection",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "sqlite3.connect"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore._ensure_column",
+    "name": "_ensure_column",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::ensure_column",
+    "description": "Function `_ensure_column` executes domain-specific processing. Coordinates downstream calls such as conn.commit, conn.execute, conn.execute.fetchall. Inputs: self, conn, table, column, definition. Outputs: no explicit return value. Called by: no internal callers detected. Calls: conn.commit, conn.execute, conn.execute.fetchall.",
+    "inputs": [
+      "self",
+      "conn",
+      "table",
+      "column",
+      "definition"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.commit",
+      "conn.execute",
+      "conn.execute.fetchall"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore._execute_write",
+    "name": "_execute_write",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::execute_write",
+    "description": "Function `_execute_write` persists outputs and artifacts. persists results to storage Inputs: self, query, params, commit. Outputs: sqlite3.Cursor. Called by: no internal callers detected. Calls: conn.commit, conn.execute, self._get_connection.",
+    "inputs": [
+      "self",
+      "query",
+      "params",
+      "commit"
+    ],
+    "outputs": "sqlite3.Cursor",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.commit",
+      "conn.execute",
+      "self._get_connection",
+      "time.sleep"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore._get_connection",
+    "name": "_get_connection",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::get_connection",
+    "description": "Function `_get_connection` loads required project data. Retrieves module data required by downstream functions. Inputs: self. Outputs: sqlite3.Connection. Called by: no internal callers detected. Calls: RuntimeError, getattr, self._configure_connection.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "sqlite3.Connection",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "RuntimeError",
+      "getattr",
+      "self._configure_connection",
+      "self._connect",
+      "self.initialize"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore._init_db",
+    "name": "_init_db",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::init_db",
+    "description": "Function `_init_db` executes domain-specific processing. Coordinates downstream calls such as conn.commit, conn.execute, self._ensure_column. Inputs: self, conn. Outputs: no explicit return value. Called by: no internal callers detected. Calls: conn.commit, conn.execute, self._ensure_column.",
+    "inputs": [
+      "self",
+      "conn"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.commit",
+      "conn.execute",
+      "self._ensure_column"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore._row_to_interaction",
+    "name": "_row_to_interaction",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::row_to_interaction",
+    "description": "Function `_row_to_interaction` executes domain-specific processing. Coordinates downstream calls such as json.loads. Inputs: self, row. Outputs: Dict. Called by: no internal callers detected. Calls: json.loads.",
+    "inputs": [
+      "self",
+      "row"
+    ],
+    "outputs": "Dict",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "json.loads"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore._row_to_memory",
+    "name": "_row_to_memory",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::row_to_memory",
+    "description": "Function `_row_to_memory` executes domain-specific processing. Coordinates downstream calls such as MemoryNode, MemoryStatus, MemoryType. Inputs: self, row. Outputs: MemoryNode. Called by: no internal callers detected. Calls: MemoryNode, MemoryStatus, MemoryType.",
+    "inputs": [
+      "self",
+      "row"
+    ],
+    "outputs": "MemoryNode",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "MemoryNode",
+      "MemoryStatus",
+      "MemoryType",
+      "json.loads"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.add_edge",
+    "name": "add_edge",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::add_edge",
+    "description": "Function `add_edge` executes domain-specific processing. Coordinates downstream calls such as self._execute_write. Inputs: self, from_id, to_id, relation, weight. Outputs: bool. Called by: no internal callers detected. Calls: self._execute_write.",
+    "inputs": [
+      "self",
+      "from_id",
+      "to_id",
+      "relation",
+      "weight"
+    ],
+    "outputs": "bool",
+    "business_tags": [
+      "Tagging"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._execute_write"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.add_interaction",
+    "name": "add_interaction",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::add_interaction",
+    "description": "Function `add_interaction` executes domain-specific processing. Coordinates downstream calls such as json.dumps, self._execute_write. Inputs: self, interaction. Outputs: int. Called by: no internal callers detected. Calls: json.dumps, self._execute_write.",
+    "inputs": [
+      "self",
+      "interaction"
+    ],
+    "outputs": "int",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "json.dumps",
+      "self._execute_write"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.add_memory",
+    "name": "add_memory",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::add_memory",
+    "description": "Function `add_memory` executes domain-specific processing. Coordinates downstream calls such as getattr, json.dumps, self._execute_write. Inputs: self, mem. Outputs: int. Called by: no internal callers detected. Calls: getattr, json.dumps, self._execute_write.",
+    "inputs": [
+      "self",
+      "mem"
+    ],
+    "outputs": "int",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "getattr",
+      "json.dumps",
+      "self._execute_write"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.close_thread_connection",
+    "name": "close_thread_connection",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::close_thread_connection",
+    "description": "Function `close_thread_connection` loads required project data. loads and retrieves required data Inputs: self. Outputs: no explicit return value. Called by: no internal callers detected. Calls: conn.close, getattr.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Retrieval"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.close",
+      "getattr"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.delete_memory",
+    "name": "delete_memory",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::delete_memory",
+    "description": "Function `delete_memory` executes domain-specific processing. Coordinates downstream calls such as self._execute_write. Inputs: self, memory_id. Outputs: no explicit return value. Called by: no internal callers detected. Calls: self._execute_write.",
+    "inputs": [
+      "self",
+      "memory_id"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._execute_write"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.get_edges",
+    "name": "get_edges",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::get_edges",
+    "description": "Function `get_edges` loads required project data. Retrieves module data required by downstream functions. Inputs: self, memory_id. Outputs: List. Called by: no internal callers detected. Calls: conn.execute, conn.execute.fetchall, self._get_connection.",
+    "inputs": [
+      "self",
+      "memory_id"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Tagging"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.execute",
+      "conn.execute.fetchall",
+      "self._get_connection"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.get_memory",
+    "name": "get_memory",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::get_memory",
+    "description": "Function `get_memory` loads required project data. Retrieves module data required by downstream functions. Inputs: self, memory_id. Outputs: Optional. Called by: no internal callers detected. Calls: conn.execute, conn.execute.fetchone, self._get_connection.",
+    "inputs": [
+      "self",
+      "memory_id"
+    ],
+    "outputs": "Optional",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.execute",
+      "conn.execute.fetchone",
+      "self._get_connection",
+      "self._row_to_memory"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.initialize",
+    "name": "initialize",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::initialize",
+    "description": "Function `initialize` executes domain-specific processing. Coordinates downstream calls such as conn.close, log.exception, self._configure_connection. Inputs: self. Outputs: bool. Called by: no internal callers detected. Calls: conn.close, log.exception, self._configure_connection.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "bool",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.close",
+      "log.exception",
+      "self._configure_connection",
+      "self._connect",
+      "self._init_db"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.interaction_stats",
+    "name": "interaction_stats",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::interaction_stats",
+    "description": "Function `interaction_stats` serves application-facing request handling. Implements API/service handler behavior and returns normalized response data. Inputs: self, limit. Outputs: Dict. Called by: no internal callers detected. Calls: self.list_interactions.",
+    "inputs": [
+      "self",
+      "limit"
+    ],
+    "outputs": "Dict",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "self.list_interactions"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.is_available",
+    "name": "is_available",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::is_available",
+    "description": "Function `is_available` executes domain-specific processing. Performs `is available` behavior for this module. Inputs: self. Outputs: bool. Called by: no internal callers detected. Calls: no internal downstream calls.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "bool",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.list_interactions",
+    "name": "list_interactions",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::list_interactions",
+    "description": "Function `list_interactions` serves application-facing request handling. Processes `list interactions` request flow and returns structured response data. Inputs: self, limit. Outputs: List. Called by: no internal callers detected. Calls: conn.execute, conn.execute.fetchall, self._get_connection.",
+    "inputs": [
+      "self",
+      "limit"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.execute",
+      "conn.execute.fetchall",
+      "self._get_connection",
+      "self._row_to_interaction"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.list_recent",
+    "name": "list_recent",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::list_recent",
+    "description": "Function `list_recent` serves application-facing request handling. Implements API/service handler behavior and returns normalized response data. Inputs: self, limit. Outputs: List. Called by: no internal callers detected. Calls: conn.execute, conn.execute.fetchall, self._get_connection.",
+    "inputs": [
+      "self",
+      "limit"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.execute",
+      "conn.execute.fetchall",
+      "self._get_connection",
+      "self._row_to_memory"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.list_recent_interactions",
+    "name": "list_recent_interactions",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::list_recent_interactions",
+    "description": "Function `list_recent_interactions` serves application-facing request handling. Retrieve recent interactions for deduplication checking. Inputs: self, limit, minutes. Outputs: List. Called by: no internal callers detected. Calls: InteractionMetadata, conn.execute, conn.execute.fetchall.",
+    "inputs": [
+      "self",
+      "limit",
+      "minutes"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "InteractionMetadata",
+      "conn.execute",
+      "conn.execute.fetchall",
+      "json.loads",
+      "self._get_connection"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.prune_edges",
+    "name": "prune_edges",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::prune_edges",
+    "description": "Function `prune_edges` orchestrates execution flow. orchestrates workflow execution steps Inputs: self, retention_days, max_rows, batch_size. Outputs: int. Called by: no internal callers detected. Calls: conn.execute, conn.execute.fetchone, cutoff.strftime.",
+    "inputs": [
+      "self",
+      "retention_days",
+      "max_rows",
+      "batch_size"
+    ],
+    "outputs": "int",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.execute",
+      "conn.execute.fetchone",
+      "cutoff.strftime",
+      "datetime.now",
+      "self._execute_write",
+      "self._get_connection",
+      "timedelta"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.prune_interactions",
+    "name": "prune_interactions",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::prune_interactions",
+    "description": "Function `prune_interactions` orchestrates execution flow. orchestrates workflow execution steps Inputs: self, retention_days, max_rows, batch_size. Outputs: int. Called by: no internal callers detected. Calls: conn.execute, conn.execute.fetchone, cutoff.strftime.",
+    "inputs": [
+      "self",
+      "retention_days",
+      "max_rows",
+      "batch_size"
+    ],
+    "outputs": "int",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.execute",
+      "conn.execute.fetchone",
+      "cutoff.strftime",
+      "datetime.now",
+      "self._execute_write",
+      "self._get_connection",
+      "timedelta"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.search",
+    "name": "search",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::search",
+    "description": "Function `search` serves application-facing request handling. Processes `search` request flow and returns structured response data. Inputs: self, text, limit. Outputs: List. Called by: no internal callers detected. Calls: conn.execute, conn.execute.fetchall, self._get_connection.",
+    "inputs": [
+      "self",
+      "text",
+      "limit"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Retrieval",
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "conn.execute",
+      "conn.execute.fetchall",
+      "self._get_connection",
+      "self._row_to_memory"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py::SQLiteStore.update_status",
+    "name": "update_status",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\sqlite_store.py",
+    "route": "Memory/app/storage/sqlite_store.py::update_status",
+    "description": "Function `update_status` executes domain-specific processing. Coordinates downstream calls such as self._execute_write. Inputs: self, memory_id, status. Outputs: no explicit return value. Called by: no internal callers detected. Calls: self._execute_write.",
+    "inputs": [
+      "self",
+      "memory_id",
+      "status"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "self._execute_write"
+    ],
+    "in_workflow": false,
+    "workflow_reason": "No entry-point-reachable call path detected for this function."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\vector_store.py::VectorStore.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\vector_store.py",
+    "route": "Memory/app/storage/vector_store.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as warnings.warn. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: warnings.warn.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "warnings.warn"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\vector_store.py::VectorStore.cosine",
+    "name": "cosine",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\vector_store.py",
+    "route": "Memory/app/storage/vector_store.py::cosine",
+    "description": "Function `cosine` executes domain-specific processing. Coordinates downstream calls such as math.sqrt, zip. Inputs: a, b. Outputs: float. Called by: search. Calls: math.sqrt, zip.",
+    "inputs": [
+      "a",
+      "b"
+    ],
+    "outputs": "float",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [
+      "search"
+    ],
+    "calls": [
+      "math.sqrt",
+      "zip"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and actively participates in call flow."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\vector_store.py::VectorStore.search",
+    "name": "search",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\vector_store.py",
+    "route": "Memory/app/storage/vector_store.py::search",
+    "description": "Function `search` serves application-facing request handling. Processes `search` request flow and returns structured response data. Inputs: self, query, top_k. Outputs: List. Called by: no internal callers detected. Calls: cosine, embedder.embed, scored.sort.",
+    "inputs": [
+      "self",
+      "query",
+      "top_k"
+    ],
+    "outputs": "List",
+    "business_tags": [
+      "Retrieval",
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "cosine",
+      "embedder.embed",
+      "scored.sort"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\vector_store.py::VectorStore.upsert",
+    "name": "upsert",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\storage\\vector_store.py",
+    "route": "Memory/app/storage/vector_store.py::upsert",
+    "description": "Function `upsert` executes domain-specific processing. Coordinates downstream calls such as embedder.embed. Inputs: self, item_id, text. Outputs: no explicit return value. Called by: no internal callers detected. Calls: embedder.embed.",
+    "inputs": [
+      "self",
+      "item_id",
+      "text"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "embedder.embed"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\workflow\\orchestrator.py::WorkflowOrchestrator.__init__",
+    "name": "__init__",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\workflow\\orchestrator.py",
+    "route": "Memory/app/workflow/orchestrator.py::init",
+    "description": "Function `__init__` executes domain-specific processing. Coordinates downstream calls such as AttentionEngine, ContextManager, FallbackManager. Inputs: self. Outputs: unspecified return value. Called by: no internal callers detected. Calls: AttentionEngine, ContextManager, FallbackManager.",
+    "inputs": [
+      "self"
+    ],
+    "outputs": "unspecified return value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "AttentionEngine",
+      "ContextManager",
+      "FallbackManager",
+      "HybridRetriever",
+      "InteractionFilter",
+      "MemoryExtractor",
+      "MemoryLifecycle",
+      "MemoryValidator",
+      "QueryRouter",
+      "TreeIndexer"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\workflow\\orchestrator.py::WorkflowOrchestrator._build_graph_edges",
+    "name": "_build_graph_edges",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\workflow\\orchestrator.py",
+    "route": "Memory/app/workflow/orchestrator.py::build_graph_edges",
+    "description": "Function `_build_graph_edges` builds and composes output artifacts. Create real graph edges: Inputs: self, stored_ids, memories. Outputs: no explicit return value. Called by: no internal callers detected. Calls: graph_store.add_relation, graph_store.connect_related_memories, zip.",
+    "inputs": [
+      "self",
+      "stored_ids",
+      "memories"
+    ],
+    "outputs": "no explicit return value",
+    "business_tags": [
+      "Tagging"
+    ],
+    "called_by": [],
+    "calls": [
+      "graph_store.add_relation",
+      "graph_store.connect_related_memories",
+      "zip"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\workflow\\orchestrator.py::WorkflowOrchestrator._log_interaction",
+    "name": "_log_interaction",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\workflow\\orchestrator.py",
+    "route": "Memory/app/workflow/orchestrator.py::log_interaction",
+    "description": "Function `_log_interaction` executes domain-specific processing. Coordinates downstream calls such as InteractionMetadata, self.interaction_filter.should_store, sqlite_store.add_interaction. Inputs: self, user_id, session_id, query, route, state. Outputs: computed value. Called by: no internal callers detected. Calls: InteractionMetadata, self.interaction_filter.should_store, sqlite_store.add_interaction.",
+    "inputs": [
+      "self",
+      "user_id",
+      "session_id",
+      "query",
+      "route",
+      "state"
+    ],
+    "outputs": "computed value",
+    "business_tags": [
+      "Utilities"
+    ],
+    "called_by": [],
+    "calls": [
+      "InteractionMetadata",
+      "self.interaction_filter.should_store",
+      "sqlite_store.add_interaction",
+      "sqlite_store.list_recent_interactions"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Supporting helper in a module that is reachable from workflow entry points."
+  },
+  {
+    "node_id": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\workflow\\orchestrator.py::WorkflowOrchestrator.run",
+    "name": "run",
+    "filepath": "C:\\Users\\jarvi\\OneDrive\\Desktop\\Book syntesizer\\memory_input_clean\\Memory\\app\\workflow\\orchestrator.py",
+    "route": "Memory/app/workflow/orchestrator.py::run",
+    "description": "Function `run` orchestrates execution flow. orchestrates workflow execution steps Inputs: self, user_id, session_id, query, debug. Outputs: QueryResult. Called by: no internal callers detected. Calls: IntentType, QueryResult, llm.chat.",
+    "inputs": [
+      "self",
+      "user_id",
+      "session_id",
+      "query",
+      "debug"
+    ],
+    "outputs": "QueryResult",
+    "business_tags": [
+      "Workflow"
+    ],
+    "called_by": [],
+    "calls": [
+      "IntentType",
+      "QueryResult",
+      "llm.chat",
+      "memory_service.store",
+      "merged_domains.update",
+      "persistent_tree_store.save",
+      "self._build_graph_edges",
+      "self._log_interaction",
+      "self.attention.analyze",
+      "self.context.build_context",
+      "self.extractor.extract",
+      "self.fallback.apply_fallback",
+      "self.lifecycle.reinforce",
+      "self.retriever.retrieve",
+      "self.router.policies.get_policy",
+      "self.router.route",
+      "self.tree_indexer.build_from_memories",
+      "self.validator.validate",
+      "sqlite_store.list_recent",
+      "sqlite_store.update_status"
+    ],
+    "in_workflow": true,
+    "workflow_reason": "Reachable from entry points and dispatches work to downstream functions."
+  }
+]

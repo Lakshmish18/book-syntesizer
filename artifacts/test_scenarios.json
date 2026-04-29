@@ -1,0 +1,1642 @@
+{
+  "function_scenarios": [
+    {
+      "function_name": "startup_event",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `startup event` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `startup_event` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "root",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `root` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `root` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "chat",
+      "sample_input": "payload='value'",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `chat` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "recent",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `recent` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "stats",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `stats` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "interactions",
+      "sample_input": "limit=10",
+      "expected_output": "Returns successful stage output with `interactions` logic applied and result fields populated.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `interactions` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "graph_data",
+      "sample_input": "memory_id='value'",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `graph_data` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "graph_view",
+      "sample_input": "memory_id='value'",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `graph_view` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "debug_route",
+      "sample_input": "req='value'",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `debug_route` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "router_stats",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `router_stats` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "get_tree",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `get tree` logic applied and result fields populated.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `get_tree` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "embed",
+      "sample_input": "self='value', text='sample_text', dim='value'",
+      "expected_output": "Returns List with `embed` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `embed` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "chat",
+      "sample_input": "self='value', system='value', user='value', temperature='value'",
+      "expected_output": "Returns API-ready str payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `chat` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "run_once",
+      "sample_input": "self='value'",
+      "expected_output": "Returns successful stage output after orchestrating downstream stage calls.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `run_once` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "run_forever",
+      "sample_input": "self='value', interval_seconds='value'",
+      "expected_output": "Returns successful stage output after orchestrating downstream stage calls.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `run_forever` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "start_background_jobs",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `start background jobs` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `start_background_jobs` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "mcp_search",
+      "sample_input": "query='cache eviction strategy'",
+      "expected_output": "Returns successful stage output with `mcp search` logic applied and result fields populated.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `mcp_search` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "mcp_recent",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `mcp_recent` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_passes_admission",
+      "sample_input": "self='value', m='value'",
+      "expected_output": "Returns bool with `passes admission` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_passes_admission` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "store",
+      "sample_input": "self='value', memories='value'",
+      "expected_output": "Returns List with `store` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `store` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "retrieve",
+      "sample_input": "self='value', query='cache eviction strategy', limit=10",
+      "expected_output": "Returns List with required records loaded and normalized.",
+      "negative_input": "unavailable document id or empty retrieval result",
+      "negative_expected_output": "Returns controlled fallback/empty result and logs retrieval failure.",
+      "negative_error_trace": "Trace excerpt: RuntimeError or ValueError from retrieval call path.",
+      "tester_note": "Use this to verify `retrieve` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value', dim='value', index_path='./state/example.json'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "initialize",
+      "sample_input": "self='value'",
+      "expected_output": "Returns None with `initialize` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `initialize` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_load",
+      "sample_input": "self='value'",
+      "expected_output": "Returns None with required records loaded and normalized.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `_load` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_persist",
+      "sample_input": "self='value'",
+      "expected_output": "Returns None after committing storage updates with consistent state.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `_persist` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "add",
+      "sample_input": "self='value', item_id='value', text='sample_text'",
+      "expected_output": "Returns None with `add` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `add` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "search",
+      "sample_input": "self='value', query='cache eviction strategy', top_k='value'",
+      "expected_output": "Returns List with `search` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `search` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "add_relation",
+      "sample_input": "self='value', from_id='value', to_id='value', relation='value', weight='value'",
+      "expected_output": "Returns None after committing storage updates with consistent state.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `add_relation` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "neighborhood",
+      "sample_input": "self='value', memory_id='value'",
+      "expected_output": "Returns List with `neighborhood` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `neighborhood` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "rich_neighborhood",
+      "sample_input": "self='value', memory_id='value'",
+      "expected_output": "Returns Dict with `rich neighborhood` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `rich_neighborhood` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "connect_related_memories",
+      "sample_input": "self='value', memory_ids=[1, 2, 3], relation='value'",
+      "expected_output": "Returns None with `connect related memories` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `connect_related_memories` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "prune",
+      "sample_input": "self='value', retention_days='value', max_edges={'nodes': [], 'edges': []}",
+      "expected_output": "Returns int after orchestrating downstream stage calls.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `prune` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value', db_path='./state/example.json'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "initialize",
+      "sample_input": "self='value'",
+      "expected_output": "Returns bool with `initialize` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `initialize` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "is_available",
+      "sample_input": "self='value'",
+      "expected_output": "Returns bool with `is available` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `is_available` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "close_thread_connection",
+      "sample_input": "self='value'",
+      "expected_output": "Returns None with required records loaded and normalized.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `close_thread_connection` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_connect",
+      "sample_input": "self='value'",
+      "expected_output": "Returns sqlite3.Connection with `connect` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `_connect` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_configure_connection",
+      "sample_input": "self='value', conn='value'",
+      "expected_output": "Returns None with `configure connection` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `_configure_connection` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_get_connection",
+      "sample_input": "self='value'",
+      "expected_output": "Returns sqlite3.Connection with `get connection` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `_get_connection` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_execute_write",
+      "sample_input": "self='value', query='cache eviction strategy', params='value', commit='value'",
+      "expected_output": "Returns sqlite3.Cursor after persisting artifacts to the expected path.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `_execute_write` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_init_db",
+      "sample_input": "self='value', conn='value'",
+      "expected_output": "Returns None with `init db` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `_init_db` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_ensure_column",
+      "sample_input": "self='value', conn='value', table='value', column='value', definition='value'",
+      "expected_output": "Returns None with `ensure column` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `_ensure_column` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "add_memory",
+      "sample_input": "self='value', mem='value'",
+      "expected_output": "Returns int after committing storage updates with consistent state.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `add_memory` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "delete_memory",
+      "sample_input": "self='value', memory_id='value'",
+      "expected_output": "Returns None after committing storage updates with consistent state.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `delete_memory` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "add_interaction",
+      "sample_input": "self='value', interaction='value'",
+      "expected_output": "Returns int after committing storage updates with consistent state.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `add_interaction` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "update_status",
+      "sample_input": "self='value', memory_id='value', status='value'",
+      "expected_output": "Returns None after committing storage updates with consistent state.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `update_status` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "get_memory",
+      "sample_input": "self='value', memory_id='value'",
+      "expected_output": "Returns Optional with `get memory` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `get_memory` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "search",
+      "sample_input": "self='value', text='sample_text', limit=10",
+      "expected_output": "Returns List with `search` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `search` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "list_recent",
+      "sample_input": "self='value', limit=10",
+      "expected_output": "Returns API-ready List payload with stable keys and serializable values.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `list_recent` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "list_recent_interactions",
+      "sample_input": "self='value', limit=10, minutes='value'",
+      "expected_output": "Returns API-ready List payload with stable keys and serializable values.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `list_recent_interactions` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "add_edge",
+      "sample_input": "self='value', from_id='value', to_id='value', relation='value', weight='value'",
+      "expected_output": "Returns bool after committing storage updates with consistent state.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `add_edge` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "get_edges",
+      "sample_input": "self='value', memory_id='value'",
+      "expected_output": "Returns List with `get edges` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `get_edges` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "list_interactions",
+      "sample_input": "self='value', limit=10",
+      "expected_output": "Returns List with `list interactions` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `list_interactions` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "interaction_stats",
+      "sample_input": "self='value', limit=10",
+      "expected_output": "Returns API-ready Dict payload with stable keys and serializable values.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `interaction_stats` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "prune_interactions",
+      "sample_input": "self='value', retention_days='value', max_rows='value', batch_size=10",
+      "expected_output": "Returns int after orchestrating downstream stage calls.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `prune_interactions` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "prune_edges",
+      "sample_input": "self='value', retention_days='value', max_rows='value', batch_size=10",
+      "expected_output": "Returns int after orchestrating downstream stage calls.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `prune_edges` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_row_to_memory",
+      "sample_input": "self='value', row='value'",
+      "expected_output": "Returns MemoryNode with `row to memory` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `_row_to_memory` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_row_to_interaction",
+      "sample_input": "self='value', row='value'",
+      "expected_output": "Returns Dict with `row to interaction` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `_row_to_interaction` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "upsert",
+      "sample_input": "self='value', item_id='value', text='sample_text'",
+      "expected_output": "Returns None with `upsert` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `upsert` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "search",
+      "sample_input": "self='value', query='cache eviction strategy', top_k='value'",
+      "expected_output": "Returns List with `search` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `search` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "cosine",
+      "sample_input": "a='value', b='value'",
+      "expected_output": "Returns float with `cosine` logic applied and result fields populated.",
+      "negative_input": "database/index unavailable or invalid persistence payload",
+      "negative_expected_output": "Returns controlled storage error and preserves existing state.",
+      "negative_error_trace": "Trace excerpt: sqlite/faiss/io runtime error with operation context.",
+      "tester_note": "Use this to verify `cosine` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "run",
+      "sample_input": "self='value', user_id='value', session_id='value', query='cache eviction strategy', debug=True",
+      "expected_output": "Returns QueryResult after orchestrating downstream stage calls.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `run` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_log_interaction",
+      "sample_input": "self='value', user_id='value', session_id='value', query='cache eviction strategy', route='value'",
+      "expected_output": "Returns computed value with `log interaction` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_log_interaction` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_build_graph_edges",
+      "sample_input": "self='value', stored_ids=[1, 2, 3], memories='value'",
+      "expected_output": "Returns None with `build graph edges` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_build_graph_edges` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "analyze_emotional_signals",
+      "sample_input": "text='sample_text'",
+      "expected_output": "Returns EmotionalSignals with `analyze emotional signals` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `analyze_emotional_signals` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_similarity",
+      "sample_input": "self='value', a='value', b='value'",
+      "expected_output": "Returns float with `similarity` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_similarity` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_group_by_topic",
+      "sample_input": "self='value', memories='value'",
+      "expected_output": "Returns dict with `group by topic` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_group_by_topic` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "compact",
+      "sample_input": "self='value', memories='value'",
+      "expected_output": "Returns List with `compact` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `compact` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "decay",
+      "sample_input": "self='value', memories='value'",
+      "expected_output": "Returns List with `decay` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `decay` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "reinforce",
+      "sample_input": "self='value', memories='value'",
+      "expected_output": "Returns List with `reinforce` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `reinforce` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "reflect",
+      "sample_input": "self='value', memories='value'",
+      "expected_output": "Returns List with `reflect` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `reflect` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "consolidate",
+      "sample_input": "self='value', memories='value'",
+      "expected_output": "Returns List with `consolidate` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `consolidate` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_tokenize",
+      "sample_input": "self='value', text='sample_text'",
+      "expected_output": "Returns set with `tokenize` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_tokenize` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_jaccard",
+      "sample_input": "self='value', a='value', b='value'",
+      "expected_output": "Returns float with `jaccard` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_jaccard` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_has_negation_flip",
+      "sample_input": "self='value', text_a='sample_text', text_b='sample_text'",
+      "expected_output": "Returns bool with `has negation flip` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_has_negation_flip` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "find_contradictions",
+      "sample_input": "self='value', new_memories='value', existing='value'",
+      "expected_output": "Returns List with `find contradictions` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `find_contradictions` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_split_atomic_facts",
+      "sample_input": "text='sample_text'",
+      "expected_output": "Returns List with `split atomic facts` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_split_atomic_facts` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_compress_episode",
+      "sample_input": "user_text='sample_text', assistant_text='sample_text'",
+      "expected_output": "Returns str with `compress episode` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_compress_episode` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_extract_entities",
+      "sample_input": "text='sample_text'",
+      "expected_output": "Returns List parsed into the expected schema.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_extract_entities` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_compute_quality",
+      "sample_input": "text='sample_text', importance='value'",
+      "expected_output": "Returns float with `compute quality` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_compute_quality` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_extract_relations",
+      "sample_input": "text='sample_text'",
+      "expected_output": "Returns List parsed into the expected schema.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_extract_relations` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "extract",
+      "sample_input": "self='value', user_text='sample_text', assistant_text='sample_text', state='value'",
+      "expected_output": "Returns ExtractionResult parsed into the expected schema.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `extract` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_tokenize",
+      "sample_input": "self='value', text='sample_text'",
+      "expected_output": "Returns set with `tokenize` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_tokenize` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_similarity",
+      "sample_input": "self='value', a='value', b='value'",
+      "expected_output": "Returns float with `similarity` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_similarity` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "validate",
+      "sample_input": "self='value', new_memories='value', existing_memories='value'",
+      "expected_output": "Returns Tuple with validation checks applied and violations surfaced.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `validate` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_phrase_score",
+      "sample_input": "text='sample_text', strong='sample_text', moderate='value', strong_weight='sample_text', moderate_weight='value'",
+      "expected_output": "Returns float with `phrase score` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_phrase_score` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "analyze",
+      "sample_input": "self='value', query='cache eviction strategy'",
+      "expected_output": "Returns BehaviorState with `analyze` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `analyze` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "decide",
+      "sample_input": "self='value', route_flags=True",
+      "expected_output": "Returns str with `decide` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `decide` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "segment",
+      "sample_input": "self='value', memories='value'",
+      "expected_output": "Returns List with `segment` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `segment` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value', lookback_minutes='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_normalize_query",
+      "sample_input": "self='value', query='cache eviction strategy'",
+      "expected_output": "Returns str with `normalize query` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_normalize_query` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_compute_query_hash",
+      "sample_input": "self='value', query='cache eviction strategy'",
+      "expected_output": "Returns str with `compute query hash` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_compute_query_hash` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_compute_token_overlap",
+      "sample_input": "self='value', query1='cache eviction strategy', query2='cache eviction strategy'",
+      "expected_output": "Returns float with `compute token overlap` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_compute_token_overlap` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_score_importance",
+      "sample_input": "self='value', interaction='value'",
+      "expected_output": "Returns float with `score importance` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_score_importance` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_check_duplicate",
+      "sample_input": "self='value', interaction='value', recent_interactions='value'",
+      "expected_output": "Returns Tuple with validation checks applied and violations surfaced.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_check_duplicate` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "should_store",
+      "sample_input": "self='value', interaction='value', recent_interactions='value'",
+      "expected_output": "Returns Tuple with `should store` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `should_store` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "build_context",
+      "sample_input": "self='value', memories='value', max_chars='value'",
+      "expected_output": "Returns str with `build context` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `build_context` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "add_path",
+      "sample_input": "self='value', titles='value', summary='value', raw_text='sample_text'",
+      "expected_output": "Returns None after committing storage updates with consistent state.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `add_path` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "to_dict",
+      "sample_input": "self='value'",
+      "expected_output": "Returns dict with `to dict` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `to_dict` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "walk",
+      "sample_input": "n='value'",
+      "expected_output": "Returns dict with `walk` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `walk` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "summarize",
+      "sample_input": "self='value', memories='value'",
+      "expected_output": "Returns str with `summarize` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `summarize` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "retrieve",
+      "sample_input": "self='value', query='cache eviction strategy', route_decision='value', behavior='value', with_audit='value'",
+      "expected_output": "Returns computed value with required records loaded and normalized.",
+      "negative_input": "unavailable document id or empty retrieval result",
+      "negative_expected_output": "Returns controlled fallback/empty result and logs retrieval failure.",
+      "negative_error_trace": "Trace excerpt: RuntimeError or ValueError from retrieval call path.",
+      "tester_note": "Use this to verify `retrieve` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value', path='./state/example.json'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "save",
+      "sample_input": "self='value', tree={'nodes': [], 'edges': []}",
+      "expected_output": "Returns successful stage output after committing storage updates with consistent state.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `save` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "load",
+      "sample_input": "self='value'",
+      "expected_output": "Returns ContextTree with required records loaded and normalized.",
+      "negative_input": "missing/invalid file path or malformed JSON payload",
+      "negative_expected_output": "Raises file/JSON handling exception with clear failure reason.",
+      "negative_error_trace": "Trace excerpt: FileNotFoundError or json.JSONDecodeError at function entry.",
+      "tester_note": "Use this to verify `load` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "rebuild",
+      "sample_input": "node_data={'nodes': [], 'edges': []}",
+      "expected_output": "Returns successful stage output with `rebuild` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `rebuild` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "resolve",
+      "sample_input": "self='value', query='cache eviction strategy'",
+      "expected_output": "Returns dict with `resolve` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `resolve` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "score",
+      "sample_input": "self='value', query='cache eviction strategy', memory='value', behavior='value'",
+      "expected_output": "Returns float with `score` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `score` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "rank",
+      "sample_input": "self='value', query='cache eviction strategy', memories='value', top_k='value', behavior='value'",
+      "expected_output": "Returns List with `rank` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `rank` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_classify",
+      "sample_input": "self='value', text='sample_text'",
+      "expected_output": "Returns Tuple with `classify` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_classify` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_generate_branch_summary",
+      "sample_input": "self='value', mems='value'",
+      "expected_output": "Returns str with `generate branch summary` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_generate_branch_summary` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "build_from_memories",
+      "sample_input": "self='value', memories='value'",
+      "expected_output": "Returns ContextTree with `build from memories` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `build_from_memories` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value', tree={'nodes': [], 'edges': []}",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_score_node",
+      "sample_input": "self='value', query='cache eviction strategy', node={'nodes': [], 'edges': []}",
+      "expected_output": "Returns float with `score node` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_score_node` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "retrieve",
+      "sample_input": "self='value', query='cache eviction strategy', top_k='value'",
+      "expected_output": "Returns List with required records loaded and normalized.",
+      "negative_input": "unavailable document id or empty retrieval result",
+      "negative_expected_output": "Returns controlled fallback/empty result and logs retrieval failure.",
+      "negative_error_trace": "Trace excerpt: RuntimeError or ValueError from retrieval call path.",
+      "tester_note": "Use this to verify `retrieve` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "walk",
+      "sample_input": "node={'nodes': [], 'edges': []}",
+      "expected_output": "Returns successful stage output with `walk` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `walk` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_get_router",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready Pipeline payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_get_router` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "predict_route",
+      "sample_input": "query='cache eviction strategy', behavior_state='value'",
+      "expected_output": "Returns API-ready Dict payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `predict_route` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "is_model_available",
+      "sample_input": "no arguments",
+      "expected_output": "Returns bool with `is model available` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `is_model_available` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "warmup",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `warmup` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `warmup` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "apply_fallback",
+      "sample_input": "self='value', decision='value', retrieved_memories='value'",
+      "expected_output": "Returns str with `apply fallback` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `apply_fallback` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "score_all",
+      "sample_input": "self='value', query='cache eviction strategy'",
+      "expected_output": "Returns Dict with `score all` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `score_all` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "classify",
+      "sample_input": "self='value', query='cache eviction strategy'",
+      "expected_output": "Returns Tuple with `classify` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `classify` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_extract_secondary",
+      "sample_input": "self='value', scores='value', dominant='value'",
+      "expected_output": "Returns List parsed into the expected schema.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_extract_secondary` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_normalize",
+      "sample_input": "self='value', scores='value'",
+      "expected_output": "Returns Dict with `normalize` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_normalize` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_detect_conflicts",
+      "sample_input": "self='value', scores='value'",
+      "expected_output": "Returns List with `detect conflicts` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_detect_conflicts` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_priority_index",
+      "sample_input": "self='value', intent='value'",
+      "expected_output": "Returns int with `priority index` logic applied and result fields populated.",
+      "negative_input": "unavailable document id or empty retrieval result",
+      "negative_expected_output": "Returns controlled fallback/empty result and logs retrieval failure.",
+      "negative_error_trace": "Trace excerpt: RuntimeError or ValueError from retrieval call path.",
+      "tester_note": "Use this to verify `_priority_index` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_greeting_token_count",
+      "sample_input": "self='value', q='value'",
+      "expected_output": "Returns int with `greeting token count` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_greeting_token_count` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_strip_greeting_prefix",
+      "sample_input": "self='value', q='value'",
+      "expected_output": "Returns str with `strip greeting prefix` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_strip_greeting_prefix` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_is_stem_chitchat",
+      "sample_input": "self='value', q='value'",
+      "expected_output": "Returns API-ready bool payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_is_stem_chitchat` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_score_greeting",
+      "sample_input": "self='value', q='value'",
+      "expected_output": "Returns float with `score greeting` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_score_greeting` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_score_chitchat",
+      "sample_input": "self='value', q='value'",
+      "expected_output": "Returns API-ready float payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_score_chitchat` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_score_summary",
+      "sample_input": "self='value', q='value'",
+      "expected_output": "Returns float with `score summary` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_score_summary` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_score_historical",
+      "sample_input": "self='value', q='value'",
+      "expected_output": "Returns float with `score historical` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_score_historical` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_score_relational",
+      "sample_input": "self='value', q='value'",
+      "expected_output": "Returns float with `score relational` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_score_relational` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_score_oos",
+      "sample_input": "self='value', q='value'",
+      "expected_output": "Returns float with `score oos` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_score_oos` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_score_factual",
+      "sample_input": "self='value', q='value'",
+      "expected_output": "Returns float with `score factual` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_score_factual` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_select_dominant",
+      "sample_input": "self='value', scores='value'",
+      "expected_output": "Returns Tuple with `select dominant` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_select_dominant` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "is_oos",
+      "sample_input": "self='value', query='cache eviction strategy'",
+      "expected_output": "Returns bool with `is oos` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `is_oos` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "route",
+      "sample_input": "self='value', query='cache eviction strategy'",
+      "expected_output": "Returns API-ready RouteDecision payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `route` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_build_reasoning",
+      "sample_input": "intent='value', confidence='value', scores='value', secondary='value'",
+      "expected_output": "Returns str with `build reasoning` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_build_reasoning` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_build_intent_reasoning",
+      "sample_input": "primary='value', secondary='value', scores='value'",
+      "expected_output": "Returns str with `build intent reasoning` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_build_intent_reasoning` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_build_orchestration_plan",
+      "sample_input": "active_intents='value'",
+      "expected_output": "Returns list after orchestrating downstream stage calls.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_build_orchestration_plan` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "get_policy",
+      "sample_input": "self='value', intent='value'",
+      "expected_output": "Returns Dict with `get policy` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `get_policy` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value', api_key='value', model='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_client_init",
+      "sample_input": "self='value'",
+      "expected_output": "Returns successful stage output with `client init` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_client_init` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "chat",
+      "sample_input": "self='value', system='value', user='value', temperature='value'",
+      "expected_output": "Returns API-ready str payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `chat` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "__init__",
+      "sample_input": "self='value', api_key='value', model='value'",
+      "expected_output": "Initializes required dependencies and object state without runtime errors.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `__init__` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "_client_init",
+      "sample_input": "self='value'",
+      "expected_output": "Returns successful stage output with `client init` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `_client_init` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "chat",
+      "sample_input": "self='value', system='value', user='value', temperature='value'",
+      "expected_output": "Returns API-ready str payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `chat` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "<module>",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `<module>` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `<module>` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "logging.basicConfig",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `logging.basicConfig` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `logging.basicConfig` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "FastAPI",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `FastAPI` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `FastAPI` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "app.include_router",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `app.include_router` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "sqlite_store.initialize",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `sqlite store.initialize` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `sqlite_store.initialize` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "RuntimeError",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output after orchestrating downstream stage calls.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `RuntimeError` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "faiss_store.initialize",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `faiss store.initialize` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `faiss_store.initialize` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "start_background_jobs",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `start background jobs` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `start_background_jobs` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "app.on_event",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `app.on event` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `app.on_event` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "app.get",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `app.get` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `app.get` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "<module>",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `<module>` logic applied and result fields populated.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `<module>` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "APIRouter",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `APIRouter` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "orchestrator.run",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output after orchestrating downstream stage calls.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `orchestrator.run` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "behavior.model_dump",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `behavior.model dump` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `behavior.model_dump` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "router.post",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `router.post` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "<module>",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `<module>` logic applied and result fields populated.",
+      "negative_input": "missing required request payload fields or malformed query/body",
+      "negative_expected_output": "Returns validation-focused error response with actionable message.",
+      "negative_error_trace": "Trace excerpt: request validation/runtime error in API handler.",
+      "tester_note": "Use this to verify `<module>` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "m.model_dump",
+      "sample_input": "no arguments",
+      "expected_output": "Returns successful stage output with `m.model dump` logic applied and result fields populated.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `m.model_dump` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "sqlite_store.list_recent",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `sqlite_store.list_recent` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "router.get",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `router.get` behavior on both happy-path and failure-path inputs."
+    },
+    {
+      "function_name": "sqlite_store.interaction_stats",
+      "sample_input": "no arguments",
+      "expected_output": "Returns API-ready successful stage output payload with stable keys and serializable values.",
+      "negative_input": "invalid input type/shape",
+      "negative_expected_output": "Raises validation error or returns deterministic fallback output.",
+      "negative_error_trace": "Trace excerpt: TypeError or ValueError in core function logic.",
+      "tester_note": "Use this to verify `sqlite_store.interaction_stats` behavior on both happy-path and failure-path inputs."
+    }
+  ],
+  "workflow_scenarios": [
+    {
+      "scenario_name": "Happy path workflow",
+      "sample_input": "Project folder path + valid configuration",
+      "expected_output": "Workflow executes sequence: run_once -> run_forever -> run -> search -> cosine",
+      "negative_input": "Project path with missing state files or failed upstream API calls",
+      "negative_expected_output": "Pipeline reports stage failure with partial artifacts and actionable error context.",
+      "negative_error_trace": "Trace excerpt: RuntimeError in run_stage with failing stage name and root exception."
+    },
+    {
+      "scenario_name": "Robustness path",
+      "sample_input": "Project folder path + partial metadata / missing docs",
+      "expected_output": "Workflow still completes with fallback descriptions and generated report.",
+      "negative_input": "Corrupt intermediate JSON + missing required retrieval outputs",
+      "negative_expected_output": "Workflow skips/flags invalid segments and emits validation diagnostics.",
+      "negative_error_trace": "Trace excerpt: ValueError/json.JSONDecodeError during stage handoff parsing."
+    }
+  ]
+}
