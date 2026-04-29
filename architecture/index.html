@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://lakshmish18.github.io/book-syntesizer/developer-guide/">
+        <link rel="canonical" href="https://lakshmish18.github.io/book-syntesizer/architecture/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../developer-guide/">
       
       
-        <link rel="next" href="../architecture/">
+        <link rel="next" href="../pipeline-stages/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Developer Guide - code_to_graph Developer Docs</title>
+        <title>Architecture - code_to_graph Developer Docs</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#developer-guide" class="md-skip">
+        <a href="#architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Developer Guide
+              Architecture
             
           </span>
         </div>
@@ -262,6 +262,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developer Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -281,7 +308,7 @@
   <span class="md-ellipsis">
     
   
-    Developer Guide
+    Architecture
   
 
     
@@ -299,7 +326,7 @@
   <span class="md-ellipsis">
     
   
-    Developer Guide
+    Architecture
   
 
     
@@ -325,10 +352,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#architecture-overview" class="md-nav__link">
+  <a href="#system-diagram" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture Overview
+        System Diagram
       
     </span>
   </a>
@@ -336,10 +363,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#capability-mapping" class="md-nav__link">
+  <a href="#flow-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Capability Mapping
+        Flow Summary
       
     </span>
   </a>
@@ -347,21 +374,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#core-integration-points" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Commands
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output-artifacts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Output Artifacts
+        Core Integration Points
       
     </span>
   </a>
@@ -372,33 +388,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architecture
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -592,10 +581,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#architecture-overview" class="md-nav__link">
+  <a href="#system-diagram" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Architecture Overview
+        System Diagram
       
     </span>
   </a>
@@ -603,10 +592,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#capability-mapping" class="md-nav__link">
+  <a href="#flow-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Capability Mapping
+        Flow Summary
       
     </span>
   </a>
@@ -614,21 +603,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#core-integration-points" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Commands
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output-artifacts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Output Artifacts
+        Core Integration Points
       
     </span>
   </a>
@@ -652,65 +630,23 @@
 
 
 
-<h1 id="developer-guide">Developer Guide<a class="headerlink" href="#developer-guide" title="Permanent link">&para;</a></h1>
-<h2 id="architecture-overview">Architecture Overview<a class="headerlink" href="#architecture-overview" title="Permanent link">&para;</a></h2>
-<p>Core execution flow:</p>
+<h1 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h1>
+<h2 id="system-diagram">System Diagram<a class="headerlink" href="#system-diagram" title="Permanent link">&para;</a></h2>
+<p><img alt="code_to_graph architecture" src="../assets/architecture-overview.svg" /></p>
+<h2 id="flow-summary">Flow Summary<a class="headerlink" href="#flow-summary" title="Permanent link">&para;</a></h2>
 <ol>
-<li>CLI entry (<code>main.py</code>)</li>
-<li>Pipeline orchestration (<code>pipeline.py</code>)</li>
-<li>Graph generation (standard mode) or graph ingestion (Bevel mode)</li>
-<li>GPT enrichment (<code>lang_q/query_engine.py</code>)</li>
-<li>Workflow tracing (<code>functions/workflow_builder.py</code>)</li>
-<li>Function metadata + test scenario generation</li>
-<li>PDF generation (<code>functions/pdf_generator.py</code>)</li>
+<li><code>main.py</code> accepts CLI inputs and validates runtime mode.</li>
+<li><code>pipeline.py</code> orchestrates parse/ingest, enrichment, workflow, and output stages.</li>
+<li>Graph data is generated (standard) or ingested (Bevel).</li>
+<li>Metadata, function descriptions, and test scenarios are generated.</li>
+<li>PDF and JSON artifacts are emitted under <code>outputs/</code>.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>flowchart LR
-  A[main.py] --&gt; B[pipeline.py]
-  B --&gt; C[Parse or Ingest Graph]
-  C --&gt; D[GPT Enrichment]
-  D --&gt; E[Workflow Trace]
-  E --&gt; F[PDF + JSON Assets]
-</code></pre></div>
-<h2 id="capability-mapping">Capability Mapping<a class="headerlink" href="#capability-mapping" title="Permanent link">&para;</a></h2>
+<h2 id="core-integration-points">Core Integration Points<a class="headerlink" href="#core-integration-points" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Every function description in assets/report</strong><br />
-  Implemented via <code>functions/function_descriptions_asset.py</code> and rendered in Chapter 2.</li>
-<li><strong>Function route (project/module/submodule)</strong><br />
-  Included as <code>route</code> in function asset and PDF function reference.</li>
-<li><strong>Business/domain tags</strong><br />
-  Implemented by <code>functions/metadata_builder.py</code>.</li>
-<li><strong>Function/workflow test scenarios with sample I/O</strong><br />
-  Implemented by <code>functions/test_scenarios.py</code>, rendered in Chapter 5.</li>
-<li><strong>Debugging agent for description/trace input</strong><br />
-<code>debug_agent.py</code> + <code>functions/debugging_agent.py</code>.</li>
-<li><strong>Error-to-fix automatic flow</strong><br />
-<code>autofix_agent.py</code> + <code>functions/autofix_agent.py</code> (guarded mode).</li>
-<li><strong>Docs on git push</strong><br />
-<code>.github/workflows/docs-on-push.yml</code>.</li>
-</ul>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
-<p>Standard mode:</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser
-</code></pre></div>
-<p>Bevel mode:</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser<span class="w"> </span>--bevel-graph<span class="w"> </span>../bevel-export.json
-</code></pre></div>
-<p>Debugging agent (error text):</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>debug_agent.py<span class="w"> </span>--error-text<span class="w"> </span><span class="s2">&quot;ValueError: invalid payload shape&quot;</span>
-</code></pre></div>
-<p>Debugging agent (trace file):</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>debug_agent.py<span class="w"> </span>--error-file<span class="w"> </span>./sample_trace.txt
-</code></pre></div>
-<p>Safe auto-fix (dry-run):</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>autofix_agent.py<span class="w"> </span>--error-file<span class="w"> </span>./sample_trace.txt<span class="w"> </span>--project-folder<span class="w"> </span>.
-</code></pre></div>
-<h2 id="output-artifacts">Output Artifacts<a class="headerlink" href="#output-artifacts" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>outputs/code_documentation.pdf</code></li>
-<li><code>outputs/assets/function_descriptions.json</code></li>
-<li><code>outputs/test_scenarios.json</code></li>
-<li><code>outputs/debug_fix_report.json</code></li>
-<li><code>outputs/autofix_report.json</code></li>
+<li><strong>Parser + graph builder</strong> for structural extraction.</li>
+<li><strong>LLM enrichment</strong> for semantic descriptions and fix suggestions.</li>
+<li><strong>Workflow builder</strong> for route-level execution mapping.</li>
+<li><strong>Documentation generators</strong> for PDF and MkDocs assets.</li>
 </ul>
 
 
@@ -749,7 +685,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../developer-guide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Developer Guide">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -759,20 +695,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Developer Guide
               </div>
             </div>
           </a>
         
         
           
-          <a href="../architecture/" class="md-footer__link md-footer__link--next" aria-label="Next: Architecture">
+          <a href="../pipeline-stages/" class="md-footer__link md-footer__link--next" aria-label="Next: Pipeline Stages">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Architecture
+                Pipeline Stages
               </div>
             </div>
             <div class="md-footer__button md-icon">

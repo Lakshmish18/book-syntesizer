@@ -296,6 +296,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#release-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Release Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#implemented-capabilities" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -339,6 +350,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#qa-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QA Status
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -362,6 +384,33 @@
     
   
     Developer Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
   
 
     
@@ -462,6 +511,60 @@
   
   
     <li class="md-nav__item">
+      <a href="demo-runbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demo Runbook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="operational-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational Readiness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="troubleshooting/" class="md-nav__link">
         
   
@@ -509,6 +612,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#release-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Release Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#implemented-capabilities" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -552,6 +666,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#qa-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QA Status
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -572,6 +697,33 @@
 <h1 id="code_to_graph-developer-documentation">code_to_graph Developer Documentation<a class="headerlink" href="#code_to_graph-developer-documentation" title="Permanent link">&para;</a></h1>
 <p>Welcome to the official developer portal for <code>code_to_graph</code>.</p>
 <p>This system converts Python codebases into a graph representation, enriches graph entities with GPT, traces runtime workflow, and outputs production-grade documentation assets.</p>
+<h2 id="release-information">Release Information<a class="headerlink" href="#release-information" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Release</td>
+<td><code>v1.0.0</code></td>
+</tr>
+<tr>
+<td>Last updated</td>
+<td><code>2026-04-29</code></td>
+</tr>
+<tr>
+<td>Documentation owner</td>
+<td><code>Platform Engineering</code></td>
+</tr>
+<tr>
+<td>Deployment target</td>
+<td><code>GitHub Pages</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="implemented-capabilities">Implemented Capabilities<a class="headerlink" href="#implemented-capabilities" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Per-function deep descriptions included in report + assets.</li>
@@ -647,6 +799,43 @@ python<span class="w"> </span>main.py<span class="w"> </span>--folder<span class
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Add debugging agent for text/trace inputs</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Add guarded auto-fix workflow</li>
 </ul>
+<h2 id="qa-status">QA Status<a class="headerlink" href="#qa-status" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pipeline run</td>
+<td>Pass</td>
+<td>Generates PDF + JSON assets</td>
+</tr>
+<tr>
+<td>Docs build (<code>mkdocs build --strict</code>)</td>
+<td>Pass</td>
+<td>No strict build errors</td>
+</tr>
+<tr>
+<td>Debug agent smoke test</td>
+<td>Pass</td>
+<td>Handles text and trace input modes</td>
+</tr>
+<tr>
+<td>Auto-fix dry-run smoke test</td>
+<td>Pass</td>
+<td>Produces edit plan and report</td>
+</tr>
+<tr>
+<td>GitHub Pages publish</td>
+<td>Pass</td>
+<td><code>gh-pages</code> branch updated</td>
+</tr>
+</tbody>
+</table>
 
 
 
