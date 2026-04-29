@@ -1,28 +1,100 @@
 :root {
-  --md-primary-fg-color: #283593;
+  --md-primary-fg-color: #1e3a8a;
+  --md-primary-fg-color--light: #2563eb;
+  --md-accent-fg-color: #0891b2;
+  --company-border: rgba(15, 23, 42, 0.12);
+  --company-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
 }
+
+/* Typography and rhythm */
 .md-typeset h1 {
   font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.8rem;
 }
 
 .md-typeset h2 {
   margin-top: 2rem;
-  border-bottom: 1px solid rgba(125, 125, 125, 0.2);
-  padding-bottom: 0.25rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid var(--company-border);
+  padding-bottom: 0.35rem;
+  font-weight: 700;
 }
 
+.md-typeset h3 {
+  font-weight: 700;
+}
+
+.md-content__inner {
+  max-width: 76rem;
+}
+
+.md-typeset p,
+.md-typeset li {
+  line-height: 1.65;
+}
+
+/* Left navigation polish */
+.md-nav__title {
+  font-weight: 700;
+}
+
+.md-nav__link--active {
+  font-weight: 700;
+}
+
+/* Card layouts */
 .md-typeset .grid.cards > ul > li,
 .md-typeset .grid.cards > ol > li {
-  border: 1px solid rgba(125, 125, 125, 0.2);
-  border-radius: 0.8rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--company-border);
+  border-radius: 0.9rem;
+  box-shadow: var(--company-shadow);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
 }
 
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+/* Admonitions */
 .md-typeset .admonition,
 .md-typeset details {
-  border-radius: 0.6rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--company-border);
 }
 
+/* Code styling */
 .md-typeset code {
   border-radius: 0.35rem;
+  font-size: 0.82em;
+}
+
+.md-typeset pre > code {
+  border-radius: 0.7rem;
+}
+
+.md-typeset .highlight pre {
+  border: 1px solid var(--company-border);
+  box-shadow: var(--company-shadow);
+}
+
+/* Table styling for cleaner enterprise docs */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--company-border);
+  border-radius: 0.6rem;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.md-typeset table:not([class]) th {
+  background: rgba(37, 99, 235, 0.08);
+  font-weight: 700;
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border-color: var(--company-border);
+  padding: 0.6rem 0.8rem;
 }
