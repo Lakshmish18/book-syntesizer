@@ -319,6 +319,60 @@
   
   
     <li class="md-nav__item">
+      <a href="../user-manual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-implementation-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Implementation Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../pipeline-stages/" class="md-nav__link">
         
   
@@ -448,6 +502,28 @@
     <span class="md-ellipsis">
       
         Required Secret
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-docs-agent-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Push Docs Agent (Local)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-pre-push-enforcement-automatic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git Pre-Push Enforcement (Automatic)
       
     </span>
   </a>
@@ -603,6 +679,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#push-docs-agent-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Push Docs Agent (Local)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-pre-push-enforcement-automatic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git Pre-Push Enforcement (Automatic)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#guarded-auto-fix-flow" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -648,6 +746,27 @@
 <li><code>OPENAI_API_KEY</code> (recommended for richer enrichment/fix suggestions)</li>
 </ul>
 <p>Without this secret, fallback logic still runs and pipeline remains operational.</p>
+<h2 id="push-docs-agent-local">Push Docs Agent (Local)<a class="headerlink" href="#push-docs-agent-local" title="Permanent link">&para;</a></h2>
+<p>Use <code>push_docs_agent.py</code> to enforce documentation generation before <code>git push</code>.</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>push_docs_agent.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser
+</code></pre></div>
+<p>What it does:</p>
+<ol>
+<li>runs documentation pipeline (<code>main.py</code>)</li>
+<li>validates MkDocs build (<code>mkdocs build --strict</code>)</li>
+<li>executes <code>git push</code> to the selected remote/branch</li>
+</ol>
+<h2 id="git-pre-push-enforcement-automatic">Git Pre-Push Enforcement (Automatic)<a class="headerlink" href="#git-pre-push-enforcement-automatic" title="Permanent link">&para;</a></h2>
+<p>A git hook is configured at <code>.git/hooks/pre-push</code> to enforce full-project documentation generation on every standard <code>git push</code>.</p>
+<p>Hook flow:</p>
+<ol>
+<li>runs <code>python main.py --folder ../book_synthesiser</code></li>
+<li>runs <code>python -m mkdocs build --strict</code></li>
+<li>allows push only after both succeed</li>
+</ol>
+<p>Emergency bypass (if explicitly needed):</p>
+<div class="highlight"><pre><span></span><code><span class="nv">SKIP_DOCS_PREPUSH</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>git<span class="w"> </span>push
+</code></pre></div>
 <h2 id="guarded-auto-fix-flow">Guarded Auto-Fix Flow<a class="headerlink" href="#guarded-auto-fix-flow" title="Permanent link">&para;</a></h2>
 <p>Use <code>autofix_agent.py</code> for a controlled patch cycle:</p>
 <ol>

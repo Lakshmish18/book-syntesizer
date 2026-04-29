@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://lakshmish18.github.io/book-syntesizer/bevel-integration/">
+        <link rel="canonical" href="https://lakshmish18.github.io/book-syntesizer/user-manual/">
       
       
-        <link rel="prev" href="../pipeline-stages/">
+        <link rel="prev" href="../architecture/">
       
       
-        <link rel="next" href="../automation/">
+        <link rel="next" href="../project-implementation-guide/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Bevel Integration - code_to_graph Developer Docs</title>
+        <title>User Manual - code_to_graph Developer Docs</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bevel-integration" class="md-skip">
+        <a href="#user-manual-book_synthesiser" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bevel Integration
+              User Manual
             
           </span>
         </div>
@@ -316,10 +316,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../user-manual/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    User Manual
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -335,6 +362,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Run Command
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generated-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generated Outputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-operational-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional Operational Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -397,19 +488,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../bevel-integration/" class="md-nav__link">
         
   
   
@@ -425,7 +507,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -558,6 +639,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Run Command
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generated-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generated Outputs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-operational-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optional Operational Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -573,51 +706,25 @@
 
 
 
-<h1 id="bevel-integration">Bevel Integration<a class="headerlink" href="#bevel-integration" title="Permanent link">&para;</a></h1>
-<p>You can ingest a Bevel-exported graph JSON and still apply local AST overlay + documentation generation.</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser<span class="w"> </span>--bevel-graph<span class="w"> </span>./bevel_export.json
+<h1 id="user-manual-book_synthesiser">User Manual - book_synthesiser<a class="headerlink" href="#user-manual-book_synthesiser" title="Permanent link">&para;</a></h1>
+<p>Generated at: 2026-04-29 21:23:24</p>
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
+<p>This manual explains how to run the documentation pipeline and where to find generated outputs.</p>
+<h2 id="run-command">Run Command<a class="headerlink" href="#run-command" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser
 </code></pre></div>
-<p>This mode preserves graph source while augmenting function metadata and report outputs.</p>
-<h1 id="bevel-integration_1">Bevel Integration<a class="headerlink" href="#bevel-integration_1" title="Permanent link">&para;</a></h1>
-<p>This project supports integration with <code>Bevel-Software/code-to-knowledge-graph</code>.</p>
-<div class="admonition success">
-<p class="admonition-title">Why this mode exists</p>
-<p>It allows you to use Bevel graph extraction while keeping your downstream enrichment and reporting pipeline intact.</p>
-</div>
-<h2 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Export graph JSON from Bevel.</li>
-<li>Pass that JSON via <code>--bevel-graph</code>.</li>
-<li>Adapter maps Bevel schema into internal graph model.</li>
-<li>Pipeline continues with enrichment, workflow tracing, and report generation.</li>
-</ol>
-<h2 id="command">Command<a class="headerlink" href="#command" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>main.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser<span class="w"> </span>--bevel-graph<span class="w"> </span>../bevel-export.json
-</code></pre></div>
-<h2 id="adapter-behavior">Adapter Behavior<a class="headerlink" href="#adapter-behavior" title="Permanent link">&para;</a></h2>
-<p><code>functions/bevel_adapter.py</code> handles:</p>
+<h2 id="generated-outputs">Generated Outputs<a class="headerlink" href="#generated-outputs" title="Permanent link">&para;</a></h2>
 <ul>
-<li>schema normalization (<code>nodes</code>, <code>edges</code>/<code>connections</code>)</li>
-<li>relation coercion (<code>calls</code>, <code>imports</code>, <code>defines</code>, <code>inherits_from</code>)</li>
-<li>symbol-noise filtering</li>
+<li><code>outputs/code_documentation.pdf</code></li>
+<li><code>outputs/assets/function_descriptions.json</code></li>
+<li><code>outputs/test_scenarios.json</code></li>
+<li><code>outputs/user_manual.md</code></li>
+<li><code>outputs/project_implementation_guide.md</code></li>
 </ul>
-<h2 id="ast-overlay-in-bevel-mode">AST Overlay in Bevel Mode<a class="headerlink" href="#ast-overlay-in-bevel-mode" title="Permanent link">&para;</a></h2>
-<p><code>pipeline.py</code> overlays AST metadata after Bevel ingest to improve function quality:</p>
-<ul>
-<li>argument lists</li>
-<li>return annotations</li>
-<li>docstrings</li>
-<li>call edges from parsed code</li>
-</ul>
-<p>This is why Bevel mode still produces high-quality function and workflow sections.</p>
-<h2 id="data-flow">Data Flow<a class="headerlink" href="#data-flow" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>flowchart TD
-  A[Bevel export JSON] --&gt; B[bevel_adapter.py]
-  B --&gt; C[Internal graph]
-  C --&gt; D[AST metadata overlay]
-  D --&gt; E[GPT enrichment]
-  E --&gt; F[Workflow trace]
-  F --&gt; G[PDF report]
+<h2 id="optional-operational-commands">Optional Operational Commands<a class="headerlink" href="#optional-operational-commands" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>debug_agent.py<span class="w"> </span>--error-text<span class="w"> </span><span class="s2">&quot;ValueError: invalid payload shape&quot;</span>
+python<span class="w"> </span>autofix_agent.py<span class="w"> </span>--error-text<span class="w"> </span><span class="s2">&quot;ValueError: invalid payload shape in run_pipeline&quot;</span>
+python<span class="w"> </span>push_docs_agent.py<span class="w"> </span>--folder<span class="w"> </span>../book_synthesiser
 </code></pre></div>
 
 
@@ -656,7 +763,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../pipeline-stages/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pipeline Stages">
+          <a href="../architecture/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Architecture">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -666,20 +773,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Pipeline Stages
+                Architecture
               </div>
             </div>
           </a>
         
         
           
-          <a href="../automation/" class="md-footer__link md-footer__link--next" aria-label="Next: Automation">
+          <a href="../project-implementation-guide/" class="md-footer__link md-footer__link--next" aria-label="Next: Project Implementation Guide">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Automation
+                Project Implementation Guide
               </div>
             </div>
             <div class="md-footer__button md-icon">
