@@ -8,6 +8,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 import argparse
+import re
 import json
 from datetime import datetime
 from pathlib import Path
