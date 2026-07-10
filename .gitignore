@@ -6,3 +6,8 @@ __pycache__/
 .env
 .venv/
 venv/
+
+.bevel/do_not_share
+
+# Local pre-push doc target (see code_to_graph/.prepush_folder.example)
+code_to_graph/.prepush_folder

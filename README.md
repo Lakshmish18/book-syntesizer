@@ -13,6 +13,7 @@ A research-document synthesis pipeline that indexes source PDFs, builds an outli
 - Reconstruction mode for query-driven knowledge graph style outputs
 - Basic validation and test coverage for reconstruction modules
 
+
 ## Pipeline Overview
 
 ```text
@@ -189,3 +190,22 @@ Lakshmish M Devadiga
 
 - GitHub: [Lakshmish18](https://github.com/Lakshmish18)
 - LinkedIn: [lakshmish-m-devadiga](https://www.linkedin.com/in/lakshmish-m-devadiga)
+
+1. Install dependencies:
+   - `pip install -r book_synthesiser/requirements.txt`
+2. Run system check:
+   - `python book_synthesiser/main.py --test`
+3. Run pipeline validation:
+   - `python book_synthesiser/main.py --stage validate`
+
+## Code documentation hook (`code_to_graph`)
+
+On push, this repo can run `python main.py --folder …` and `mkdocs build --strict` before the push completes.
+
+1. Point Git at the tracked hooks (once per clone): `git config core.hooksPath githooks`
+2. Choose the analyzed folder (path is relative to `code_to_graph/`):
+   - **Persistent:** copy `code_to_graph/.prepush_folder.example` to `code_to_graph/.prepush_folder` and edit the path (e.g. `../memory_input_clean/Memory`).
+   - **One-off:** set `CODETOGRAPH_PREPUSH_FOLDER` for that terminal session, then push.
+   - **Default** if neither is set: `../book_synthesiser`.
+3. Skip when needed: `SKIP_DOCS_PREPUSH=1 git push`
+
